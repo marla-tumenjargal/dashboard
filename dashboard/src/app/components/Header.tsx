@@ -3,11 +3,29 @@
 import { useState } from "react"
 import { usePathname, useRouter } from "next/navigation"
 import { Menu, X } from "lucide-react"
+// Custom Switch component since UI library isn't available
+const Switch = ({ checked, onCheckedChange, className }: { 
+  checked: boolean; 
+  onCheckedChange: (checked: boolean) => void; 
+  className?: string 
+}) => {
+  return (
+    <button
+      role="switch"
+      aria-checked={checked}
+      onClick={() => onCheckedChange(!checked)}
+      className={`toggle-switch-button ${checked ? 'checked' : ''} ${className || ''}`}
+    >
+      <span className={`toggle-switch-thumb ${checked ? 'checked' : ''}`} />
+    </button>
+  )
+}
 import "./header.css"
 import logo from '@/public/starfish.png'
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const [isHovering, setIsHovering] = useState(false)
 
   const router = useRouter()
   const pathname = usePathname()
@@ -19,13 +37,15 @@ export default function Header() {
     { name: "about", href: "#" },
   ]
 
-  const handleToggle = () => {
-    if (pathname === '/alternatehome') {
-      router.push('/')
-    } else {
+  const handleToggle = (checked: boolean) => {
+    if (checked) {
       router.push('/alternatehome')
+    } else {
+      router.push('/')
     }
   }
+
+  const isToggled = pathname === '/alternatehome'
 
   return (
     <header className="header">
@@ -60,11 +80,27 @@ export default function Header() {
               ))}
             </div>
 
-            {/* Right Section - CTA + Toggle Button */}
+            {/* Right Section - Toggle Switch */}
             <div className="right-section">
-              <button className="silly-toggle-button" onClick={handleToggle}>
-                silly stuff
-              </button>
+              <div className="toggle-container">
+                <div 
+                  className="toggle-wrapper"
+                  onMouseEnter={() => setIsHovering(true)} 
+                  onMouseLeave={() => setIsHovering(false)}
+                >
+                  <Switch 
+                    checked={isToggled} 
+                    onCheckedChange={handleToggle} 
+                    className={`${isToggled ? 'toggle-switch' : ''}`}
+                  />
+                </div>
+                
+                <span
+                  className={`toggle-label ${isHovering ? "visible" : "hidden"} ${isToggled ? "alternate" : ""}`}
+                >
+                  {isToggled ? "back home" : "silly stuff"}
+                </span>
+              </div>
 
               {/* Mobile menu button */}
               <button
