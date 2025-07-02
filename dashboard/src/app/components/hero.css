@@ -1,7 +1,6 @@
-/* Hero Container Styles */
 .hero-container {
     padding-top: 6rem;
-    padding-left: 3rem;
+    padding-left: 2rem;
     padding-right: 1rem;
     max-width: 80rem;
     margin: 0 auto;
@@ -10,10 +9,10 @@
     align-items: flex-start; /* aligns text/image to top-left */
     text-align: left;
     position: relative;
-  }
-  
-  /* Hero Text Styles */
-  .hero-text {
+}
+
+/* Hero Text Styles */
+.hero-text {
     font-size: 2rem;
     font-weight: 500;
     color: #111827;
@@ -21,27 +20,82 @@
     line-height: 1.2;
     margin: 0;
     max-width: 600px;
-  }
-  
-  /* Hero Sample Image Styles */
-  .hero-sample-image {
+}
+
+/* Hero Images Container */
+.hero-images-container {
+    display: flex;
+    gap: 2rem; /* space between images */
     margin-top: 3rem;
-    width: 20rem; /* reduced from 7rem to 4rem for smaller size */
+    flex-wrap: wrap; /* allows wrapping on smaller screens */
+}
+
+/* Hero Image Wrapper */
+.hero-image-wrapper {
+    position: relative;
+    cursor: pointer;
+}
+
+/* Hero Sample Image Styles */
+.hero-sample-image {
+    width: 20rem;
     height: auto;
     padding: 10px;
     background-color: white;
-  }
-  
-  
-  /* Responsive Typography */
-  @media (max-width: 768px) {
-    .hero-text {
-      font-size: 1.75rem;
+    transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.active-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .hero-images-container {
+        gap: 1.5rem;
     }
-  }
-  
-  @media (max-width: 480px) {
-    .hero-text {
-      font-size: 1.5rem;
+    
+    .hero-sample-image {
+        width: 16rem;
     }
-  }
+}
+
+@media (max-width: 768px) {
+    .hero-text {
+        font-size: 1.75rem;
+    }
+    
+    .hero-images-container {
+        gap: 1rem;
+        justify-content: center; /* center images on mobile */
+    }
+    
+    .hero-sample-image {
+        width: 14rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text {
+        font-size: 1.5rem;
+    }
+    
+    .hero-images-container {
+        flex-direction: column; /* stack vertically on very small screens */
+        align-items: center;
+    }
+    
+    .hero-sample-image {
+        width: 18rem;
+    }
+}

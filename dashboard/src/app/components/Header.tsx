@@ -32,7 +32,7 @@ export default function Header() {
   const navItems = [
     { name: "projects", href: "#", disabled: true },
     { name: "garden", href: "#" },
-    { name: "connect", href: "#" },
+    { name: "writing", href: "#" },
     { name: "about", href: "#" },
   ]
 
