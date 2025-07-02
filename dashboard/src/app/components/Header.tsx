@@ -21,7 +21,6 @@ const Switch = ({ checked, onCheckedChange, className }: {
   )
 }
 import "./header.css"
-import logo from '@/public/starfish.png'
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)

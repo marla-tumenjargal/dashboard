@@ -1,4 +1,4 @@
-import "./hero.css"
+import "./hero.css";
 
 export default function Hero() {
     return (
@@ -6,6 +6,11 @@ export default function Hero() {
             <p className="hero-text">
                 Visual designer with over a decade of experience designing exceptional products for big companies, small businesses and individuals.
             </p>
+            <img
+                  src="/sample-folder.png"
+                  alt="sample folder"
+                  className="hero-sample-image"
+                />
         </div>
-    )
+    );
 }

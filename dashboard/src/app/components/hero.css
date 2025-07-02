@@ -1,12 +1,18 @@
-/* Hero Styles */
+/* Hero Container Styles */
 .hero-container {
-    padding-top: 13rem;
-    padding-left: 2.85rem;
+    padding-top: 6rem;
+    padding-left: 3rem;
     padding-right: 1rem;
     max-width: 80rem;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* aligns text/image to top-left */
+    text-align: left;
+    position: relative;
   }
   
+  /* Hero Text Styles */
   .hero-text {
     font-size: 2rem;
     font-weight: 500;
@@ -17,15 +23,25 @@
     max-width: 600px;
   }
   
+  /* Hero Sample Image Styles */
+  .hero-sample-image {
+    margin-top: 3rem;
+    width: 20rem; /* reduced from 7rem to 4rem for smaller size */
+    height: auto;
+    padding: 10px;
+    background-color: white;
+  }
+  
+  
   /* Responsive Typography */
   @media (max-width: 768px) {
     .hero-text {
-      font-size: 2rem;
+      font-size: 1.75rem;
     }
   }
   
   @media (max-width: 480px) {
     .hero-text {
-      font-size: 1.75rem;
+      font-size: 1.5rem;
     }
   }
