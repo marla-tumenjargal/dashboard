@@ -1,7 +1,5 @@
 'use client'
 
-
-
 import { useState, useEffect } from "react"
 import { usePathname, useRouter } from "next/navigation"
 import { Menu, X } from "lucide-react"
@@ -75,7 +73,7 @@ export default function Header() {
                   <a href="#" className="morphed-nav-link">garden</a>
                   <div className="morphed-avatar-container">
                     <img
-                      src="/starfish.png"
+                      src="/logo.png"
                       alt="Marla Avatar"
                       className="morphed-avatar-image"
                     />
@@ -104,7 +102,7 @@ export default function Header() {
                   <div className="avatar-section">
                     <div className="avatar-container">
                       <img
-                        src="/starfish.png"
+                        src="/logo.png"
                         alt="Marla Avatar"
                         className="header-avatar-image"
                       />

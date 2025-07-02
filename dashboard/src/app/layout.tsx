@@ -1,11 +1,16 @@
 // app/layout.tsx
 
+// app/layout.tsx
+
 import './globals.css'  // your global styles
 import Header from './components/header'
 
 export const metadata = {
-  title: 'My App',
+  title: 'Marla Tumenjargal',
   description: 'Example',
+  icons: {
+    icon: '/starfish.png',
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
