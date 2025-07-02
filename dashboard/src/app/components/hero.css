@@ -1,5 +1,5 @@
 .hero-container {
-    padding-top: 6rem;
+    padding-top: 12rem;
     padding-left: 2rem;
     padding-right: 1rem;
     max-width: 80rem;
@@ -22,11 +22,10 @@
     max-width: 600px;
 }
 
-/* Hero Images Container */
 .hero-images-container {
     display: flex;
     gap: 2rem; /* space between images */
-    margin-top: 3rem;
+    margin-top: 6rem; /* increased from 3rem */
     margin-bottom: 6rem; /* Add significant bottom margin */
     flex-wrap: wrap; /* allows wrapping on smaller screens */
 }
@@ -35,7 +34,7 @@
 .hero-image-wrapper {
     position: relative;
     cursor: pointer;
-    width: 20rem;
+    width: 22rem;
     height: auto;
     /* Add a fixed aspect ratio to maintain space */
     aspect-ratio: 1;
@@ -54,7 +53,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    transition: opacity 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: opacity 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .original-image {
