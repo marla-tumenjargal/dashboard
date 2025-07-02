@@ -9,7 +9,7 @@ export default function Footer() {
                     <div className="footer-inner">
                         {/* Left Section - Copyright */}
                         <div className="footer-left">
-                            <span className="copyright">© 2025 - Marla Tumenjargal</span>
+                            <span className="copyright">© 2025 - marla (made with love </span>
                         </div>
 
                         {/* Center Section - Links (Desktop only) */}
@@ -21,7 +21,6 @@ export default function Footer() {
                                 className="footer-link"
                             >
                                 <Linkedin className="footer-icon" />
-                                LinkedIn
                             </a>
                             <a 
                                 href="/cv.pdf" 
@@ -30,7 +29,6 @@ export default function Footer() {
                                 className="footer-link"
                             >
                                 <FileText className="footer-icon" />
-                                CV
                             </a>
                             <a 
                                 href="https://github.com/marlatumenjargal" 
@@ -39,7 +37,6 @@ export default function Footer() {
                                 className="footer-link"
                             >
                                 <Github className="footer-icon" />
-                                Github
                             </a>
                         </div>
 

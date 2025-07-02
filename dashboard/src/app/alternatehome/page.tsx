@@ -7,7 +7,7 @@ export default function alternatehome() {
     <>
       <Header />
       <main style={{ padding: '2rem', textAlign: 'center', paddingTop: '10rem' }}>
-        <h1> welcome to silly marla stuff :D </h1>
+        <h1> Marla Tumenjargal </h1>
       </main>
     </>
   )
