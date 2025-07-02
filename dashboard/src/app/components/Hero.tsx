@@ -13,48 +13,36 @@ export default function Hero() {
                     <img
                         src="/projectsfolder.jpg"
                         alt="projects folder"
-                        className="hero-sample-image"
-                        data-hover-src="/activeprojectsfolder.jpg"
-                        onMouseEnter={(e) => {
-                            const img = e.target as HTMLImageElement;
-                            img.src = img.dataset.hoverSrc || "/activeprojectsfolder.jpg";
-                        }}
-                        onMouseLeave={(e) => {
-                            const img = e.target as HTMLImageElement;
-                            img.src = "/projectsfolder.jpg";
-                        }}
+                        className="hero-sample-image original-image"
+                    />
+                    <img
+                        src="/activeprojectsfolder.jpg"
+                        alt="active projects folder"
+                        className="hero-sample-image active-image"
                     />
                 </div>
                 <div className="hero-image-wrapper">
                     <img
                         src="/uifolder.jpg"
                         alt="UI folder"
-                        className="hero-sample-image"
-                        data-hover-src="/activeuifolder.jpg"
-                        onMouseEnter={(e) => {
-                            const img = e.target as HTMLImageElement;
-                            img.src = img.dataset.hoverSrc || "/activeuifolder.jpg";
-                        }}
-                        onMouseLeave={(e) => {
-                            const img = e.target as HTMLImageElement;
-                            img.src = "/uifolder.jpg";
-                        }}
+                        className="hero-sample-image original-image"
+                    />
+                    <img
+                        src="/activeuifolder.jpg"
+                        alt="active UI folder"
+                        className="hero-sample-image active-image"
                     />
                 </div>
                 <div className="hero-image-wrapper">
                     <img
                         src="/writingfolder.jpg"
                         alt="writing folder"
-                        className="hero-sample-image"
-                        data-hover-src="/activewritingfolder.jpg"
-                        onMouseEnter={(e) => {
-                            const img = e.target as HTMLImageElement;
-                            img.src = img.dataset.hoverSrc || "/activewritingfolder.jpg";
-                        }}
-                        onMouseLeave={(e) => {
-                            const img = e.target as HTMLImageElement;
-                            img.src = "/writingfolder.jpg";
-                        }}
+                        className="hero-sample-image original-image"
+                    />
+                    <img
+                        src="/activewritingfolder.jpg"
+                        alt="active writing folder"
+                        className="hero-sample-image active-image"
                     />
                 </div>
             </div>

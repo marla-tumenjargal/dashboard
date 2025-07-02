@@ -27,6 +27,7 @@
     display: flex;
     gap: 2rem; /* space between images */
     margin-top: 3rem;
+    margin-bottom: 6rem; /* Add significant bottom margin */
     flex-wrap: wrap; /* allows wrapping on smaller screens */
 }
 
@@ -34,29 +35,40 @@
 .hero-image-wrapper {
     position: relative;
     cursor: pointer;
+    width: 20rem;
+    height: auto;
+    /* Add a fixed aspect ratio to maintain space */
+    aspect-ratio: 1;
 }
 
 /* Hero Sample Image Styles */
 .hero-sample-image {
-    width: 20rem;
+    width: 100%;
     height: auto;
     padding: 10px;
     background-color: white;
-    transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.active-image {
     position: absolute;
     top: 0;
     left: 0;
+    transition: opacity 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-.fade-in {
+.original-image {
     opacity: 1;
+    z-index: 2;
 }
 
-.fade-out {
+.active-image {
     opacity: 0;
+    z-index: 1;
+}
+
+.hero-image-wrapper:hover .original-image {
+    opacity: 0;
+}
+
+.hero-image-wrapper:hover .active-image {
+    opacity: 1;
 }
 
 /* Responsive Design */
@@ -65,7 +77,7 @@
         gap: 1.5rem;
     }
     
-    .hero-sample-image {
+    .hero-image-wrapper {
         width: 16rem;
     }
 }
@@ -80,7 +92,7 @@
         justify-content: center; /* center images on mobile */
     }
     
-    .hero-sample-image {
+    .hero-image-wrapper {
         width: 14rem;
     }
 }
@@ -95,7 +107,7 @@
         align-items: center;
     }
     
-    .hero-sample-image {
+    .hero-image-wrapper {
         width: 18rem;
     }
 }
