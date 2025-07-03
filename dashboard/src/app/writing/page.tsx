@@ -64,11 +64,8 @@ export default function WritingPage() {
       <div className="postsList">
         {blogPosts.map((post, index) => (
           <div key={post.id} className="postItem">
-            <button
-              onClick={() => togglePost(post.id)}
-              className="toggleButton"
-            >
-              <div className="postHeader">
+            <div className="postItemHeader">
+              <div className="postHeaderSection">
                 {post.isArchived && (
                   <span className="archiveTag">
                     Archive
@@ -93,22 +90,27 @@ export default function WritingPage() {
                 </span>
               </div>
               
-              <div className="postMeta">
-                <span className="categoryTag">
-                  {post.category}
-                </span>
-                <span className="yearTag">
-                  {post.year}
-                </span>
-                <div className="chevronIcon">
-                  {expandedPosts.has(post.id) ? (
-                    <ChevronUp size={20} />
-                  ) : (
-                    <ChevronDown size={20} />
-                  )}
+              <button
+                onClick={() => togglePost(post.id)}
+                className="toggleButton"
+              >
+                <div className="postMeta">
+                  <span className="categoryTag">
+                    {post.category}
+                  </span>
+                  <span className="yearTag">
+                    {post.year}
+                  </span>
+                  <div className="chevronIcon">
+                    {expandedPosts.has(post.id) ? (
+                      <ChevronUp size={20} />
+                    ) : (
+                      <ChevronDown size={20} />
+                    )}
+                  </div>
                 </div>
-              </div>
-            </button>
+              </button>
+            </div>
             
             {expandedPosts.has(post.id) && (
               <div className="expandedContent">

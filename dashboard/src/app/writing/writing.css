@@ -4,7 +4,7 @@
   max-width: 64rem;
   margin: 0 auto;
   padding: 1.5rem;
-  background-color: #f9fafb;
+  background-color: #ffffff;
   min-height: 100vh;
   margin-top: 5rem;
 }
@@ -23,33 +23,42 @@
   border-bottom: none;
 }
 
-.toggleButton {
+.postItemHeader {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1rem 0;
-  text-align: left;
-  background: none;
-  border: none;
-  cursor: pointer;
   transition: background-color 0.2s ease;
 }
 
-.toggleButton:hover {
+.postItemHeader:hover {
   background-color: #f3f4f6;
 }
 
-.toggleButton:focus {
-  outline: none;
-  background-color: #f3f4f6;
-}
-
-.postHeader {
+.postHeaderSection {
   display: flex;
   align-items: center;
   gap: 1rem;
   flex: 1;
+}
+
+.toggleButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.toggleButton:hover {
+  background-color: #e5e7eb;
+}
+
+.toggleButton:focus {
+  outline: none;
+  background-color: #e5e7eb;
 }
 
 .archiveTag {
