@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600&display=swap');
+
+.container {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background-color: #f9fafb;
+  min-height: 100vh;
+  margin-top: 2rem;
+}
+
+.postsList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.postItem {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.postItem:last-child {
+  border-bottom: none;
+}
+
+.toggleButton {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  text-align: left;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.toggleButton:hover {
+  background-color: #f3f4f6;
+}
+
+.toggleButton:focus {
+  outline: none;
+  background-color: #f3f4f6;
+}
+
+.postHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+}
+
+.archiveTag {
+  background-color: #000;
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.postTitle {
+  color: #000;
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 500;
+  font-size: 1.125rem;
+  letter-spacing: -0.82px;
+}
+
+.postMeta {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.categoryTag,
+.yearTag {
+  font-size: 0.75rem;
+  color: #6b7280;
+  border: 1px solid #d1d5db;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.chevronIcon {
+  margin-left: 1rem;
+  color: #6b7280;
+}
+
+.expandedContent {
+  padding: 0 0 1.5rem 0;
+  animation: slideIn 0.2s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.contentText {
+  font-family: 'Times New Roman', Garamond, serif;
+  color: #374151;
+  line-height: 1.625;
+  white-space: pre-line;
+  max-width: none;
+}

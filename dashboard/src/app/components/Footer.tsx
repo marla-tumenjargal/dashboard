@@ -9,7 +9,7 @@ export default function Footer() {
                     <div className="footer-inner">
                         {/* Left Section - Copyright */}
                         <div className="footer-left">
-                            <span className="copyright">© 2025 - marla (made with love </span>
+                            <span className="copyright">© 2025 - marla (made with love) </span>
                         </div>
 
                         {/* Center Section - Links (Desktop only) */}
@@ -43,10 +43,10 @@ export default function Footer() {
                         {/* Right Section - Email */}
                         <div className="footer-right">
                             <a 
-                                href="mailto:hello@marla.com" 
+                                href="mailto:tumearla@gmail.com" 
                                 className="footer-email"
                             >
-                                hello@marla.com
+                                tumearla@gmail.com
                                 <ArrowUpRight className="email-arrow" />
                             </a>
                         </div>
