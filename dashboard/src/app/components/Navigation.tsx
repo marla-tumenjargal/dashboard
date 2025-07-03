@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { usePathname, useRouter } from "next/navigation"
+import Link from "next/link"
 import { Menu, X } from "lucide-react"
 
 // Custom Switch component
@@ -24,19 +25,20 @@ const Switch = ({ checked, onCheckedChange, className }: {
 
 import "./header.css"
 
-export default function Header() {
+export default function Navigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [isHovering, setIsHovering] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
+  const [isLogoHovered, setIsLogoHovered] = useState(false)
 
   const router = useRouter()
   const pathname = usePathname()
 
   const navItems = [
-    { name: "projects", href: "#", disabled: true },
-    { name: "garden", href: "#" },
-    { name: "writing", href: "#" },
-    { name: "about", href: "#" },
+    { name: "projects", href: "/projects", disabled: false },
+    { name: "garden", href: "/playground" },
+    { name: "writing", href: "/writing" },
+    { name: "about", href: "/about" },
   ]
 
   // Scroll detection
@@ -60,26 +62,60 @@ export default function Header() {
 
   const isToggled = pathname === '/alternatehome'
 
+  // Helper function to check if a nav item is current
+  const isCurrentPage = (href: string) => {
+    return pathname === href
+  }
+
   return (
-    <header className={`header ${isScrolled ? 'morphed' : ''}`}>
-      <nav className="nav-container">
+    <nav className={`header ${isScrolled ? 'morphed' : ''}`}>
+      <div className="nav-container">
         <div className={`glass-container ${isScrolled ? 'morphed' : ''}`}>
           <div className="nav-content">
             <div className="nav-inner">
-              {/* Morphed layout when scrolled */}
+              {/* Logo - always visible with smooth transition, clickable home link */}
+              <Link 
+                href="/" 
+                className={`avatar-section ${isScrolled ? 'morphed' : ''}`}
+                onMouseEnter={() => setIsLogoHovered(true)}
+                onMouseLeave={() => setIsLogoHovered(false)}
+              >
+                <div className={`avatar-container ${isScrolled ? 'morphed' : ''}`}>
+                  <img
+                    src="/logo.png"
+                    alt="Marla Avatar - Home"
+                    className={`header-avatar-image ${isScrolled ? 'morphed' : ''} ${isLogoHovered ? 'spinning' : ''}`}
+                  />
+                </div>
+                {!isScrolled && (
+                  <div className="name-section">
+                    <span className="name-primary">marla</span>
+                  </div>
+                )}
+              </Link>
+
+              {/* Navigation links */}
               {isScrolled ? (
                 <div className="morphed-nav">
-                  <a href="#" className="morphed-nav-link disabled">projects</a>
-                  <a href="#" className="morphed-nav-link">garden</a>
-                  <div className="morphed-avatar-container">
-                    <img
-                      src="/logo.png"
-                      alt="Marla Avatar"
-                      className="morphed-avatar-image"
-                    />
-                  </div>
-                  <a href="#" className="morphed-nav-link">writing</a>
-                  <a href="#" className="morphed-nav-link">about</a>
+                  {navItems.map((item) => (
+                    item.disabled ? (
+                      <span 
+                        key={item.name}
+                        className="morphed-nav-link disabled"
+                        aria-disabled="true"
+                      >
+                        {item.name}
+                      </span>
+                    ) : (
+                      <Link 
+                        key={item.name}
+                        href={item.href} 
+                        className={`morphed-nav-link ${isCurrentPage(item.href) ? 'current' : ''}`}
+                      >
+                        {item.name}
+                      </Link>
+                    )
+                  ))}
                   
                   <div className="morphed-toggle-section">
                     <div 
@@ -98,30 +134,25 @@ export default function Header() {
               ) : (
                 /* Original layout when at top */
                 <>
-                  {/* Left Section - Avatar and Name */}
-                  <div className="avatar-section">
-                    <div className="avatar-container">
-                      <img
-                        src="/logo.png"
-                        alt="Marla Avatar"
-                        className="header-avatar-image"
-                      />
-                    </div>
-                    <div className="name-section">
-                      <span className="name-primary">marla</span>
-                    </div>
-                  </div>
-
                   <div className="desktop-nav">
                     {navItems.map((item) => (
-                      <a
-                        key={item.name}
-                        href={item.href}
-                        className={`nav-link ${item.name === "garden" ? "current" : ""} ${item.disabled ? "disabled" : ""}`}
-                        {...(item.disabled && { "aria-disabled": "true" })}
-                      >
-                        {item.name}
-                      </a>
+                      item.disabled ? (
+                        <span
+                          key={item.name}
+                          className={`nav-link disabled`}
+                          aria-disabled="true"
+                        >
+                          {item.name}
+                        </span>
+                      ) : (
+                        <Link
+                          key={item.name}
+                          href={item.href}
+                          className={`nav-link ${isCurrentPage(item.href) ? "current" : ""}`}
+                        >
+                          {item.name}
+                        </Link>
+                      )
                     ))}
                   </div>
 
@@ -170,14 +201,24 @@ export default function Header() {
           <div className="mobile-menu">
             <div className="mobile-menu-content">
               {navItems.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className={`mobile-nav-link ${item.disabled ? "disabled" : ""}`}
-                  {...(item.disabled && { "aria-disabled": "true" })}
-                >
-                  {item.name}
-                </a>
+                item.disabled ? (
+                  <span
+                    key={item.name}
+                    className="mobile-nav-link disabled"
+                    aria-disabled="true"
+                  >
+                    {item.name}
+                  </span>
+                ) : (
+                  <Link
+                    key={item.name}
+                    href={item.href}
+                    className={`mobile-nav-link ${isCurrentPage(item.href) ? 'current' : ''}`}
+                    onClick={() => setIsMobileMenuOpen(false)} // Close mobile menu on navigation
+                  >
+                    {item.name}
+                  </Link>
+                )
               ))}
               <button className="mobile-cta-button">
                 {"Let's chat →"}
@@ -185,7 +226,7 @@ export default function Header() {
             </div>
           </div>
         )}
-      </nav>
-    </header>
+      </div>
+    </nav>
   )
 }

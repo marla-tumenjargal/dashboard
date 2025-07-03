@@ -3,13 +3,13 @@
 // app/layout.tsx
 
 import './globals.css'  // your global styles
-import Header from './components/header'
+import Header from './components/Navigation'
 
 export const metadata = {
   title: 'Marla Tumenjargal',
   description: 'Example',
   icons: {
-    icon: '/starfish.png',
+    icon: '/logo.png',
   },
 }
 

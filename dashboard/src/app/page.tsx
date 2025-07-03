@@ -1,4 +1,4 @@
-import Header from './components/header';
+import Header from './components/Navigation';
 import Hero from './components/Hero';
 import Footer from './components/Footer';
 
