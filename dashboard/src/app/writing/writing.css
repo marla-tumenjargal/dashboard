@@ -6,7 +6,7 @@
   padding: 1.5rem;
   background-color: #f9fafb;
   min-height: 100vh;
-  margin-top: 2rem;
+  margin-top: 5rem;
 }
 
 .postsList {
@@ -110,4 +110,219 @@
   line-height: 1.625;
   white-space: pre-line;
   max-width: none;
+}
+
+.lockIcon {
+  color: #6b7280;
+}
+
+.starButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  transition: transform 0.1s ease;
+}
+
+.starButton:hover {
+  transform: scale(1.1);
+}
+
+.starIcon {
+  color: #6b7280;
+  transition: color 0.2s ease;
+}
+
+.starIcon:hover {
+  color: #fbbf24;
+}
+
+.starIcon.starred {
+  color: #fbbf24;
+}
+
+.passwordProtectedContent {
+  position: relative;
+}
+
+.blurredContentContainer {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  mask: linear-gradient(to bottom, 
+    transparent 0%, 
+    black 5%, 
+    black 95%, 
+    transparent 100%);
+  -webkit-mask: linear-gradient(to bottom, 
+    transparent 0%, 
+    black 5%, 
+    black 95%, 
+    transparent 100%);
+}
+
+.blurredText {
+  filter: blur(8px);
+  user-select: none;
+  pointer-events: none;
+  font-family: 'Times New Roman', Garamond, serif;
+  color: #374151;
+  line-height: 1.625;
+  white-space: pre-line;
+  position: relative;
+  z-index: 1;
+}
+
+.excerptContainer {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  max-width: 80%;
+}
+
+.excerptText {
+  font-family: 'Times New Roman', Garamond, serif;
+  color: #000;
+  line-height: 1.625;
+  white-space: pre-line;
+  background: rgba(249, 250, 251, 0.95);
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  text-align: center;
+  font-style: italic;
+}
+
+.passwordOverlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.95);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  min-width: 280px;
+  backdrop-filter: blur(2px);
+  z-index: 3;
+}
+
+.passwordOverlay p {
+  margin: 0 0 1rem 0;
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 500;
+  color: #374151;
+}
+
+.inlinePasswordInput {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.25rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.875rem;
+}
+
+.inlinePasswordInput:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.inlinePasswordButton {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.inlinePasswordButton:hover {
+  background-color: #374151;
+}
+
+.passwordModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.passwordPrompt {
+  background: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  min-width: 300px;
+}
+
+.passwordPrompt h3 {
+  margin: 0 0 1rem 0;
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 500;
+}
+
+.passwordPrompt input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.passwordPrompt input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.passwordButtons {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.passwordButtons button {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.passwordButtons button:first-child {
+  background-color: #000;
+  color: white;
+}
+
+.passwordButtons button:first-child:hover {
+  background-color: #374151;
+}
+
+.passwordButtons button:last-child {
+  background-color: #f3f4f6;
+  color: #374151;
+}
+
+.passwordButtons button:last-child:hover {
+  background-color: #e5e7eb;
 }

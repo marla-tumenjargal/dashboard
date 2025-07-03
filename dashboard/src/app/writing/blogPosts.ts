@@ -5,16 +5,52 @@ export interface BlogPost {
     category: string;
     content: string;
     isArchived?: boolean;
+    isPasswordProtected?: boolean;
+    excerpt?: string;
   }
   
   export class BlogPostsService {
     private static posts: BlogPost[] = [
+  
       {
-        id: 'co-create',
-        title: 'Co:Create',
-        year: '2022',
-        category: 'VISUAL IDENTITY',
-        isArchived: true,
+        id: 'poem 1',
+        title: 'what is wrong with a little bit of poison, if it teaches you to bloom?  ',
+        year: 'march 12th, 2025',
+        category: 'poetry',
+        isPasswordProtected: true,
+        excerpt: "... and so, what is wrong with a little bit of poison, if it teaches you to bloom—if it teaches you to rise from the ashes with softer hands, clearer eyes, and roots deep enough hold your own weight?...",
+        content: `
+  i drank the drop, every bitter ounce,
+  thinking the truth would melt on my tongue,
+  like lush honey—
+  but it seared a hole straight through
+  through           the silences i never gave voice to. 
+  through           a voice i once poured all of myself into. 
+  truth is a match, and whomever strikes it— 
+  boldly, 
+  timidly, 
+  truthfully,
+  holds its flame . . . 
+                                   . . .   midair. 
+  i tried clearing a thundercloud with sunlight
+  hoping its weight would evaporate into the sky, 
+  but they do say that to grow feels like blooming—
+  but some petals come only after the thorns have torn you open. 
+  my skin still carries the ache and all the blood—
+  not of cruelty, but of truths too sharp to hold gently. 
+  and yet, in that silence,
+  something sacred bloomed: strength isn't proven by how tight you cling, but in the softness of letting go. 
+  and so—i did. slowly, with grace and ire. 
+  i've learned from the red thorns that prick and preach into my skin every day: what is wrong with
+  a little bit of poison, if it teaches you to bloom—if it teaches you to rise from the ashes with softer
+  hands, clearer eyes, and roots deep enough hold your own weight? nothing. nothing at all. and so, the bloom for the brightest red rose has begun again.
+        `
+      },
+      {
+        id: 'reflection',
+        title: 'airplanes windows are my favorite ordinary thing. ',
+        year: '2025',
+        category: 'reflections',
         content: `Co:Create was a collaborative design initiative that brought together designers, developers, and creative professionals to explore the intersection of technology and human creativity. The project focused on developing new methodologies for cross-disciplinary collaboration in the digital age.
   
   Our approach centered around creating shared spaces where different creative disciplines could converge and inform each other. We developed a series of workshops, tools, and frameworks that enabled more effective communication between team members with diverse skill sets and perspectives.
@@ -24,23 +60,25 @@ export interface BlogPost {
   The project resulted in a new framework for creative collaboration that has since been adopted by numerous design agencies and in-house teams around the world.`
       },
       {
-        id: 'wer-farmers',
-        title: 'WeRFarmers',
-        year: '2021',
-        category: 'UX-UI',
-        content: `WeRFarmers was a comprehensive digital platform designed to connect small-scale farmers with consumers, creating a direct-to-consumer marketplace that eliminated intermediaries and increased farmer profits while providing consumers with fresh, locally-sourced produce.
-  
-  The UX challenge was significant: creating an interface that would work for farmers who might have limited digital literacy while also appealing to urban consumers accustomed to polished e-commerce experiences. We conducted extensive field research, spending time with farmers to understand their workflows and pain points.
-  
-  Our solution featured a simplified seller interface with large, clear buttons and intuitive navigation, while the consumer-facing side offered advanced filtering, detailed product information, and seamless checkout. We implemented features like harvest calendars, weather integration, and automated inventory management.
-  
-  The platform launched with over 200 farmers and achieved 15,000 registered consumers in its first year, demonstrating the viability of direct agricultural commerce.`
+        id: 'like the calm blue and starstruck moon, sort out who you really are. ',
+        title: 'like the calm blue and starstruck moon, sort out who you really are. ',
+        year: '2025',
+        category: 'poetry',
+        isPasswordProtected: true,
+        excerpt: 'yet, no matter the season, the air i breathe on my strolls always carries the same chilled clarity—not the kind of air that makes your lungs wince from the cold, but the kind that rinses your head clean.',
+        content: `
+        there is a particular shade of blue that stains the sky just before the stars stir awake. it is a calm blue. it is an ethereal blue—one that coats the sky in a lush, thick pastel so soft i understand why the clouds choose to bathe in its presence each day. under it, i always take afternoon strolls to rewire my thoughts. with every step, i begin to remember the parts of myself i misplace in the rush of (criminally late) cramming for final exams and the strange pressure to know everything all at once. i begin to resent that feeling of wanting to go back and do it all over again while simultaneously romanticizing the ambitious strides i’ll take in the future. 
+
+        yet, no matter the season, the air i breathe on my strolls always carries the same chilled clarity—not the kind of air that makes your lungs wince from the cold, but the kind that rinses your head clean. i stop often. just to look up. just to remember what it feels like to exist without desperately grasping to fast forward time. 
+
+        sometimes, tears blur my vision—not from sorrow, but from the weight of memory. under this very sky, i’ve stargazed across the mongolian steppe, endured the itch of summer mosquitoes, held my parents’ warm hands, felt their quiet kisses on my forehead. I’ve remembered, again and again, my love for stories, for the sky, for searching. And I’ve come to better understand what drives me—beyond prestige or performance—the values, resolve, and quiet strength poured into every decision, every initiative. and so, through these strolls and my parent’s love, i always feel incredibly grateful to reconnect with every version of myself—who i’ve been, who i’m becoming, who i aspire to be. and in many ways, i still am connected with the little i was once was—the girl who once stockpiled fortune cookie notes, saw dragons in the clouds, and slept with books under her cashmere pillow. i truly believe i've reclaimed that silly little girl in myself this year—piecing together all of her wildness, hope, and wonder. she is still here, hiding in the space between my ribs and behind my eyelids. and on occasion, i gather her wonder piece by piece, folding it into myself like a paper crane. i feel her hope vividly rekindling in my palms, stubborn and bright. and so, like the calm blue and starstruck moon, i always look up when i can afford the time and notice that the blue is always the same—soft, quiet, eternal.
+        `
       },
       {
-        id: 'caminhos-festival',
-        title: 'Caminhos Film Festival',
-        year: '2021',
-        category: 'VISUAL IDENTITY',
+        id: 'how a hair tie changed my life.',
+        title: 'how a hair tie changed my life.',
+        year: '2025',
+        category: 'reflections',
         content: `The Caminhos Film Festival visual identity project was inspired by the Portuguese word "caminhos" meaning "paths" or "ways." The festival celebrated independent cinema from Portuguese-speaking countries, and we wanted the brand to reflect the diverse journeys of filmmakers and their stories.
   
   Our design concept centered around path-like elements that could form different configurations - sometimes intersecting, sometimes parallel, sometimes diverging. These visual metaphors represented the various narrative paths explored in cinema and the different cultural perspectives represented at the festival.
@@ -50,10 +88,10 @@ export interface BlogPost {
   The identity was applied across all festival materials including programs, posters, digital assets, and environmental graphics. The flexible system allowed for different configurations while maintaining strong brand recognition throughout the event's duration.`
       },
       {
-        id: 'caleidoscopio',
-        title: 'Caleidoscópio',
-        year: '2021',
-        category: 'VISUAL IDENTITY',
+        id: 'show me your friends, and i’ll show you your future',
+        title: 'show me your friends, and i’ll show you your future',
+        year: '2025',
+        category: 'reflections',
         content: `Caleidoscópio (Kaleidoscope) was a visual identity project for a contemporary art exhibition that explored themes of perception, transformation, and multiple perspectives. The exhibition featured works by emerging artists who challenged traditional ways of seeing and understanding visual art.
   
   The identity drew inspiration from the kaleidoscope's ability to create infinite patterns from simple elements. We developed a dynamic logo system that could shift and change while maintaining core recognition elements. The mark itself was built from modular components that could be rearranged to create different configurations.
@@ -63,43 +101,32 @@ export interface BlogPost {
   The identity was implemented across exhibition materials, including catalogs, wall graphics, digital displays, and promotional materials. The flexible system allowed for unique applications while maintaining the cohesive visual language throughout the exhibition space.`
       },
       {
-        id: 'uxp',
-        title: 'UXP',
+        id: 'time tells us what to measure, but not what is meaningful',
+        title: 'time tells us what to measure, but not what is meaningful',
         year: '2021',
         category: 'VISUAL IDENTITY',
-        content: `UXP (User Experience Platform) was a comprehensive rebrand for a UX design consultancy that specialized in helping companies transform their digital products through human-centered design principles. The challenge was creating an identity that would appeal to both startup founders and enterprise executives.
-  
-  Our approach focused on the intersection of human insight and digital innovation. The logo combined geometric precision with organic curves, representing the balance between systematic methodology and creative problem-solving that defines excellent UX work.
-  
-  The visual system included a distinctive color palette of deep teals and warm grays, chosen to convey both professionalism and approachability. Typography selections emphasized clarity and readability - principles that directly reflected the company's UX philosophy.
-  
-  We developed a comprehensive brand guideline that included applications for presentations, case studies, digital interfaces, and business materials. The identity successfully positioned UXP as a premium consultancy while maintaining accessibility for diverse client types.`
+        content: `
+        flashback one year ago and you’ll find me with my head in this very computer at some cafe in Mongolia, jotting down each and every childhood memory and lesson and value i’ve ever learned and/or discovered to brainstorm my 650-word commonapp essay for college apps. and although decisions for university came out mooonths ago, i want to take a moment to reflect on timelines and how authenticity is one’s greatest power amidst competition.
+
+before that, however, i must address competition itself. from the surface, competition is always seen as a negative emotion–just as jealousy is. yet, it is not something we can directly control within a given moment. as humans, we are all naturally wired to strive for the best and to be accepted by social groups–to adapt if you will. but at the same time, i am not dismissing competition as a good emotion either. instead, competition is best when it’s accepted and used to better one’s self, whether that be academically, spiritually, socially, career-wise (when done ethically, of course), etc. 
+
+now, one whole year after college apps, i now realize i was attempting to package sixteen years of becoming into a neat narrative arc that would convince strangers i was worth their acceptance.
+
+ i see competition as a double-edged sword–something that brings out all the sides of you (frustration, growth, joy, jealousy)
+
+the moments that matter become ingrained within us—a book that changed how you think, a conversation that shifted your perspective, moments you resist picking up your phone to just clear your mind. competition taught me that everyone's timeline looks different from the inside. what appears as overnight success to an observer is usually years of invisible work, false starts, and recalibrations that never make it into the highlight reel. 
+
+the point is: we don’t become ourselves all at once. we iterate, shift, gather data from the things we love, and the people who light us up.
+authenticity becomes radical when it refuses to perform on anyone else's schedule. fulfillment isn’t something we discover so much as something we create through attention and choice. i like to see it as all the people who inspire us, all the ideas that challenge us, the work that engages us, and through the quality of our actions. perhaps this is why there is no universal formula to anything. what draws one person forward might leave another. so, after all that, if there’s one thing you take away: fulfillment isn’t something we discover so much as something we create through attention and choice. i know i’ve already written it, but it’s a motto i strive to live by.
+
+        `
       },
       {
-        id: 'jazz-centro',
-        title: 'Jazz ao Centro Clube',
-        year: '2020',
-        category: 'UX-UI',
-        content: `Jazz ao Centro Clube was a digital platform designed to connect jazz enthusiasts, musicians, and venues in central Portugal. The project aimed to create a thriving community around jazz music while providing practical tools for event discovery and musician networking.
-  
-  The UX research revealed that jazz communities are tight-knit but often lack digital tools for connection and discovery. Musicians needed better ways to find collaboration opportunities, venues needed help promoting events, and fans wanted a centralized place to discover performances.
-  
-  Our solution featured a community-driven platform with event listings, musician profiles, venue information, and integrated social features. The design aesthetic drew inspiration from jazz album covers and club atmospheres, using deep blues and warm golds to create an inviting digital space.
-  
-  Key features included a sophisticated event discovery system with filtering by style, venue, and date, musician networking tools, and integration with streaming services for music discovery. The platform launched with partnerships with major jazz venues across the region.`
-      },
-      {
-        id: 'jof',
-        title: 'JOF',
-        year: '2020',
-        category: 'UX-UI',
-        content: `JOF (Jobs Opportunities Framework) was a comprehensive employment platform designed to address the specific needs of recent graduates and entry-level job seekers. The project emerged from research showing that traditional job boards were poorly suited for candidates with limited work experience.
-  
-  Our UX approach focused on skill-based matching rather than experience-based filtering. We developed algorithms that could identify transferable skills from academic projects, volunteer work, and personal interests, creating more opportunities for new graduates to connect with suitable positions.
-  
-  The interface design prioritized clarity and confidence-building. We included features like application tracking, interview preparation resources, and personalized feedback to help users navigate the job search process more effectively.
-  
-  The platform also included employer tools for posting entry-level positions and evaluating candidates based on potential rather than just experience. This two-sided approach created a more balanced marketplace that benefited both job seekers and employers looking for fresh talent.`
+        id: 'raise y_our glasses (one last time!)',
+        title: 'raise y_our glasses (one last time!)',
+        year: '2025',
+        category: 'reflections',
+        content: `writing here`
       },
       {
         id: 'queima-fitas',
@@ -117,7 +144,7 @@ export interface BlogPost {
     ];
   
     static getAllPosts(): BlogPost[] {
-      return this.posts;
+      return [...this.posts].reverse(); // Return a reversed copy to show newest first
     }
   
     static getPostById(id: string): BlogPost | undefined {
