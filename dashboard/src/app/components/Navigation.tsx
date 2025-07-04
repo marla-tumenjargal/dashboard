@@ -52,6 +52,12 @@ export default function Navigation() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  // Reset scroll state on pathname change
+  useEffect(() => {
+    const scrollTop = window.scrollY
+    setIsScrolled(scrollTop > 100)
+  }, [pathname])
+
   const handleToggle = (checked: boolean) => {
     if (checked) {
       router.push('/alternatehome')
