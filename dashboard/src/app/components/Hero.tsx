@@ -1,6 +1,7 @@
 'use client'
 
 import "./hero.css";
+import { ArrowUpRight } from "lucide-react";
 
 export default function Hero() {
     return (
@@ -14,23 +15,38 @@ export default function Hero() {
             <div className="hero-columns">
                 <div className="hero-column">
                     <div className="section">
-                        <p className="section-title">building</p>
+                        <p className="section-title">building:</p>
                         <ul>
                             <li>eikon (a for fun café journaling app :D)</li>
                         </ul>
                     </div>
 
                     <div className="section">
-                        <p className="section-title">research</p>
+                        <p className="section-title">research:</p>
                         <ul>
-                            <li>evaluating bcrypt for secure password storage 
-                                
-                                against brute force attacks</li>
-                        </ul>
-                    </div>
+                        
 
+                        <li>
+  <a
+    href="https://drive.google.com/file/d/1mEwKWCe4PnR-lZPTBqL5JkA4VfkU4U_l/view"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="research-link"
+  >
+    evaluating bcrypt for secure password storage
+    <br />
+    <span>
+      against brute force attacks
+      <ArrowUpRight className="research-arrow" />
+    </span>
+  </a>
+</li>
+
+
+                        </ul>
+                        </div>
                     <div className="section">
-                        <p className="section-title">thinking about</p>
+                        <p className="section-title">thinking about:</p>
                         <ul>
                             <li>interpretability in multimodal LLMs</li>
                             <li>techno-optimism (is AI a slippery slope?)</li>
@@ -40,7 +56,7 @@ export default function Hero() {
 
                 <div className="hero-column">
                     <div className="section">
-                        <p className="section-title">currently</p>
+                        <p className="section-title">currently:</p>
                         <ul>
                             <li>tuning into the nyt's hard fork podcast & lex fridman</li>
                             <li>ux design(ing)</li>
@@ -50,7 +66,7 @@ export default function Hero() {
                     </div>
 
                     <div className="section">
-                        <p className="section-title">reading</p>
+                        <p className="section-title">reading:</p>
                         <ul>
                             <li>the alignment problem (human values & ml) by brian christian</li>
                         </ul>
