@@ -66,10 +66,68 @@ export default function Hero() {
                     </div>
 
                     <div className="section">
-                        <p className="section-title">reading:</p>
-                        <ul>
-                            <li>the alignment problem (human values & ml) by brian christian</li>
-                        </ul>
+                        <p className="section-title">coverage:</p>
+
+                       
+                        <li>
+                        <a
+                            href="https://www.google.com/search?q=marla+tumenjargal&oq=marla+tumenjargal&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRg7MgoIAhAAGIAEGKIEMgcIAxAAGO8FMgoIBBAAGIAEGKIEMgYIBRBFGDwyBggGEEUYPDIGCAcQRRg80gEIMTQzMmowajeoAgCwAgA&sourceid=chrome&ie=UTF-8"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="research-link">
+                            <br />
+                            <span>
+                            regional sterling scholar
+                            <ArrowUpRight className="research-arrow" />
+                            </span>
+                        </a>
+                        </li>
+
+
+
+                        <li>
+                        <a
+                            href="https://www.congressionalappchallenge.us/22-ut04/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="research-link">
+                            <br />
+                            <span>
+                            congressional app challenge
+                            <ArrowUpRight className="research-arrow" />
+                            </span>
+                        </a>
+                        </li>
+
+
+                        <li>
+                        <a
+                            href="https://www.nationalcyberscholarship.org/ncsf-winners-2024"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="research-link">
+                            <br />
+                            <span>
+                            cyberstart scholars
+                            <ArrowUpRight className="research-arrow" />
+                            </span>
+                        </a>
+                        </li>
+
+
+                        <li>
+                        <a
+                            href="https://www.aspirations.org/people/marla-t/1291564"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="research-link">
+                            <br />
+                            <span>
+                            ncwit national honorable mention
+                            <ArrowUpRight className="research-arrow" />
+                            </span>
+                        </a>
+                        </li>
                     </div>
                 </div>
             </div>
