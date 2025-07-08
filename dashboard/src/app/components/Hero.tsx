@@ -10,22 +10,28 @@ export default function Hero() {
                 <p className="hero-name">✿</p>
                 <p className="hero-name">marla tumenjargal</p>
                 <p className="hero-location">salt lake city // sf</p>
+
+                <div className="hero-bio">
+                    <p>
+                        hi hi! i’m marla, an undergraduate @ uc berkeley studying computer science and (planned) minoring in business. interested in mitigating data bias with AI, computer vision, and democratizing tech for women [as well as UI/UX design & clean code]
+                    </p>
+                </div>
             </div>
 
             <div className="hero-columns">
                 <div className="hero-column">
                     <div className="section">
-                        <p className="section-title">building:</p>
+                        <p className="section-title">currently i’m:</p>
                         <ul>
-                            <li>eikon (a for fun café journaling app :D)</li>
+                            <li>building <strong>eikon</strong> (a whimsical, for-fun café game)</li>
+                            <li>scaling AI/CS education for 3k girls @ stembridgeinc</li>
+                            <li>penning my <a href="/writing" className="underline">thoughts</a></li>
                         </ul>
                     </div>
 
                     <div className="section">
-                        <p className="section-title">research:</p>
+                        <p className="section-title">previously, i was:</p>
                         <ul>
-                        
-
                         <li>
                         <a
                             href="https://drive.google.com/file/d/1w1xmkq_HoUAaS_-eGr8OWHLERXESeL-e/view"
@@ -33,103 +39,105 @@ export default function Hero() {
                             rel="noopener noreferrer"
                             className="research-link"
                         >
-                            evaluating bcrypt for secure password storage
+                            evaluating bcrypt for secure password storage against brute
                             <br />
                             <span>
-                            against brute force attacks
+                            force attacks
                             <ArrowUpRight className="research-arrow" />
                             </span>
                         </a>
                         </li>
+                        <li>
+
+                        <a
+                            href="https://www.congressionalappchallenge.us/22-ut04/"
+                            className="research-link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            building iOS tools for nomadic learners @ IntellectX{' '}
+                            <ArrowUpRight className="research-arrow" />
+                        </a>
+                        </li>
 
 
-                        </ul>
-                        </div>
-                    <div className="section">
-                        <p className="section-title">thinking about:</p>
-                        <ul>
-                            <li>interpretability in multimodal LLMs</li>
-                            <li>techno-optimism (is AI a slippery slope?)</li>
+                        <li>
+                        <a
+                            href="https://educationusa.state.gov/centers/educationusa-mongolia"
+                            className="research-link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            marketing higher ed @ the U.S. Embassy in Mongolia's EducationUSA
+                            <ArrowUpRight className="research-arrow" />
+                        </a>
+                        </li>
+
+                        <li>
+                        <a
+                            href="https://www.linkedin.com/company/mission-math-utah/"
+                            className="research-link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            raising $17k for competition math @ Mission Math Utah
+                            <ArrowUpRight className="research-arrow" />
+                        </a>
+                        </li>
                         </ul>
                     </div>
                 </div>
 
                 <div className="hero-column">
                     <div className="section">
-                        <p className="section-title">currently:</p>
+                        <p className="section-title">awards & coverage:</p>
+
                         <ul>
-                            <li>tuning into the nyt's hard fork podcast & lex fridman</li>
-                            <li>ux design(ing)</li>
-                            <li>choreographing hip-hop (all yours by normani)</li>
-                            <li>listening to ariana's 'eternal sunshine'</li>
+                            <li>
+                                <a
+                                    href="https://www.congressionalappchallenge.us/22-ut04/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="research-link"
+                                >
+                                    <span>
+                                        congressional app challenge<ArrowUpRight className="research-arrow" />
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.nationalcyberscholarship.org/ncsf-winners-2024"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="research-link"
+                                >
+                                    <span>
+                                        2024 cyberstart scholar <ArrowUpRight className="research-arrow" />
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.aspirations.org/people/marla-t/1291564"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="research-link"
+                                >
+                                    <span>
+                                        ncwit national honorable mention <ArrowUpRight className="research-arrow" />
+                                    </span>
+                                </a>
+                            </li>
                         </ul>
                     </div>
-
-                    <div className="section">
-                        <p className="section-title">coverage:</p>
-
-                       
-                        <li>
-                        <a
-                            href="https://www.google.com/search?q=marla+tumenjargal&oq=marla+tumenjargal&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRg7MgoIAhAAGIAEGKIEMgcIAxAAGO8FMgoIBBAAGIAEGKIEMgYIBRBFGDwyBggGEEUYPDIGCAcQRRg80gEIMTQzMmowajeoAgCwAgA&sourceid=chrome&ie=UTF-8"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="research-link">
-                            <br />
-                            <span>
-                            regional sterling scholar
-                            <ArrowUpRight className="research-arrow" />
-                            </span>
-                        </a>
-                        </li>
-
-
-
-                        <li>
-                        <a
-                            href="https://www.congressionalappchallenge.us/22-ut04/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="research-link">
-                            <br />
-                            <span>
-                            congressional app challenge
-                            <ArrowUpRight className="research-arrow" />
-                            </span>
-                        </a>
-                        </li>
-
-
-                        <li>
-                        <a
-                            href="https://www.nationalcyberscholarship.org/ncsf-winners-2024"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="research-link">
-                            <br />
-                            <span>
-                            cyberstart scholars
-                            <ArrowUpRight className="research-arrow" />
-                            </span>
-                        </a>
-                        </li>
-
-
-                        <li>
-                        <a
-                            href="https://www.aspirations.org/people/marla-t/1291564"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="research-link">
-                            <br />
-                            <span>
-                            ncwit national honorable mention
-                            <ArrowUpRight className="research-arrow" />
-                            </span>
-                        </a>
-                        </li>
-                    </div>
                 </div>
+            </div>
+
+            <div className="hero-bio">
+                <p>
+                    in my free time, i loveee tuning into the NYT's <em>hard fork</em> podcast & lex fridman, choreographing hip-hop (currently to <em>all yours</em> by normani), and thinking about interpretability in multimodal LLMs.
+                </p>
             </div>
 
             <div className="hero-images-container">
