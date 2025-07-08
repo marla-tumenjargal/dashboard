@@ -23,7 +23,7 @@
 }
 
 .hero-name {
-    font-size: 1.25rem;
+    font-size: 1.7rem;
     font-weight: 500;
     font-family: 'DM Sans', sans-serif;
     color: #111827;
@@ -65,7 +65,7 @@
 .section-title {
     font-weight: 600;
     color: #1f2937;
-    font-size: 0.86rem;
+    font-size: 0.95rem;
     letter-spacing: -0.01em;
     margin-bottom: 0.35rem;
     text-transform: lowercase;

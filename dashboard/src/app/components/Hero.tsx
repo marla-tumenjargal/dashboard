@@ -6,6 +6,7 @@ export default function Hero() {
     return (
         <div className="hero-container">
             <div className="hero-header">
+                <p className="hero-name">✿</p>
                 <p className="hero-name">marla tumenjargal</p>
                 <p className="hero-location">salt lake city // sf</p>
             </div>
@@ -15,7 +16,7 @@ export default function Hero() {
                     <div className="section">
                         <p className="section-title">building</p>
                         <ul>
-                            <li>eikon (for fun cafe journaling app :D)</li>
+                            <li>eikon (a for fun café journaling app :D)</li>
                         </ul>
                     </div>
 
@@ -39,17 +40,17 @@ export default function Hero() {
                     <div className="section">
                         <p className="section-title">currently</p>
                         <ul>
-                            <li>choreographing hip-hop (*All Yours* – Normani)</li>
-                            <li>listening to Ariana's *eternal sunshine*</li>
-                            <li>watching the *3 Body Problem*</li>
+                            <li>tuning into the nyt's hard fork podcast & lex fridman</li>
                             <li>ux design(ing)</li>
+                            <li>choreographing hip-hop (all yours by normani)</li>
+                            <li>listening to ariana's 'eternal sunshine'</li>
                         </ul>
                     </div>
 
                     <div className="section">
                         <p className="section-title">reading</p>
                         <ul>
-                            <li>*The Alignment Problem* (human values & machine learning)</li>
+                            <li>the alignment problem (human values & machine learning) by brian christian</li>
                         </ul>
                     </div>
                 </div>
