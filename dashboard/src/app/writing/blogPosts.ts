@@ -14,7 +14,7 @@ export interface BlogPost {
   
       {
         id: 'poem 1',
-        title: 'what is wrong with a little bit of poison, if it teaches you to bloom?  ',
+        title: 'code driven by self-doubt',
         year: 'march 12th, 2025',
         category: 'poetry',
         isPasswordProtected: true,

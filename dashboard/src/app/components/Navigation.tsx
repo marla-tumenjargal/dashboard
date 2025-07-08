@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import { usePathname, useRouter } from "next/navigation"
 import Link from "next/link"
 import { Menu, X } from "lucide-react"
+import "./header.css"
 
 // Custom Switch component
 const Switch = ({ checked, onCheckedChange, className }: { 
@@ -22,8 +23,6 @@ const Switch = ({ checked, onCheckedChange, className }: {
     </button>
   )
 }
-
-import "./header.css"
 
 export default function Navigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
