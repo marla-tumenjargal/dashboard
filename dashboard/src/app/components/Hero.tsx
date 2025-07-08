@@ -27,20 +27,20 @@ export default function Hero() {
                         
 
                         <li>
-  <a
-    href="https://drive.google.com/file/d/1mEwKWCe4PnR-lZPTBqL5JkA4VfkU4U_l/view"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="research-link"
-  >
-    evaluating bcrypt for secure password storage
-    <br />
-    <span>
-      against brute force attacks
-      <ArrowUpRight className="research-arrow" />
-    </span>
-  </a>
-</li>
+                        <a
+                            href="https://drive.google.com/file/d/1w1xmkq_HoUAaS_-eGr8OWHLERXESeL-e/view"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="research-link"
+                        >
+                            evaluating bcrypt for secure password storage
+                            <br />
+                            <span>
+                            against brute force attacks
+                            <ArrowUpRight className="research-arrow" />
+                            </span>
+                        </a>
+                        </li>
 
 
                         </ul>
