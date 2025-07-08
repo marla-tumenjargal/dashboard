@@ -94,7 +94,7 @@ export default function Navigation() {
                 </div>
                 {!isScrolled && (
                   <div className="name-section">
-                    <span className="name-primary">marla</span>
+                    <span className="name-primary"></span>
                   </div>
                 )}
               </Link>
