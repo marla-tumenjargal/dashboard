@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap');
 
 .hero-container {
-    padding-top: 8rem; /* reduced from 12rem */
+    padding-top: 8rem;
     padding-left: 2rem;
     padding-right: 1rem;
     max-width: 80rem;
@@ -14,55 +14,57 @@
     position: relative;
 }
 
+/* Top Text */
 .hero-header {
-    margin-bottom: 1rem;
+    margin-bottom: 1.25rem;
 }
 
 .hero-name {
     font-size: 1.25rem;
     font-weight: 500;
-    letter-spacing: -0.03em;
-    color: #111827;
     font-family: 'DM Sans', sans-serif;
+    color: #111827;
+    letter-spacing: -0.03em;
     margin: 0;
 }
 
 .hero-location {
     font-size: 0.875rem;
     font-weight: 600;
-    color: #4B5563;
     font-family: 'Public Sans', sans-serif;
-    letter-spacing: -0.015em;
-    margin-top: 0.2rem;
+    color: #4B5563;
+    letter-spacing: -0.01em;
+    margin-top: 0.15rem;
 }
 
+/* Columns */
 .hero-columns {
     display: flex;
-    gap: 3rem;
-    margin-top: 1.5rem;
     flex-wrap: wrap;
+    gap: 3rem;
     width: 100%;
+    margin-bottom: 1.5rem;
 }
 
 .hero-column {
-    font-size: 0.95rem;
+    flex: 1;
+    min-width: 260px;
+    max-width: 28rem;
+    font-size: 0.93rem;
     font-family: 'Public Sans', sans-serif;
     line-height: 1.45;
-    min-width: 260px;
-    flex: 1;
-    max-width: 28rem;
 }
 
 .section {
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.1rem;
 }
 
 .section-title {
     font-weight: 600;
     color: #1f2937;
-    margin-bottom: 0.4rem;
+    font-size: 0.86rem;
     letter-spacing: -0.01em;
-    font-size: 0.88rem;
+    margin-bottom: 0.35rem;
     text-transform: lowercase;
 }
 
@@ -76,21 +78,74 @@
     margin-bottom: 0.3rem;
 }
 
-/* Folders */
+/* Folder Images */
 .hero-images-container {
     display: flex;
-    gap: 2rem;
-    margin-top: 4rem; /* reduced from 6rem */
+    gap: 1rem;
+    margin-top: 3.5rem;
     margin-bottom: 5rem;
     flex-wrap: wrap;
 }
 
-/* Other image styles remain unchanged */
+.hero-image-wrapper {
+    position: relative;
+    cursor: pointer;
+    width: 20rem;
+    aspect-ratio: 1;
+}
+
+.hero-sample-image {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.original-image {
+    opacity: 1;
+    z-index: 2;
+}
+
+.active-image {
+    opacity: 0;
+    z-index: 1;
+}
+
+.hero-image-wrapper:hover .original-image {
+    opacity: 0;
+}
+
+.hero-image-wrapper:hover .active-image {
+    opacity: 1;
+}
+
+/* Custom Hover Cursor */
+.hero-image-wrapper:hover {
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="64" height="24" viewBox="0 0 64 24"><defs><filter id="blur"><feGaussianBlur in="SourceGraphic" stdDeviation="0.5"/></filter></defs><rect width="64" height="24" rx="12" fill="rgba(0,0,0,0.3)" stroke="rgba(255,255,255,0.1)" stroke-width="1" filter="url(%23blur)"/><rect width="64" height="24" rx="12" fill="rgba(0,0,0,0.6)" stroke="rgba(255,255,255,0.2)" stroke-width="0.5"/><text x="8" y="16" font-family="system-ui" font-size="11" fill="white">view</text><path d="M42 8l6 4-6 4" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>') 32 12, pointer;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .hero-columns {
+        gap: 2rem;
+    }
+
+    .hero-image-wrapper {
+        width: 16rem;
+    }
+}
 
 @media (max-width: 768px) {
     .hero-columns {
         flex-direction: column;
-        gap: 1.5rem;
+    }
+
+    .hero-image-wrapper {
+        width: 14rem;
     }
 
     .hero-name {
@@ -100,10 +155,15 @@
     .hero-location {
         font-size: 0.8rem;
     }
+}
 
+@media (max-width: 480px) {
     .hero-images-container {
-        gap: 1.5rem;
-        justify-content: center;
-        margin-top: 3rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-image-wrapper {
+        width: 18rem;
     }
 }

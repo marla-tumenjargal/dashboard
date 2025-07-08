@@ -21,7 +21,9 @@ export default function Hero() {
 
                     <div className="section">
                         <p className="section-title">research</p>
-                        <ul><li>(ongoing)</li></ul>
+                        <ul>
+                            <li>(ongoing)</li>
+                        </ul>
                     </div>
 
                     <div className="section">
