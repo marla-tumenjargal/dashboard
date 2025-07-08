@@ -23,7 +23,9 @@ export default function Hero() {
                     <div className="section">
                         <p className="section-title">research</p>
                         <ul>
-                            <li>(ongoing)</li>
+                            <li>evaluating bcrypt for secure password storage 
+                                
+                                against brute force attacks</li>
                         </ul>
                     </div>
 
@@ -50,7 +52,7 @@ export default function Hero() {
                     <div className="section">
                         <p className="section-title">reading</p>
                         <ul>
-                            <li>the alignment problem (human values & machine learning) by brian christian</li>
+                            <li>the alignment problem (human values & ml) by brian christian</li>
                         </ul>
                     </div>
                 </div>
