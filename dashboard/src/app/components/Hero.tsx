@@ -8,11 +8,128 @@ export default function Hero() {
         <div className="hero-container">
             <div className="hero-header">
 
-                <p className="hero-name">✿ </p>
-                <p className="hero-name">marla tumenjargal</p>
+                <div className="hero-row">
+                <p className="hero-name">✿</p>
                 <p className="hero-location">salt lake city // sf</p>
-                <p className="hero-secondary">designer, developer, and an undergraduate @ uc berkeley studying <strong>computer science</strong></p>
+                </div>
+                <p className="hero-name">marla tumenjargal</p>
+                <p className="hero-secondary">developer, UI/UX designer, and undergraduate @ uc berkeley studying computer science. interested in HCI, computer vision, and mitigating data bias with AI. </p>
+                <p></p>
 
+            </div>
+            
+            <div className="hero-columns">
+                <div className="hero-column">
+                    <div className="section">
+                        <p className="section-title">currently i’m:</p>
+                        <ul style={{fontSize: "1.03rem"}}>
+                            <li>building <strong>eikon</strong> (a whimsical, for-fun café game)</li>
+                            <li>scaling AI/CS education for 3k girls @ stembridgeinc</li>
+                            <li>penning my <a href="/writing" className="underline">thoughts</a></li>
+                        </ul>
+                    </div>
+
+                    <div className="section">
+                        <p className="section-title">previously, i was:</p>
+                        <ul>
+                            <li>
+                                <a
+                                    href="https://drive.google.com/file/d/1w1xmkq_HoUAaS_-eGr8OWHLERXESeL-e/view"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="research-link"
+                                    style={{fontSize: "1rem"}}
+                                >
+                                    researching bcrypt for secure password storage
+                                    <br />
+                                    <span>
+                                        force attacks <ArrowUpRight className="research-arrow" />
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.congressionalappchallenge.us/22-ut04/"
+                                    className="research-link"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    style={{fontSize: "1rem"}}
+                                >
+                                    building iOS tools for nomadic learners @ <em>IntellectX</em>{' '}
+                                    <ArrowUpRight className="research-arrow" />
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://educationusa.state.gov/centers/educationusa-mongolia"
+                                    className="research-link"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    style={{fontSize: "1rem"}}
+                                >
+                                    marketing intern to <em>35k+</em> @ U.S. Embassy in Mongolia's EducationUSA
+                                    <ArrowUpRight className="research-arrow" />
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.linkedin.com/company/mission-math-utah/"
+                                    className="research-link"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    style={{fontSize: "1rem"}}
+                                >
+                                    raising $17k for competition math @ Mission Math Utah
+                                    <ArrowUpRight className="research-arrow" />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                {/* <div className="hero-column">
+                    <div className="section">
+                        <p className="section-title">awards & coverage:</p>
+                        <ul>
+                            <li>
+                                <a
+                                    href="https://www.congressionalappchallenge.us/22-ut04/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="research-link"
+                                >
+                                    <span>
+                                        congressional app challenge <ArrowUpRight className="research-arrow" />
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.nationalcyberscholarship.org/ncsf-winners-2024"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="research-link"
+                                >
+                                    <span>
+                                        2024 cyberstart scholar <ArrowUpRight className="research-arrow" />
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.aspirations.org/people/marla-t/1291564"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="research-link"
+                                >
+                                    <span>
+                                        ncwit national honorable mention <ArrowUpRight className="research-arrow" />
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div> */}
             </div>
 
             <div className="hero-images-container">
