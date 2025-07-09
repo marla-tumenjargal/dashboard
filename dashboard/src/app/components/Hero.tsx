@@ -32,7 +32,13 @@ export default function Hero() {
                             <li>penning my <a href="/writing" className="underline">thoughts</a></li>
                         </ul>
                     </div>
+                </div>
 
+
+
+
+
+                <div className="hero-column">
                     <div className="section">
                         <p className="section-title">previously, i was:</p>
                         <ul>
@@ -86,6 +92,10 @@ export default function Hero() {
                         </ul>
                     </div>
                 </div>
+
+
+
+
 
                 <div className="hero-column">
                     <div className="section">
