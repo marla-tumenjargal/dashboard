@@ -35,7 +35,7 @@ export default function Navigation() {
 
   const navItems = [
     { name: "email", href: "/projects", disabled: false },
-    { name: "linkedin", href: "/playground" },
+    { name: "bio", href: "/playground" },
     { name: "cv/resume", href: "/writing" },
     { name: "github", href: "/about" },
   ]

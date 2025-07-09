@@ -24,19 +24,8 @@
 .hero-name {
     font-size: 1.75rem;
     font-weight: 500;
-    padding-top: 0.5rem;
     font-family: 'DM Sans', sans-serif;
     color: #111827;
-    letter-spacing: -0.03em;
-    margin: 0;
-}
-
-.hero-secondary {
-    font-size: 1rem;
-    font-weight: 450;
-    padding-top: 0.3rem;
-    font-family: 'DM Sans', sans-serif;
-    color: #1f1f1f;
     letter-spacing: -0.03em;
     margin: 0;
 }
@@ -136,7 +125,7 @@
 .hero-images-container {
     display: flex;
     gap: 1rem;
-    margin-left: -1.2rem;
+    margin-top: 3.5rem;
     margin-bottom: 5rem;
     flex-wrap: wrap;
 }
