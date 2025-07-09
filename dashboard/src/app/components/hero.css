@@ -21,6 +21,10 @@
     margin-bottom: 1.25rem;
 }
 
+.hero-body {
+    font-size: 1.03rem;
+}
+
 .hero-row {
     display: flex;
     align-items: center;
@@ -38,7 +42,7 @@
 }
 
 .hero-secondary {
-    font-size: 1.02rem;
+    font-size: 1.03rem;
     font-weight: 300;
     padding-top: 0.3rem;
     max-width: 640px;
@@ -52,7 +56,7 @@
     font-size: 0.875rem;
     font-weight: 600;
     color: #4B5563;
-    margin-top: 0.15rem;
+    margin-top: -0.2rem;
     position: relative;
     top: 0.15rem; /* adjust this value until it's perfectly aligned */
   } 
@@ -153,7 +157,7 @@
 .hero-image-wrapper {
     position: relative;
     cursor: pointer;
-    width: 20rem;
+    width: 22rem;
     aspect-ratio: 1;
 }
 
@@ -249,11 +253,17 @@
     }
 
     .hero-name {
-        font-size: 1.15rem;
+        font-size: 1.7rem;
     }
 
     .hero-location {
         font-size: 0.8rem;
+    }
+
+    .hero-secondary {
+        font-size: 1.05rem;
+        max-width: 378px;
+        font-weight: 10px;
     }
 }
 
@@ -285,3 +295,11 @@
     margin-bottom: 1rem;
 }
 
+.hero-header-2 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-family: 'DM Sans', sans-serif;
+    color: #111827;
+    letter-spacing: -0.03em;
+    margin: 0;
+}

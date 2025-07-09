@@ -12,6 +12,7 @@ export default function Hero() {
                 <p className="hero-name">✿</p>
                 <p className="hero-location">salt lake city // sf</p>
                 </div>
+                
                 <p className="hero-name">marla tumenjargal</p>
                 <p className="hero-secondary">developer, UI/UX designer, and undergraduate @ uc berkeley studying computer science. interested in HCI, computer vision, and mitigating data bias with AI. </p>
                 <p></p>
@@ -19,13 +20,14 @@ export default function Hero() {
             </div>
             
             <div className="hero-columns">
+                {/* Column 1 */}
                 <div className="hero-column">
                     <div className="section">
                         <p className="section-title">currently i’m:</p>
-                        <ul style={{fontSize: "1.03rem"}}>
+                        <ul style={{ fontSize: "1.03rem" }}>
                             <li>building <strong>eikon</strong> (a whimsical, for-fun café game)</li>
                             <li>scaling AI/CS education for 3k girls @ stembridgeinc</li>
-                            <li>penning my <a href="/writing" className="underline">thoughts</a></li>
+                            <li> penning my <a href="/writing" className="underline">thoughts</a> on tech, design, and society</li>
                         </ul>
                     </div>
 
@@ -38,7 +40,7 @@ export default function Hero() {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="research-link"
-                                    style={{fontSize: "1rem"}}
+                                    style={{ fontSize: "1rem" }}
                                 >
                                     researching bcrypt for secure password storage
                                     <br />
@@ -53,7 +55,7 @@ export default function Hero() {
                                     className="research-link"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    style={{fontSize: "1rem"}}
+                                    style={{ fontSize: "1rem" }}
                                 >
                                     building iOS tools for nomadic learners @ <em>IntellectX</em>{' '}
                                     <ArrowUpRight className="research-arrow" />
@@ -65,7 +67,7 @@ export default function Hero() {
                                     className="research-link"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    style={{fontSize: "1rem"}}
+                                    style={{ fontSize: "1rem" }}
                                 >
                                     marketing intern to <em>35k+</em> @ U.S. Embassy in Mongolia's EducationUSA
                                     <ArrowUpRight className="research-arrow" />
@@ -77,7 +79,7 @@ export default function Hero() {
                                     className="research-link"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    style={{fontSize: "1rem"}}
+                                    style={{ fontSize: "1rem" }}
                                 >
                                     raising $17k for competition math @ Mission Math Utah
                                     <ArrowUpRight className="research-arrow" />
@@ -87,50 +89,13 @@ export default function Hero() {
                     </div>
                 </div>
 
-                {/* <div className="hero-column">
-                    <div className="section">
-                        <p className="section-title">awards & coverage:</p>
-                        <ul>
-                            <li>
-                                <a
-                                    href="https://www.congressionalappchallenge.us/22-ut04/"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="research-link"
-                                >
-                                    <span>
-                                        congressional app challenge <ArrowUpRight className="research-arrow" />
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href="https://www.nationalcyberscholarship.org/ncsf-winners-2024"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="research-link"
-                                >
-                                    <span>
-                                        2024 cyberstart scholar <ArrowUpRight className="research-arrow" />
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href="https://www.aspirations.org/people/marla-t/1291564"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="research-link"
-                                >
-                                    <span>
-                                        ncwit national honorable mention <ArrowUpRight className="research-arrow" />
-                                    </span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div> */}
             </div>
+
+            <div className="hero-row">
+                <p className="hero-name">✿</p>
+                <p className="hero-header-2">view my work</p>
+            </div>
+
 
             <div className="hero-images-container">
                 <div className="hero-image-wrapper">
