@@ -1,6 +1,5 @@
 // app/alternatehome/page.tsx
 
-import Header from '@/app/components/Navigation'
 
 export default function alternatehome() {
     return (
