@@ -1,36 +1,16 @@
 'use client'
 
 import { useState, useEffect } from "react"
-import { usePathname, useRouter } from "next/navigation"
+import { usePathname } from "next/navigation"
 import Link from "next/link"
 import { Menu, X } from "lucide-react"
 import "./header.css"
 
-// Custom Switch component
-const Switch = ({ checked, onCheckedChange, className }: { 
-  checked: boolean; 
-  onCheckedChange: (checked: boolean) => void; 
-  className?: string 
-}) => {
-  return (
-    <button
-      role="switch"
-      aria-checked={checked}
-      onClick={() => onCheckedChange(!checked)}
-      className={`toggle-switch-button ${checked ? 'checked' : ''} ${className || ''}`}
-    >
-      <span className={`toggle-switch-thumb ${checked ? 'checked' : ''}`} />
-    </button>
-  )
-}
-
 export default function Navigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
-  const [isHovering, setIsHovering] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
   const [isLogoHovered, setIsLogoHovered] = useState(false)
 
-  const router = useRouter()
   const pathname = usePathname()
 
   const navItems = [
@@ -56,16 +36,6 @@ export default function Navigation() {
     const scrollTop = window.scrollY
     setIsScrolled(scrollTop > 100)
   }, [pathname])
-
-  const handleToggle = (checked: boolean) => {
-    if (checked) {
-      router.push('/alternatehome')
-    } else {
-      router.push('/')
-    }
-  }
-
-  const isToggled = pathname === '/alternatehome'
 
   // Helper function to check if a nav item is current
   const isCurrentPage = (href: string) => {
@@ -121,20 +91,6 @@ export default function Navigation() {
                       </Link>
                     )
                   ))}
-                  
-                  <div className="morphed-toggle-section">
-                    <div 
-                      className="toggle-wrapper"
-                      onMouseEnter={() => setIsHovering(true)} 
-                      onMouseLeave={() => setIsHovering(false)}
-                    >
-                      <Switch 
-                        checked={isToggled} 
-                        onCheckedChange={handleToggle} 
-                        className={`${isToggled ? 'toggle-switch' : ''}`}
-                      />
-                    </div>
-                  </div>
                 </div>
               ) : (
                 /* Original layout when at top */
@@ -161,29 +117,8 @@ export default function Navigation() {
                     ))}
                   </div>
 
-                  {/* Right Section - Toggle Switch */}
+                  {/* Right Section - Mobile menu button */}
                   <div className="right-section">
-                    <div className="toggle-container">
-                      <div 
-                        className="toggle-wrapper"
-                        onMouseEnter={() => setIsHovering(true)} 
-                        onMouseLeave={() => setIsHovering(false)}
-                      >
-                        <Switch 
-                          checked={isToggled} 
-                          onCheckedChange={handleToggle} 
-                          className={`${isToggled ? 'toggle-switch' : ''}`}
-                        />
-                      </div>
-                      
-                      <span
-                        className={`toggle-label ${isHovering ? "visible" : "hidden"} ${isToggled ? "alternate" : ""}`}
-                      >
-                        {isToggled ? "back home" : "silly stuff"}
-                      </span>
-                    </div>
-
-                    {/* Mobile menu button */}
                     <button
                       onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                       className="mobile-menu-button"

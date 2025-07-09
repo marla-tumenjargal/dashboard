@@ -4,8 +4,8 @@
 .hero-container {
     font-family: 'Public Sans', sans-serif;
     letter-spacing: -0.01em;
-    padding-top: 10rem;
-    padding-left: 2rem;
+    padding-top: 8.5rem;
+    padding-left: 7.3rem;
     padding-right: 1rem;
     max-width: 80rem;
     margin: 0 auto;
@@ -42,7 +42,7 @@
 }
 
 .hero-secondary {
-    font-size: 1.03rem;
+    font-size: 1.1rem;
     font-weight: 300;
     padding-top: 0.3rem;
     max-width: 640px;
@@ -131,7 +131,7 @@
 .section-title {
     font-weight: 600;
     color: #1f2937;
-    font-size: 0.95rem;
+    font-size: 1.05rem;
     margin-bottom: 0.35rem;
     text-transform: lowercase;
 }
@@ -150,6 +150,7 @@
     display: flex;
     gap: 1rem;
     margin-left: -1.2rem;
+    margin-top: -0.25rem;
     margin-bottom: 5rem;
     flex-wrap: wrap;
 }
@@ -157,7 +158,7 @@
 .hero-image-wrapper {
     position: relative;
     cursor: pointer;
-    width: 22rem;
+    width: 21rem;
     aspect-ratio: 1;
 }
 
@@ -261,7 +262,7 @@
     }
 
     .hero-secondary {
-        font-size: 1.05rem;
+        font-size: 1.1rem;
         max-width: 378px;
         font-weight: 10px;
     }

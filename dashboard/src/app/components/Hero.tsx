@@ -24,7 +24,7 @@ export default function Hero() {
                 <div className="hero-column">
                     <div className="section">
                         <p className="section-title">currently i’m:</p>
-                        <ul style={{ fontSize: "1.03rem" }}>
+                        <ul style={{ fontSize: "1rem" }}>
                             <li>building <strong>eikon</strong> (a whimsical, for-fun café game)</li>
                             <li>scaling AI/CS education for 3k girls @ stembridgeinc</li>
                             <li> penning my <a href="/writing" className="underline">thoughts</a> on tech, design, and society</li>
@@ -93,7 +93,7 @@ export default function Hero() {
 
             <div className="hero-row">
                 <p className="hero-name">✿</p>
-                <p className="hero-header-2">view my work</p>
+                <p className="hero-header-2">view my work ↓</p>
             </div>
 
 
