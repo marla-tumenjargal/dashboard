@@ -13,40 +13,6 @@ export interface BlogPost {
     private static posts: BlogPost[] = [
   
       {
-        id: 'poem 1',
-        title: 'code driven by self-doubt',
-        year: 'march 12th, 2025',
-        category: 'poetry',
-        isPasswordProtected: true,
-        excerpt: "... and so, what is wrong with a little bit of poison, if it teaches you to bloom—if it teaches you to rise from the ashes with softer hands, clearer eyes, and roots deep enough hold your own weight?...",
-        content: `
-  i drank the drop, every bitter ounce,
-  thinking the truth would melt on my tongue,
-  like lush honey—
-  but it seared a hole straight through
-  through           the silences i never gave voice to. 
-  through           a voice i once poured all of myself into. 
-  truth is a match, and whomever strikes it— 
-  boldly, 
-  timidly, 
-  truthfully,
-  holds its flame . . . 
-                                   . . .   midair. 
-  i tried clearing a thundercloud with sunlight
-  hoping its weight would evaporate into the sky, 
-  but they do say that to grow feels like blooming—
-  but some petals come only after the thorns have torn you open. 
-  my skin still carries the ache and all the blood—
-  not of cruelty, but of truths too sharp to hold gently. 
-  and yet, in that silence,
-  something sacred bloomed: strength isn't proven by how tight you cling, but in the softness of letting go. 
-  and so—i did. slowly, with grace and ire. 
-  i've learned from the red thorns that prick and preach into my skin every day: what is wrong with
-  a little bit of poison, if it teaches you to bloom—if it teaches you to rise from the ashes with softer
-  hands, clearer eyes, and roots deep enough hold your own weight? nothing. nothing at all. and so, the bloom for the brightest red rose has begun again.
-        `
-      },
-      {
         id: 'reflection',
         title: 'airplanes windows are my favorite ordinary thing. ',
         year: '2025',
@@ -58,21 +24,6 @@ export interface BlogPost {
   The visual identity we created reflected this collaborative spirit through interconnected geometric forms that could be combined and recombined in infinite ways. The color palette drew from the full spectrum to represent the diversity of perspectives we sought to bring together.
   
   The project resulted in a new framework for creative collaboration that has since been adopted by numerous design agencies and in-house teams around the world.`
-      },
-      {
-        id: 'like the calm blue and starstruck moon, sort out who you really are. ',
-        title: 'like the calm blue and starstruck moon, sort out who you really are. ',
-        year: '2025',
-        category: 'poetry',
-        isPasswordProtected: true,
-        excerpt: 'yet, no matter the season, the air i breathe on my strolls always carries the same chilled clarity—not the kind of air that makes your lungs wince from the cold, but the kind that rinses your head clean.',
-        content: `
-        there is a particular shade of blue that stains the sky just before the stars stir awake. it is a calm blue. it is an ethereal blue—one that coats the sky in a lush, thick pastel so soft i understand why the clouds choose to bathe in its presence each day. under it, i always take afternoon strolls to rewire my thoughts. with every step, i begin to remember the parts of myself i misplace in the rush of (criminally late) cramming for final exams and the strange pressure to know everything all at once. i begin to resent that feeling of wanting to go back and do it all over again while simultaneously romanticizing the ambitious strides i’ll take in the future. 
-
-        yet, no matter the season, the air i breathe on my strolls always carries the same chilled clarity—not the kind of air that makes your lungs wince from the cold, but the kind that rinses your head clean. i stop often. just to look up. just to remember what it feels like to exist without desperately grasping to fast forward time. 
-
-        sometimes, tears blur my vision—not from sorrow, but from the weight of memory. under this very sky, i’ve stargazed across the mongolian steppe, endured the itch of summer mosquitoes, held my parents’ warm hands, felt their quiet kisses on my forehead. I’ve remembered, again and again, my love for stories, for the sky, for searching. And I’ve come to better understand what drives me—beyond prestige or performance—the values, resolve, and quiet strength poured into every decision, every initiative. and so, through these strolls and my parent’s love, i always feel incredibly grateful to reconnect with every version of myself—who i’ve been, who i’m becoming, who i aspire to be. and in many ways, i still am connected with the little i was once was—the girl who once stockpiled fortune cookie notes, saw dragons in the clouds, and slept with books under her cashmere pillow. i truly believe i've reclaimed that silly little girl in myself this year—piecing together all of her wildness, hope, and wonder. she is still here, hiding in the space between my ribs and behind my eyelids. and on occasion, i gather her wonder piece by piece, folding it into myself like a paper crane. i feel her hope vividly rekindling in my palms, stubborn and bright. and so, like the calm blue and starstruck moon, i always look up when i can afford the time and notice that the blue is always the same—soft, quiet, eternal.
-        `
       },
       {
         id: 'how a hair tie changed my life.',
