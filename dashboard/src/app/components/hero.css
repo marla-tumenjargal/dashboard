@@ -74,13 +74,73 @@
     opacity: 1;
 }
 
+.hero-content-wrapper {
+    display: flex;
+    gap: 3rem;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.hero-text-content {
+    flex: 1;
+    max-width: 630px;
+}
+
+.hero-folders-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem 2rem;  
+    flex-shrink: 0;
+    margin-top: -7rem;
+}
+
+.folder-item {
+    position: relative;
+    cursor: pointer;
+    width: 15rem;
+    aspect-ratio: 1;
+}
+
+.folder-image {
+    width: 100%;
+    height: auto;
+    padding: 6px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.folder-item .original-image {
+    opacity: 1;
+    z-index: 2;
+}
+
+.folder-item .active-image {
+    opacity: 0;
+    z-index: 1;
+}
+
+.folder-item:hover .original-image {
+    opacity: 0;
+}
+
+.folder-item:hover .active-image {
+    opacity: 1;
+}
+
+/* Cursor */
+.folder-item:hover {
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="64" height="24" viewBox="0 0 64 24"><defs><filter id="blur"><feGaussianBlur in="SourceGraphic" stdDeviation="0.5"/></filter></defs><rect width="64" height="24" rx="12" fill="rgba(0,0,0,0.3)" stroke="rgba(255,255,255,0.1)" stroke-width="1" filter="url(%23blur)"/><rect width="64" height="24" rx="12" fill="rgba(0,0,0,0.6)" stroke="rgba(255,255,255,0.2)" stroke-width="0.5"/><text x="8" y="16" font-family="system-ui" font-size="11" fill="white">view</text><path d="M42 8l6 4-6 4" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>') 32 12, pointer;
+}
+
 /* Bio & Columns */
 .hero-bio {
     font-size: 1rem;
     letter-spacing: -0.015em;
     margin-top: 0.5rem;
     margin-bottom: 2rem;
-    max-width: 700px;
     line-height: 1.6;
 }
 
@@ -119,56 +179,6 @@
 
 .hero-column li {
     margin-bottom: 0.3rem;
-}
-
-/* Folder Images */
-.hero-images-container {
-    display: flex;
-    gap: 1rem;
-    margin-top: 3.5rem;
-    margin-bottom: 5rem;
-    flex-wrap: wrap;
-}
-
-.hero-image-wrapper {
-    position: relative;
-    cursor: pointer;
-    width: 20rem;
-    aspect-ratio: 1;
-}
-
-.hero-sample-image {
-    width: 100%;
-    height: auto;
-    padding: 10px;
-    background-color: white;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: opacity 0.2s ease-in-out;
-}
-
-.original-image {
-    opacity: 1;
-    z-index: 2;
-}
-
-.active-image {
-    opacity: 0;
-    z-index: 1;
-}
-
-.hero-image-wrapper:hover .original-image {
-    opacity: 0;
-}
-
-.hero-image-wrapper:hover .active-image {
-    opacity: 1;
-}
-
-/* Cursor */
-.hero-image-wrapper:hover {
-    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="64" height="24" viewBox="0 0 64 24"><defs><filter id="blur"><feGaussianBlur in="SourceGraphic" stdDeviation="0.5"/></filter></defs><rect width="64" height="24" rx="12" fill="rgba(0,0,0,0.3)" stroke="rgba(255,255,255,0.1)" stroke-width="1" filter="url(%23blur)"/><rect width="64" height="24" rx="12" fill="rgba(0,0,0,0.6)" stroke="rgba(255,255,255,0.2)" stroke-width="0.5"/><text x="8" y="16" font-family="system-ui" font-size="11" fill="white">view</text><path d="M42 8l6 4-6 4" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>') 32 12, pointer;
 }
 
 /* Links */
@@ -210,22 +220,24 @@
 
 /* Responsive */
 @media (max-width: 1024px) {
-    .hero-columns {
+    .hero-content-wrapper {
+        flex-direction: column;
         gap: 2rem;
     }
-
-    .hero-image-wrapper {
-        width: 16rem;
+    
+    .hero-folders-grid {
+        align-self: flex-start;
+        margin-top: 1rem;
+    }
+    
+    .folder-item {
+        width: 5rem;
     }
 }
 
 @media (max-width: 768px) {
     .hero-columns {
         flex-direction: column;
-    }
-
-    .hero-image-wrapper {
-        width: 14rem;
     }
 
     .hero-name {
@@ -235,15 +247,19 @@
     .hero-location {
         font-size: 0.8rem;
     }
+    
+    .folder-item {
+        width: 4.5rem;
+    }
 }
 
 @media (max-width: 480px) {
-    .hero-images-container {
-        flex-direction: column;
-        align-items: center;
+    .hero-folders-grid {
+        justify-self: center;
+        margin-top: 1.5rem;
     }
 
-    .hero-image-wrapper {
-        width: 18rem;
+    .folder-item {
+        width: 5rem;
     }
 }
