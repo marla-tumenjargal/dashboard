@@ -13,7 +13,7 @@ export default function Hero() {
                 <p className="hero-location">salt lake city // sf</p>
                 </div>
                 
-                <p className="hero-name">marla tumenjargal</p>
+                <p className="hero-name">Marla Tumenjargal</p>
                 <p className="hero-secondary">hi hi! i'm a developer and undergraduate @ uc berkeley studying <strong>computer science</strong> and (planned) minor in data science. interested in HCI, computer vision, and mitigating data bias with AI. </p>
                 <p></p>
 

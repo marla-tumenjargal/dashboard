@@ -22,7 +22,7 @@
 }
 
 .hero-body {
-    font-size: 1.03rem;
+    font-size: 1rem;
 }
 
 .hero-row {
@@ -42,7 +42,7 @@
 }
 
 .hero-secondary {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 300;
     padding-top: 0.3rem;
     max-width: 750px;
@@ -120,7 +120,7 @@
     flex: 1;
     min-width: 260px;
     max-width: 34rem;
-    font-size: 0.93rem;
+    font-size: 1rem;
     line-height: 1.45;
 }
 
@@ -202,7 +202,7 @@
     flex-wrap: wrap;
     align-items: center;
     gap: 0.25rem;
-    font-size: 0.93rem;
+    font-size: 1rem;
     font-weight: 400;
     color: #111827;
     text-decoration: none;
@@ -262,7 +262,7 @@
     }
 
     .hero-secondary {
-        font-size: 1.1rem;
+        font-size: 1rem;
         max-width: 378px;
         font-weight: 10px;
     }

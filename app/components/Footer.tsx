@@ -9,7 +9,29 @@ export default function Footer() {
                     <div className="footer-inner">
                         {/* Left Section - Copyright */}
                         <div className="footer-left">
-                            <span className="copyright">© 2025 - marla (made with love) </span>
+                            <span className="copyright">© 2025 - Marla Tumenjargal </span>
+                        </div>
+
+                        {/* Center Section - Links */}
+                        <div className="footer-center">
+                            <a 
+                                href="https://www.linkedin.com/in/marla-tumenjargal?original_referer=https%3A%2F%2Fwww.google.com%2F" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                className="footer-link"
+                            >
+                                <Linkedin className="footer-icon" />
+                                LinkedIn
+                            </a>
+                            <a 
+                                href="https://github.com/marla-tumenjargal" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                className="footer-link"
+                            >
+                                <Github className="footer-icon" />
+                                Github
+                            </a>
                         </div>
 
                         {/* Right Section - Email */}
@@ -36,15 +58,6 @@ export default function Footer() {
                         >
                             <Linkedin className="footer-icon" />
                             LinkedIn
-                        </a>
-                        <a 
-                            href="/cv.pdf" 
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                            className="mobile-footer-link"
-                        >
-                            <FileText className="footer-icon" />
-                            CV
                         </a>
                         <a 
                             href="https://github.com/marlatumenjargal" 
