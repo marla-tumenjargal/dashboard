@@ -14,10 +14,10 @@ export default function Navigation() {
   const pathname = usePathname()
 
   const navItems = [
-    { name: "email", href: "/projects", disabled: false },
-    { name: "bio", href: "/playground" },
-    { name: "cv/resume", href: "/writing" },
-    { name: "github", href: "/about" },
+    { name: "bio", href: "/projects", disabled: false },
+    { name: "projects", href: "/playground" },
+    { name: "writing", href: "/writing" },
+    { name: "cv/resume", href: "/about" },
   ]
 
   // Scroll detection

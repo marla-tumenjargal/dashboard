@@ -14,7 +14,7 @@ export default function Hero() {
                 </div>
                 
                 <p className="hero-name">marla tumenjargal</p>
-                <p className="hero-secondary">developer, UI/UX designer, and undergraduate @ uc berkeley studying computer science. interested in HCI, computer vision, and mitigating data bias with AI. </p>
+                <p className="hero-secondary">hi hi! i'm a developer and undergraduate @ uc berkeley studying <strong>computer science</strong> and (planned) minor in data science. interested in HCI, computer vision, and mitigating data bias with AI. </p>
                 <p></p>
 
             </div>
@@ -23,10 +23,9 @@ export default function Hero() {
                 {/* Column 1 */}
                 <div className="hero-column">
                     <div className="section">
-                        <p className="section-title">currently i’m:</p>
+                        <p className="section-title">currently i'm:</p>
                         <ul style={{ fontSize: "1rem" }}>
                             <li>building <strong>eikon</strong> (a whimsical, for-fun café game)</li>
-                            <li>scaling AI/CS education for 3k girls @ stembridgeinc</li>
                             <li> penning my <a href="/writing" className="underline">thoughts</a> on tech, design, and society</li>
                         </ul>
                     </div>
@@ -34,6 +33,8 @@ export default function Hero() {
                     <div className="section">
                         <p className="section-title">previously, i was:</p>
                         <ul>
+
+                        <li>scaling AI/CS education for 3k girls @ <a href="https://www.instagram.com/stembridge.inc/" target="_blank" rel="noopener noreferrer" className="underline">stembridgeinc</a></li>
                             <li>
                                 <a
                                     href="https://drive.google.com/file/d/1w1xmkq_HoUAaS_-eGr8OWHLERXESeL-e/view"
