@@ -12,28 +12,6 @@ export default function Footer() {
                             <span className="copyright">© 2025 - Marla Tumenjargal </span>
                         </div>
 
-                        {/* Center Section - Links */}
-                        <div className="footer-center">
-                            <a 
-                                href="https://www.linkedin.com/in/marla-tumenjargal?original_referer=https%3A%2F%2Fwww.google.com%2F" 
-                                target="_blank" 
-                                rel="noopener noreferrer"
-                                className="footer-link"
-                            >
-                                <Linkedin className="footer-icon" />
-                                LinkedIn
-                            </a>
-                            <a 
-                                href="https://github.com/marla-tumenjargal" 
-                                target="_blank" 
-                                rel="noopener noreferrer"
-                                className="footer-link"
-                            >
-                                <Github className="footer-icon" />
-                                Github
-                            </a>
-                        </div>
-
                         {/* Right Section - Email */}
                         <div className="footer-right">
                             <a 

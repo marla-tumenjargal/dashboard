@@ -11,12 +11,13 @@ export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isLogoHovered, setIsLogoHovered] = useState(false)
 
+
   const pathname = usePathname()
 
   const navItems = [
-    { name: "courses", href: "/courses", disabled: false },
-    { name: "projects", href: "/projects" },
-    { name: "cv/resume", href: "/resume" },
+    { name: "linkedin", url: "https://www.linkedin.com/in/marla-tumenjargal?original_referer=https%3A%2F%2Fwww.google.com%2F", disabled: false },
+    { name: "github", url: "https://github.com/marla-tumenjargal" },
+    { name: "email", url: "mailto:tumearla@gmail.com" },
   ]
 
   // Scroll detection - but we won't use it to change the layout
@@ -34,8 +35,9 @@ export default function Navigation() {
   // This ensures header styling remains consistent across tab changes
 
   // Helper function to check if a nav item is current
-  const isCurrentPage = (href: string) => {
-    return pathname === href
+  const isCurrentPage = (url: string) => {
+    // Since these are external links, we don't have "current" pages
+    return false
   }
 
   return (
@@ -75,13 +77,13 @@ export default function Navigation() {
                       {item.name}
                     </span>
                   ) : (
-                    <Link
+                    <button
                       key={item.name}
-                      href={item.href}
-                      className={`${styles.navLink} ${isCurrentPage(item.href) ? styles.current : ""}`}
+                      className={styles.navLink}
+                      onClick={() => window.open(item.url, '_blank', 'noopener,noreferrer')}
                     >
                       {item.name}
-                    </Link>
+                    </button>
                   )
                 ))}
               </div>
@@ -117,14 +119,16 @@ export default function Navigation() {
                     {item.name}
                   </span>
                 ) : (
-                  <Link
+                  <button
                     key={item.name}
-                    href={item.href}
-                    className={`${styles.mobileNavLink} ${isCurrentPage(item.href) ? styles.current : ''}`}
-                    onClick={() => setIsMobileMenuOpen(false)} // Close mobile menu on navigation
+                    className={styles.mobileNavLink}
+                    onClick={() => {
+                      window.open(item.url, '_blank', 'noopener,noreferrer')
+                      setIsMobileMenuOpen(false)
+                    }}
                   >
                     {item.name}
-                  </Link>
+                  </button>
                 )
               ))}
               <button className={styles.mobileCtaButton}>
