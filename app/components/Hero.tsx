@@ -25,6 +25,7 @@ export default function Hero() {
                     <div className="section">
                         <p className="section-title">currently i'm:</p>
                         <ul style={{ fontSize: "1rem" }}>
+                            <li>taking <strong>CS 61A (Structure and Interpretation of Computer Programs), DATA C104 (Human Contexts and Ethics of Data)</strong>, English R1B, & Math 54</li>
                             <li>building <strong>eikon</strong> (a whimsical, for-fun café game)</li>
                             <li> penning my <a href="/writing" className="underline">thoughts</a> on tech, design, and society</li>
                         </ul>
