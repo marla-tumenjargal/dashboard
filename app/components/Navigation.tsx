@@ -11,13 +11,12 @@ export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isLogoHovered, setIsLogoHovered] = useState(false)
 
-
   const pathname = usePathname()
 
   const navItems = [
     { name: "linkedin", url: "https://www.linkedin.com/in/marla-tumenjargal?original_referer=https%3A%2F%2Fwww.google.com%2F", disabled: false },
     { name: "github", url: "https://github.com/marla-tumenjargal" },
-    { name: "email", url: "mailto:tumearla@gmail.com" },
+    { name: "let's chat!", url: "https://calendly.com/tumearla/let-s-chat"},
   ]
 
   // Scroll detection - but we won't use it to change the layout
@@ -31,8 +30,27 @@ export default function Navigation() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  // Removed the pathname-dependent useEffect that was resetting scroll state
-  // This ensures header styling remains consistent across tab changes
+  // Helper function to handle nav item clicks
+  const handleNavClick = (url: string) => {
+    if (url.startsWith('mailto:')) {
+      // Try multiple approaches for email links
+      try {
+        // Method 1: Direct assignment
+        window.location.href = url
+      } catch (error) {
+        // Method 2: Create and click a hidden link
+        const link = document.createElement('a')
+        link.href = url
+        link.style.display = 'none'
+        document.body.appendChild(link)
+        link.click()
+        document.body.removeChild(link)
+      }
+    } else {
+      // For other links, open in new tab
+      window.open(url, '_blank', 'noopener,noreferrer')
+    }
+  }
 
   // Helper function to check if a nav item is current
   const isCurrentPage = (url: string) => {
@@ -77,13 +95,15 @@ export default function Navigation() {
                       {item.name}
                     </span>
                   ) : (
-                    <button
+                    <a
                       key={item.name}
+                      href={item.url}
                       className={styles.navLink}
-                      onClick={() => window.open(item.url, '_blank', 'noopener,noreferrer')}
+                      target={item.url.startsWith('mailto:') ? '_self' : '_blank'}
+                      rel={item.url.startsWith('mailto:') ? undefined : 'noopener noreferrer'}
                     >
                       {item.name}
-                    </button>
+                    </a>
                   )
                 ))}
               </div>
@@ -119,16 +139,16 @@ export default function Navigation() {
                     {item.name}
                   </span>
                 ) : (
-                  <button
+                  <a
                     key={item.name}
+                    href={item.url}
                     className={styles.mobileNavLink}
-                    onClick={() => {
-                      window.open(item.url, '_blank', 'noopener,noreferrer')
-                      setIsMobileMenuOpen(false)
-                    }}
+                    target={item.url.startsWith('mailto:') ? '_self' : '_blank'}
+                    rel={item.url.startsWith('mailto:') ? undefined : 'noopener noreferrer'}
+                    onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {item.name}
-                  </button>
+                  </a>
                 )
               ))}
               <button className={styles.mobileCtaButton}>
