@@ -2,8 +2,16 @@
 
 import "./hero.css";
 import { ArrowUpRight } from "lucide-react";
+import { useRouter } from 'next/navigation';
+
 
 export default function Hero() {
+    const router = useRouter();
+
+    const handleProjectsClick = () => {
+        router.push('/projects');
+    };
+
     return (
         <div className="hero-container">
             <div className="hero-header">
@@ -99,8 +107,9 @@ export default function Hero() {
             </div>
 
 
+            <div className="hero-section">
             <div className="hero-images-container">
-                <div className="hero-image-wrapper">
+                <div className="hero-image-wrapper" onClick={handleProjectsClick} style={{ cursor: 'pointer' }}>
                     <img src="/projectsfolder.jpg" alt="projects folder" className="hero-sample-image original-image" />
                     <img src="/activeprojectsfolder.jpg" alt="active projects folder" className="hero-sample-image active-image" />
                 </div>
@@ -113,6 +122,7 @@ export default function Hero() {
                     <img src="/activewritingfolder.jpg" alt="active writing folder" className="hero-sample-image active-image" />
                 </div>
             </div>
+        </div>
         </div>
     );
 }
