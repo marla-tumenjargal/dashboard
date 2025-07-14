@@ -1,14 +1,12 @@
-/* Projects Page - Completely separate from hero styles */
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap');
 
-/* Projects Page Container */
 .projects-page {
     font-family: 'Public Sans', sans-serif;
     letter-spacing: -0.01em;
-    padding: 2rem;
-    max-width: 1200px;
+    padding: 2rem 0;
     margin: 0 auto;
+    max-width: 100%;
     min-height: 100vh;
 }
 
@@ -16,8 +14,7 @@
 .projects-back-button {
     display: inline-flex;
     align-items: center;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin: 2rem 0 1rem 2rem; /* smaller bottom margin */
     color: #111827;
     background: none;
     border: none;
@@ -35,24 +32,21 @@
     transform: translateX(-2px);
 }
 
-/* Projects Container */
+/* Projects Layout */
 .projects-main-container {
     display: flex;
     flex-direction: column;
     gap: 6rem;
-    align-items: flex-start;
+    padding: 0;
     width: 100%;
 }
 
-/* Individual Project Item */
 .projects-item {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 900px;
 }
 
-/* New Layout Container for Image and Content Side by Side */
 .projects-item-layout {
     display: flex;
     align-items: flex-start;
@@ -62,12 +56,13 @@
 
 /* Project Image */
 .projects-image {
+    max-width: 1000px;
     width: 100%;
-    max-width: 400px;
     height: auto;
     display: block;
-    border-radius: 0;
-    box-shadow: none;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.06); /* subtle gray border */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.04); /* very light glassy effect */
     flex-shrink: 0;
 }
 
@@ -75,9 +70,10 @@
 .projects-content {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 0.5rem; /* smaller gap between title & description */
     flex: 1;
     min-width: 0;
+    padding: 3rem 2rem 3rem 0.75rem; /* reduce left padding */
 }
 
 /* Project Header */
@@ -86,7 +82,7 @@
     justify-content: space-between;
     align-items: flex-start;
     gap: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.25rem;
 }
 
 .projects-title {
@@ -112,19 +108,18 @@
 .projects-description {
     font-size: 1rem;
     color: #374151;
-    line-height: 1.7;
-    margin: 0;
+    line-height: 1.6;
     font-weight: 400;
     max-width: 600px;
+    margin: 0;
 }
 
-/* Project Details Grid */
 .projects-details {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-    padding-top: 2rem;
+    gap: 1rem; 
+    margin-top: 0.5rem;
+    padding-top: 1.5rem;
     border-top: 1px solid #e5e7eb;
 }
 
@@ -150,6 +145,7 @@
     line-height: 1.5;
 }
 
+/* Tags */
 .projects-tags {
     display: flex;
     flex-wrap: wrap;
@@ -165,6 +161,7 @@
     font-weight: 500;
 }
 
+/* Links */
 .projects-links {
     display: flex;
     flex-direction: column;
@@ -200,36 +197,49 @@
 /* Responsive Design */
 @media (max-width: 768px) {
     .projects-page {
-        padding: 1rem;
+        padding: 1rem 0;
     }
-    
+
+    .projects-back-button {
+        margin-left: 1rem;
+    }
+
     .projects-main-container {
         gap: 4rem;
     }
-    
+
     .projects-item-layout {
         flex-direction: column;
-        gap: 2rem;
+        gap: 0.5rem;
         margin-bottom: 2rem;
     }
-    
+
     .projects-image {
         max-width: 100%;
+        width: 100%;
+        height: auto;
     }
-    
+
+    .projects-content {
+        padding: 2rem 1rem;
+    }
+
     .projects-header {
         flex-direction: column;
         gap: 0.5rem;
         align-items: flex-start;
     }
-    
+
     .projects-title {
         font-size: 1.5rem;
     }
-    
-    .projects-details {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
+
+    @media (max-width: 768px) {
+        .projects-details {
+            grid-template-columns: 1fr;
+            gap: 1rem; /* Changed from 1.5rem to 1rem */
+            padding: 1rem;
+        }
     }
 }
 
@@ -238,13 +248,13 @@
         margin-top: 1rem;
         margin-bottom: 2rem;
     }
-    
+
     .projects-title {
         font-size: 1.3rem;
     }
-    
+
     .projects-item-layout {
-        gap: 1.5rem;
+        gap: 1rem;
         margin-bottom: 1.5rem;
     }
 }
