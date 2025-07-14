@@ -20,16 +20,12 @@
     border: none;
     padding: 12px 24px;
     border-radius: 6px;
+    margin-top: -20px;
     cursor: pointer;
     font-size: 16px;
     font-weight: 500;
     transition: all 0.2s ease;
     text-decoration: none;
-}
-
-.projects-back-button:hover {
-    background-color: #f9fafb;
-    transform: translateX(-2px);
 }
 
 /* Projects Layout */
@@ -170,7 +166,7 @@
     text-decoration: underline;
     font-size: 14px;
     font-weight: 400;
-    transition: color 0.2s ease;
+    transition: color 0.5s ease;
 }
 
 .projects-link:hover {
@@ -276,4 +272,42 @@
         padding: 12px;
         gap: 16px;
     }
+}
+/* Image Carousel Container */
+.projects-image-container {
+    position: relative;
+    max-width: 1000px;
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+}
+
+/* Update the existing .projects-image class */
+.projects-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.04);
+    opacity: 0;
+    transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.projects-image.active {
+    opacity: 1;
+}
+
+/* Ensure the first image sets the container height */
+.projects-image:first-child {
+    position: relative;
+    opacity: 1;
+}
+
+.projects-image:first-child.active {
+    position: absolute;
 }

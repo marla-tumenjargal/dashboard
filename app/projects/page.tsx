@@ -1,13 +1,24 @@
 'use client'
 import { useRouter } from 'next/navigation';
+import { useState, useEffect } from 'react';
 import './projects.css'; // Import the completely separate CSS file
 
 export default function ProjectsPage() {
     const router = useRouter();
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    const images = ['/intellect.jpg', '/intellect2.jpg'];
 
     const handleBackClick = () => {
         router.push('/');
     };
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+        }, 2000); // Switch every 2 seconds
+
+        return () => clearInterval(interval);
+    }, [images.length]);
 
     return (
         <div className="projects-page">
@@ -17,7 +28,16 @@ export default function ProjectsPage() {
             <div className="projects-main-container">
                 <div className="projects-item">
                     <div className="projects-item-layout">
-                        <img src="/intellect.jpg" alt="IntellectX Project" className="projects-image" />
+                        <div className="projects-image-container">
+                            {images.map((image, index) => (
+                                <img 
+                                    key={index}
+                                    src={image} 
+                                    alt="IntellectX Project" 
+                                    className={`projects-image ${index === currentImageIndex ? 'active' : ''}`}
+                                />
+                            ))}
+                        </div>
                         <div className="projects-content">
                             <div className="projects-header">
                                 <h2 className="projects-title">intellect</h2>
