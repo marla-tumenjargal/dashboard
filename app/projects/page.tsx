@@ -21,7 +21,7 @@ export default function ProjectsPage() {
                         <div className="projects-content">
                             <div className="projects-header">
                                 <h2 className="projects-title">intellect</h2>
-                                <span className="projects-year">2023</span>
+                                <span className="projects-year">2023 [closed]</span>
                             </div>
                             <p className="projects-description">
                             intellect delivers Al-powered learning, anywhere. We connect students to Al-powered coursework and lectures—all in one seamless platform. Built in collaboration for Mongolian national educators.
@@ -29,7 +29,7 @@ export default function ProjectsPage() {
                             
                             <div className="projects-details">
                                 <div className="projects-detail-section">
-                                    <h3 className="projects-detail-title">Technologies</h3>
+                                    <h3 className="projects-detail-title">technologies</h3>
                                     <div className="projects-tags">
                                         <span className="projects-tag">Swift</span>
                                         <span className="projects-tag">iOS</span>
@@ -37,21 +37,12 @@ export default function ProjectsPage() {
                                     </div>
                                 </div>
                                 <div className="projects-detail-section">
-                                    <h3 className="projects-detail-title">Dimensions</h3>
+                                    <h3 className="projects-detail-title">dimensions</h3>
                                     <p className="projects-detail-content">
-                                        Length: 12 months<br />
-                                        Width: Cross-platform<br />
-                                        Height: 50k+ downloads<br />
-                                        Weight: 45 MB
+                                        Width: iOS<br />
+                                        Height: 1k+ downloads<br />
+                                        Awards: 2022 Congressional App Challenge, Yeti Educational Academy (Ulaanbaatar)
                                     </p>
-                                </div>
-                                <div className="projects-detail-section">
-                                    <h3 className="projects-detail-title">Links</h3>
-                                    <div className="projects-links">
-                                        <a href="#" className="projects-link">View Live Project</a>
-                                        <a href="#" className="projects-link">GitHub Repository</a>
-                                        <a href="#" className="projects-link">Case Study</a>
-                                    </div>
                                 </div>
                             </div>
                         </div>
