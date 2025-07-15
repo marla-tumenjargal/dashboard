@@ -12,6 +12,10 @@ export default function Hero() {
         router.push('/projects');
     };
 
+    const handleWritingClick = () => {
+        router.push('/writing');
+    };
+
     return (
         <>
             <Header />
@@ -119,7 +123,7 @@ export default function Hero() {
                         <img src="/uifolder.jpg" alt="UI folder" className="hero-sample-image original-image" />
                         <img src="/activeuifolder.jpg" alt="active UI folder" className="hero-sample-image active-image" />
                     </div>
-                    <div className="hero-image-wrapper">
+                    <div className="hero-image-wrapper" onClick={handleWritingClick} style={{ cursor: 'pointer' }}>
                         <img src="/writingfolder.jpg" alt="writing folder" className="hero-sample-image original-image" />
                         <img src="/activewritingfolder.jpg" alt="active writing folder" className="hero-sample-image active-image" />
                     </div>

@@ -1,337 +1,421 @@
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&display=swap');
 
-.container {
-  max-width: 64rem;
-  margin: 0 auto;
-  padding: 1.5rem;
-  background-color: #ffffff;
-  min-height: 100vh;
-  margin-top: 5rem;
-}
-
-.postsList {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-}
-
-.postItem {
-  border-bottom: 1px solid #e5e7eb;
-}
-
-.postItem:last-child {
-  border-bottom: none;
-}
-
-.postItemHeader {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 0;
-  transition: background-color 0.2s ease;
-}
-
-.postItemHeader:hover {
-  background-color: #f3f4f6;
-}
-
-.postHeaderSection {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  flex: 1;
-}
-
-.toggleButton {
-  background: none;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-  padding: 0.5rem;
-  border-radius: 0.25rem;
-}
-
-.toggleButton:hover {
-  background-color: #e5e7eb;
-}
-
-.toggleButton:focus {
-  outline: none;
-  background-color: #e5e7eb;
-}
-
-.archiveTag {
-  background-color: #000;
-  color: #fff;
-  font-size: 0.75rem;
-  padding: 0.25rem 0.5rem;
-  border-radius: 0.25rem;
-}
-
-.postTitle {
-  color: #000;
+.writing-page {
   font-family: 'Public Sans', sans-serif;
-  font-weight: 500;
-  font-size: 1.125rem;
-  letter-spacing: -0.82px;
+  margin: 2rem auto 0;
+  padding: 0 1rem;
+  max-width: 1000px;
+  min-height: 100vh;
+  box-sizing: border-box;
 }
 
-.postMeta {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-}
-
-.categoryTag,
-.yearTag {
-  font-size: 0.75rem;
-  color: #6b7280;
-  border: 1px solid #d1d5db;
-  padding: 0.25rem 0.5rem;
-  border-radius: 0.25rem;
-}
-
-.chevronIcon {
-  margin-left: 1rem;
-  color: #6b7280;
-}
-
-.expandedContent {
-  padding: 0 0 1.5rem 0;
-  animation: slideIn 0.2s ease-out;
-}
-
-@keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translateY(-8px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.contentText {
-  font-family: 'Times New Roman', Garamond, serif;
-  color: #374151;
-  line-height: 1.625;
-  white-space: pre-line;
-  max-width: none;
-}
-
-.lockIcon {
-  color: #6b7280;
-}
-
-.starButton {
+/* Back Button */
+.writing-back-button {
   background: none;
   border: none;
+  color: #111827;
   cursor: pointer;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  transition: transform 0.1s ease;
-}
-
-.starButton:hover {
-  transform: scale(1.1);
-}
-
-.starIcon {
-  color: #6b7280;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0.5rem;
+  margin: 0 0 2rem 0;
+  border-radius: 6px;
   transition: color 0.2s ease;
 }
 
-.starIcon:hover {
-  color: #fbbf24;
+.writing-back-button:hover {
+  color: #4f46e5;
 }
 
-.starIcon.starred {
-  color: #fbbf24;
+/* Header */
+.writing-main-container {
+  display: flex;
+  flex-direction: column;
 }
 
-.passwordProtectedContent {
-  position: relative;
+.writing-header {
+  text-align: left;
+  margin-bottom: 1rem;
 }
 
-.blurredContentContainer {
-  position: relative;
+.writing-title {
+  font-size: 2rem;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  color: #111827;
+}
+
+.writing-description {
+  color: #6b7280;
+  line-height: 1.6;
+  margin: 0;
+  max-width: 600px;
+}
+
+/* Grid Layout - One card per row */
+.writing-grid {
+  display: grid;
+  margin-top: 1.5rem;
+  grid-template-columns: 1fr;
+  gap: 1.3rem;
+  align-items: start;
+}
+
+/* Card Styling - Image overlay on right third with gradient (always visible) */
+.writing-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
   overflow: hidden;
-  border-radius: 0.5rem;
-  mask: linear-gradient(to bottom, 
-    transparent 0%, 
-    black 5%, 
-    black 95%, 
-    transparent 100%);
-  -webkit-mask: linear-gradient(to bottom, 
-    transparent 0%, 
-    black 5%, 
-    black 95%, 
-    transparent 100%);
+  position: relative;
 }
 
-.blurredText {
-  filter: blur(8px);
-  user-select: none;
-  pointer-events: none;
-  font-family: 'Times New Roman', Garamond, serif;
-  color: #374151;
-  line-height: 1.625;
-  white-space: pre-line;
-  position: relative;
+.writing-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60%;
+  height: 100%;
+  background-image: var(--card-bg-image);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   z-index: 1;
 }
 
-.excerptContainer {
+.writing-card::after {
+  content: '';
   position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 0;
+  right: 0;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.7) 40%, rgba(255, 255, 255, 0) 70%);
   z-index: 2;
-  max-width: 80%;
 }
 
-.excerptText {
-  font-family: 'Times New Roman', Garamond, serif;
-  color: #000;
-  line-height: 1.625;
-  white-space: pre-line;
-  background: rgba(249, 250, 251, 0.95);
-  padding: 1rem 1.5rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(1px);
-  border: 1px solid rgba(255, 255, 255, 0.8);
-  text-align: center;
-  font-style: italic;
+/* Ensure image overlay only applies to header, not expanded content */
+.writing-card::before,
+.writing-card::after {
+  bottom: auto;
+  height: var(--card-header-height, 200px);
 }
 
-.passwordOverlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: rgba(255, 255, 255, 0.95);
-  padding: 1.5rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  text-align: center;
-  min-width: 280px;
-  backdrop-filter: blur(2px);
+.writing-card-header {
+  position: relative;
+  z-index: 3;
+  min-height: 200px;
+}
+
+.writing-card.expanded::before,
+.writing-card.expanded::after {
+  height: 200px;
+}
+
+.writing-card.expanded {
+  border-color: #9ca3af;
+}
+
+.writing-card-header {
+  padding-top: 3rem;
+  padding-left: 3rem;
+  padding-bottom: 1rem;
+  cursor: pointer;
+  position: relative;
+  min-height: 200px;
   z-index: 3;
 }
 
-.passwordOverlay p {
-  margin: 0 0 1rem 0;
-  font-family: 'Public Sans', sans-serif;
-  font-weight: 500;
-  color: #374151;
+.writing-card-content {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
 }
 
-.inlinePasswordInput {
-  width: 100%;
-  padding: 0.75rem;
-  border: 1px solid #d1d5db;
-  border-radius: 0.25rem;
-  margin-bottom: 0.75rem;
-  font-size: 0.875rem;
+.writing-card-text {
+  flex: 1;
+  min-width: 0;
 }
 
-.inlinePasswordInput:focus {
-  outline: none;
-  border-color: #3b82f6;
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+.writing-card-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #111827;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.3;
 }
 
-.inlinePasswordButton {
-  width: 100%;
-  padding: 0.75rem 1rem;
-  background-color: #000;
-  color: white;
-  border: none;
-  border-radius: 0.25rem;
-  cursor: pointer;
-  font-size: 0.875rem;
+.writing-card-author {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 0 0 0.75rem 0;
   font-weight: 500;
 }
 
-.inlinePasswordButton:hover {
-  background-color: #374151;
+.writing-card-meta {
+  font-size: 13px;
+  color: #9ca3af;
+  margin: 0 0 0.25rem 0;
 }
 
-.passwordModal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+.writing-card-time {
+  font-size: 13px;
+  color: #9ca3af;
+  margin: 0;
+}
+
+
+
+.writing-card-toggle {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-size: 20px;
+  color: #6b7280;
+  font-weight: 300;
+  width: 28px;
+  height: 28px;
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 1000;
+  border-radius: 50%;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
 }
 
-.passwordPrompt {
-  background: white;
+/* Expanded Content */
+.writing-card-expanded {
+  border-top: 1px solid #e5e7eb;
+  animation: slideDown 0.3s ease-out;
+  position: relative;
+  z-index: 3;
+  background: #ffffff;
+}
+
+.writing-card-full-text {
+  font-family: 'IBM Plex Mono', 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.8;
+  color: #1f2937;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  margin: 0;
   padding: 2rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-  min-width: 300px;
+  background: #fefefe;
+  letter-spacing: 0.02em;
 }
 
-.passwordPrompt h3 {
-  margin: 0 0 1rem 0;
-  font-family: 'Public Sans', sans-serif;
-  font-weight: 500;
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 2000px;
+  }
 }
 
-.passwordPrompt input {
-  width: 100%;
-  padding: 0.75rem;
-  border: 1px solid #d1d5db;
-  border-radius: 0.25rem;
-  margin-bottom: 1rem;
-  font-size: 1rem;
+/* Responsive Design */
+
+/* Large screens */
+@media (min-width: 1400px) {
+  .writing-page {
+    padding: 0 2rem;
+  }
+  
+  .writing-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .writing-card-full-text {
+    font-size: 15px;
+    padding: 3rem;
+  }
 }
 
-.passwordPrompt input:focus {
-  outline: none;
-  border-color: #3b82f6;
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+/* Medium to large screens */
+@media (max-width: 1200px) {
+  .writing-page {
+    margin: 2rem 1rem 0;
+    max-width: none;
+  }
+  
+  .writing-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
 }
 
-.passwordButtons {
-  display: flex;
-  gap: 0.75rem;
+/* Tablet landscape */
+@media (max-width: 1024px) {
+  .writing-page {
+    margin: 1.5rem 1rem 0;
+  }
+  
+  .writing-title {
+    font-size: 2.25rem;
+  }
+  
+  .writing-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .writing-card-full-text {
+    font-size: 13px;
+    padding: 1.5rem;
+  }
 }
 
-.passwordButtons button {
-  flex: 1;
-  padding: 0.75rem 1rem;
-  border: none;
-  border-radius: 0.25rem;
-  cursor: pointer;
-  font-size: 0.875rem;
-  font-weight: 500;
+/* Tablet portrait */
+@media (max-width: 768px) {
+  .writing-page {
+    margin: 1rem 0.75rem 0;
+  }
+
+  .writing-title {
+    font-size: 2rem;
+  }
+  
+  .writing-description {
+    font-size: 16px;
+  }
+
+  .writing-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .writing-card-header {
+    padding: 1.25rem;
+  }
+  
+  .writing-card-content {
+    gap: 1rem;
+  }
+  
+
+  
+  .writing-card-full-text {
+    font-size: 13px;
+    padding: 1.5rem;
+    line-height: 1.7;
+  }
 }
 
-.passwordButtons button:first-child {
-  background-color: #000;
-  color: white;
+/* Mobile landscape */
+@media (max-width: 640px) {
+  .writing-page {
+    margin: 1rem 0.5rem 0;
+  }
+  
+  .writing-title {
+    font-size: 1.75rem;
+  }
+  
+  .writing-description {
+    font-size: 15px;
+  }
+  
+  .writing-card-title {
+    font-size: 18px;
+  }
+  
+  .writing-card-full-text {
+    font-size: 12px;
+    padding: 1rem;
+    line-height: 1.6;
+  }
 }
 
-.passwordButtons button:first-child:hover {
-  background-color: #374151;
+/* Mobile portrait */
+@media (max-width: 480px) {
+  .writing-page {
+    margin: 0.75rem 0.25rem 0;
+  }
+  
+  .writing-back-button {
+    padding: 0.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  .writing-title {
+    font-size: 1.5rem;
+  }
+  
+  .writing-description {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .writing-card-header {
+    padding: 1rem;
+  }
+  
+  .writing-card-content {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .writing-card-images {
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .writing-card-title {
+    font-size: 16px;
+  }
+  
+  .writing-card-author {
+    font-size: 13px;
+  }
+  
+  .writing-card-meta,
+  .writing-card-time {
+    font-size: 12px;
+  }
+  
+  .writing-card-toggle {
+    top: 1rem;
+    right: 1rem;
+    width: 24px;
+    height: 24px;
+    font-size: 18px;
+  }
+  
+  .writing-card-full-text {
+    font-size: 12px;
+    padding: 1rem;
+    line-height: 1.6;
+  }
 }
 
-.passwordButtons button:last-child {
-  background-color: #f3f4f6;
-  color: #374151;
-}
-
-.passwordButtons button:last-child:hover {
-  background-color: #e5e7eb;
+/* Extra small screens */
+@media (max-width: 320px) {
+  .writing-page {
+    margin: 0.5rem 0.125rem 0;
+  }
+  
+  .writing-title {
+    font-size: 1.25rem;
+  }
+  
+  .writing-description {
+    font-size: 13px;
+  }
+  
+  .writing-card-title {
+    font-size: 15px;
+  }
+  
+  .writing-card-full-text {
+    font-size: 11px;
+    padding: 0.75rem;
+  }
 }
