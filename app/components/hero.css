@@ -158,7 +158,6 @@
 
 .hero-image-wrapper {
     position: relative;
-    cursor: pointer;
     width: 20rem;
     aspect-ratio: 1;
 }
@@ -192,10 +191,17 @@
     opacity: 1;
 }
 
-/* Cursor */
+/* Cursor - Applied to all folders, but you can make it more specific if needed */
 .hero-image-wrapper:hover {
     cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="64" height="24" viewBox="0 0 64 24"><defs><filter id="blur"><feGaussianBlur in="SourceGraphic" stdDeviation="0.5"/></filter></defs><rect width="64" height="24" rx="12" fill="rgba(0,0,0,0.3)" stroke="rgba(255,255,255,0.1)" stroke-width="1" filter="url(%23blur)"/><rect width="64" height="24" rx="12" fill="rgba(0,0,0,0.6)" stroke="rgba(255,255,255,0.2)" stroke-width="0.5"/><text x="8" y="16" font-family="system-ui" font-size="11" fill="white">view</text><path d="M42 8l6 4-6 4" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>') 32 12, pointer;
 }
+
+/* Alternative: If you want to only show "view" cursor on clickable folders */
+/*
+.hero-image-wrapper[style*="cursor: pointer"]:hover {
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="64" height="24" viewBox="0 0 64 24"><defs><filter id="blur"><feGaussianBlur in="SourceGraphic" stdDeviation="0.5"/></filter></defs><rect width="64" height="24" rx="12" fill="rgba(0,0,0,0.3)" stroke="rgba(255,255,255,0.1)" stroke-width="1" filter="url(%23blur)"/><rect width="64" height="24" rx="12" fill="rgba(0,0,0,0.6)" stroke="rgba(255,255,255,0.2)" stroke-width="0.5"/><text x="8" y="16" font-family="system-ui" font-size="11" fill="white">view</text><path d="M42 8l6 4-6 4" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>') 32 12, pointer;
+}
+*/
 
 /* Links */
 .research-link {
