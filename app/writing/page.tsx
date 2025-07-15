@@ -19,28 +19,29 @@ export default function WritingPage() {
   const articles: Article[] = [
     {
       id: 1,
-      title: "huggable corners of the internet",
+      title: "thoughts, in no particular order",
       author: "society",
       blocks: "7/15/2025",
       images: ['/rnb2.jpg'],
-      content: `huggable corners of the internet
+      content: `01. i often wonder what we women could become if we lived in a world where we were equally empowered to be loud, to be wrong, to be messy, to be brilliant without having to dim our light for others. <span class="highlight">what would we create if we didn't spend so much energy managing our image, if we could channel that mental bandwidth toward spontaneity without blinking twice and wholeheartedly pursue our dreams without setback?</span> there are certainly many women who have done so—who have created businesses, become investors, become mothers and businesswomen, who see the strength in softness. the list goes on and on. i believe this is simply the first spark. <span class="highlight">now more than ever, we need to continue celebrating each other's victories as our own, turning competition into collaboration and building each other up instead of feeling threatened by another woman's success. </span>
+      
+02. fulfillment isn't something we discover so much as something we create through attention and choice. i like to see it as <span class="highlight">all the people who inspire us, all the ideas that challenge us, the work that engages us, and through the quality of our actions</span>. perhaps this is why there is no universal formula to anything. what draws one person forward might leave another. 
+    
+03. i can already imagine the 200+ conversations i'll have of "what's your major? what's your dorm? your name?" on the grounds of uc berkeley this fall. yet, if i could never introduce myself with my occupation, or school, or age, or ethnicity, or my hometown, who am i? 
 
-In the vast expanse of digital space, there exist pockets of warmth that feel like home. These are the huggable corners of the internet—places where humanity shines through pixels and code.
+what is my essence?
 
-I've been thinking about what makes a digital space feel welcoming. It's not just good design or smooth interactions, though those help. It's something more fundamental: the sense that real people built this with care, that they considered how it would feel to be here.
+my whole high school career, i've been usually been known as that 4.0 girl, the girl who got into two ivies, who is reserved, who is into tech, who is mongolian, who is book-smart. if you know me personally, you also know that i'm a die-hard arianator. yet, surrounding myself with new music tastes this summer (notably hiphop), and moving past the songs of my past--the songs that have memories of high school, of friendship breakup, of strange situationships, of nearly burning out from college apps--has shown me the next chapter of my life. without the labels, who is marla?
 
-The best online communities I've found share certain qualities. They have rituals and inside jokes. They remember your birthday. They create space for vulnerability alongside celebration. They feel lived-in rather than engineered.
+well, i'm someone who enjoys music as equally as she approaches others with genuine curiosity, always wondering about the stories they carry and the worlds they've built inside their minds. i'm endlessly fascinated by how new technology works and am driven to complete whatever opportunity sits in front of me with the utmost intention (except household chores :<).
 
-Consider the comment sections that actually make you smile, the forums where strangers become friends, the platforms where creativity flourishes without performance pressure. These spaces exist because someone decided that connection mattered more than engagement metrics.
+i'm also someone who enjoys expressing her creativity through choreographing and ux design. someone who has learned to stand her ground while understanding others with empathy. in other words, that softness is strength. 
 
-Building huggable corners requires intentional design choices. Slower loading times that create anticipation rather than frustration. Gentle notifications that feel like taps on the shoulder rather than shouts for attention. Features that encourage depth over velocity.
+most importantly, i value internal validation from goals and dreams over external applause.  <span class="highlight">but most of all, i'm someone who knows that if i am the smartest person in a room, i'm not in the right room. i know its cheugy, but labels are ok because they're never the full story. i believe it is up to people to learn more about the story that's inside them.</span> if we knew everyone's story. we wouldn't be curious or willing to make mistakes and learn from them. 
+  
+`
 
-The internet doesn't have to be a hostile place. We can choose to build corners that invite lingering, that reward curiosity, that make people feel seen and heard. In a world of infinite scroll, the most radical act might be creating spaces that encourage stopping, breathing, and connecting.
-
-Every interface is a doorway. Every interaction is a handshake. Every user experience is an opportunity to say: you belong here, you matter, you're welcome to stay as long as you'd like.
-
-The huggable corners of the internet remind us that technology, at its best, amplifies our capacity for warmth.`
-    },
+},
     {
       id: 2,
       title: "tech/design tools waitlist",
@@ -145,9 +146,10 @@ In a world designed to capture and monetize your attention, choosing how to spen
               
               {expandedArticle?.id === article.id && (
                 <div className="writing-card-expanded">
-                  <pre className="writing-card-full-text">
-                    {article.content}
-                  </pre>
+                  <div 
+                    className="writing-card-full-text"
+                    dangerouslySetInnerHTML={{ __html: article.content }}
+                  />
                 </div>
               )}
             </div>
