@@ -4,6 +4,7 @@
 
 import './globals.css'  // your global styles
 import Header from './components/Navigation'
+import Footer from './components/Footer';
 
 export const metadata = {
   title: 'Marla Tumenjargal',
@@ -22,6 +23,8 @@ export default function RootLayout({
     <html lang="en">
       <body>
         {children}
+
+      <Footer />
       </body>
     </html>
   )
