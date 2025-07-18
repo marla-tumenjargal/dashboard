@@ -17,7 +17,7 @@ export interface BlogPost {
         title: 'airplanes windows are my favorite ordinary thing. ',
         year: '2025',
         category: 'reflections',
-        content: `Co:Create was a collaborative design initiative that brought together designers, developers, and creative professionals to explore the intersection of technology and human creativity. The project focused on developing new methodologies for cross-disciplinary collaboration in the digital age.
+        content: `was a collaborative design initiative that brought together designers, developers, and creative professionals to explore the intersection of technology and human creativity. The project focused on developing new methodologies for cross-disciplinary collaboration in the digital age.
   
   Our approach centered around creating shared spaces where different creative disciplines could converge and inform each other. We developed a series of workshops, tools, and frameworks that enabled more effective communication between team members with diverse skill sets and perspectives.
   
