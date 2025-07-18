@@ -24,7 +24,7 @@ export default function Hero() {
 
                     <div className="hero-row">
                     <p className="hero-name">✿</p>
-                    <p className="hero-location">salt lake city // sf</p>
+                    <p className="hero-location">salt lake city // san francisco</p>
                     </div>
                     
                     <p className="hero-name">Marla Tumenjargal</p>
@@ -39,7 +39,7 @@ export default function Hero() {
                         <div className="section">
                             <p className="section-title">currently i'm:</p>
                             <ul style={{ fontSize: "1rem" }}>
-                                <li>taking <strong>CS 61A (Structure and Interpretation of Computer Programs), DATA C104 (Human Contexts and Ethics of Data)</strong>, English R1B, & Math 54</li>
+                                <li>taking <strong>CS 61A (Structure and Interpretation of Computer Programs), CS 70, Data 94</strong>, and COMLIT R1B</li>
                                 <li>building <strong>eikon</strong> (a whimsical, for-fun café game)</li>
                                 <li> penning my <a href="/writing" className="underline">thoughts</a> on tech, design, and society</li>
                             </ul>
