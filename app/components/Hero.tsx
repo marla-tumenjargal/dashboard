@@ -39,7 +39,7 @@ export default function Hero() {
                         <div className="section">
                             <p className="section-title">currently i'm:</p>
                             <ul style={{ fontSize: "1rem" }}>
-                                <li>taking <strong>CS 61A (Structure & Interpretation of Computer Programs), EECS 16A (), Data 94 (Computational Thinking & Social Dynamics) </strong>, Math 54, and COMLIT R1B</li>
+                                <li>taking <strong>CS 61A (Structure & Interpretation of Computer Programs), Data 94 (Computational Thinking & Social Dynamics) </strong>, Math 54, and COMLIT R1B</li>
                                 <li>building <strong>eikon</strong> (a whimsical, for-fun café game)</li>
                                 <li> penning my <a href="/writing" className="underline">thoughts</a> on tech, design, and society</li>
                             </ul>
