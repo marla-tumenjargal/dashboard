@@ -28,19 +28,17 @@
   color: #4f46e5;
 }
 
-/* Layout */
 .projects-main-container {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  position: relative;
+  max-width: 100%; /* ensure full width */
+  padding-left: 2rem;  /* add left padding */
+  padding-right: 2rem; /* add right padding */
+  gap: 1.5rem; /* a bit more vertical space */
 }
 
 .projects-item {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
 }
+
 
 .projects-content {
   display: flex;

@@ -106,9 +106,6 @@ In a world designed to capture and monetize your attention, choosing how to spen
 
   return (
     <div className="writing-page">
-      <button onClick={handleBackClick} className="writing-back-button">
-        ← back
-      </button>
 
       <div className="writing-main-container">
         <div className="writing-header">

@@ -4,11 +4,11 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&display=swap');
 
 .writing-page {
-  font-family: 'Public Sans', sans-serif;
-  margin: 2rem auto 0;
-  padding: 0 1rem;
-  max-width: 1000px;
-  min-height: 100vh;
+  max-width: 80vw;       /* about 98% of viewport width */
+  width: 80vw;           /* same as max-width for consistency */
+  padding-left: 3rem;    /* left padding for breathing room */
+  padding-right: 1rem;   /* smaller right padding, since width is less than full */
+  margin: 2rem auto 0;   /* center horizontally */
   box-sizing: border-box;
 }
 

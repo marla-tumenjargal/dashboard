@@ -1,0 +1,210 @@
+/* Global background color */
+body {
+  background-color: #fafaf9;
+  margin: 0;
+  padding: 0;
+}
+
+.hover-underline-link {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  color: #000000;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  text-decoration: none; /* no underline by default */
+  transition: color 0.2s ease;
+}
+
+.hero-container {
+  max-width: 900px; /* or wider */
+  margin-left: auto;
+  margin-right: auto;
+  /* add background, padding, etc if you want */
+}
+
+.hover-underline-link:hover {
+  color: #111827;
+}
+
+/* underline bar under text only */
+.hover-underline-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -0.51px;          /* reduced space between text baseline and underline */
+  height: 1.5px;            /* thickness of underline */
+  background-color: #393939;
+  opacity: 0;               /* invisible by default */
+  transition: opacity 0.3s ease;
+  border-radius: 1px;       /* slight rounding, optional */
+}
+
+.hover-underline-link:hover::after {
+  opacity: 1;               /* fade in underline on hover */
+}
+
+/* arrow styles */
+.hover-underline-link .email-arrow {
+  flex-shrink: 0;
+  color: #626262;
+  transition: transform 0.2s ease, color 0.2s ease;
+  text-decoration: none; /* prevent underline on arrow */
+}
+
+.hover-underline-link:hover .email-arrow {
+  transform: translate(2px, -2px);
+  color: #111827;
+}
+
+/* Background video styles */
+.background-video-container {
+  position: fixed;
+  top: 40%; /* POSITIONING: moved up from center (was 50%) */
+  right: 2vw; /* POSITIONING: shifted more to the right (was 10vw) */
+  transform: translateY(-50%); /* centers the video vertically */
+  width: 85vw; /* SIZE: increased from 75vw to 85vw for a bigger video */
+  height: 110vh; /* SIZE: increased from 100vh to 110vh for a bigger video */
+  z-index: -1; /* behind all content */
+  overflow: hidden;
+  pointer-events: none; /* prevents video from intercepting clicks */
+  border-radius: 12px; /* optional: rounded corners for a softer look */
+}
+
+.background-video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* changed from cover to contain to prevent cutoff */
+  opacity: 0.6; /* slightly more transparent */
+}
+
+/* NEW: Hero section styles for horizontal layout */
+.hero-section {
+  /* Remove container constraints to allow overflow */
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  overflow-x: auto;
+  padding: 20px 0;
+}
+
+.hero-row {
+  padding-left: 1.5vw; 
+  display: inline-flex;         /* or flex */
+  align-items: center;    
+  margin-left: 0;
+}
+
+.hero-row p {
+  margin-left: 0;
+  font-size: 1.3rem;
+  font-weight: 400;
+  font-family: "HK Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.hero-images-container {
+  display: flex;
+  gap: 40px; /* space between folders */
+  padding-left: calc(50vw - 450px + 120px); /* align with text container left edge */
+  padding-right: 20px;
+  min-width: max-content; /* prevent wrapping */
+  justify-content: flex-start;
+}
+
+.hero-image-wrapper {
+  position: relative;
+  display: inline-block;
+  flex-shrink: 0; /* prevent compression */
+  cursor: none; /* hide default cursor */
+}
+
+.hero-image-wrapper:hover {
+  cursor: none; /* ensure cursor stays hidden on hover */
+}
+
+.hero-sample-image {
+  width: 300px; /* adjust size */
+  height: auto;
+  object-fit: contain;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Show original image by default */
+.original-image {
+  opacity: 1;
+  position: relative; /* keep normal flow for original */
+  z-index: 1;
+}
+
+/* Hide active image by default */
+.active-image {
+  opacity: 0;
+  z-index: 2;
+}
+
+/* View text overlay */
+.view-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 3;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+/* Custom cursor that follows mouse */
+.custom-cursor {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 3px 6px;
+  border-radius: 8px;
+  font-size: 11px;
+  font-weight: 500;
+  z-index: 9999;
+  pointer-events: none;
+  white-space: nowrap;
+  transition: none;
+}
+
+/* On hover, switch to active image */
+.hero-image-wrapper:hover .original-image {
+  opacity: 0;
+}
+
+.hero-image-wrapper:hover .active-image {
+  opacity: 1;
+}
+
+/* Optional: Add scroll behavior for mobile */
+@media (max-width: 768px) {
+  .background-video-container {
+    width: 60vw; /* increased from 50vw to 60vw for mobile */
+    height: 35vh; /* increased from 30vh to 35vh for mobile */
+    top: 15vh; /* adjust position for mobile */
+    right: 2vw; /* closer to edge on mobile */
+    opacity: 0.4; /* more transparent on mobile for better readability */
+  }
+  
+  .hero-images-container {
+    gap: 20px;
+    padding-left: 16px; /* match mobile text padding */
+    padding-right: 10px;
+  }
+  
+  .hero-sample-image {
+    width: 250px; /* smaller on mobile */
+  }
+}

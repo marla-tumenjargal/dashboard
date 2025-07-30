@@ -1,60 +1,54 @@
 .footer {
   margin-top: 4rem;
-  padding: 0.75rem 1rem; /* Match header padding structure */
+  padding: 0.75rem 1rem;
 }
 
 @media (min-width: 640px) {
   .footer {
-    padding: 0.75rem 1.5rem; /* Match header sm breakpoint */
+    padding: 0.75rem 1.5rem;
   }
 }
 
 @media (min-width: 1024px) {
   .footer {
-    padding: 0.75rem 2rem; /* Match header lg breakpoint */
+    padding: 0.75rem 2rem;
   }
 }
 
 .footer-container {
   margin: 0 auto;
-  max-width: 80rem; /* Match header max-width */
+  max-width: 80rem;
 }
 
 .footer-content {
-  padding: 0 1rem;
+  /* Align with navigation bar's left position */
+  padding-left: 2.5rem; /* pl-10 equivalent to match navbar */
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 @media (min-width: 640px) {
   .footer-content {
-    padding: 0 1.5rem; /* Match header nav-content padding */
+    padding-left: 2.5rem;
   }
 }
 
 @media (min-width: 1024px) {
   .footer-content {
-    padding: 0 2rem; /* Match header nav-content padding */
+    padding-left: 2.5rem;
   }
 }
 
 .footer-inner {
   display: flex;
-  height: 4rem; /* Match header nav-inner height */
+  height: 4rem;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end; /* Align email to the right */
   gap: 2rem;
 }
 
-/* Left Section - Copyright */
+/* Remove left section since signature moved below */
 .footer-left {
-  display: flex;
-  align-items: center;
-}
-
-.copyright {
-  font-size: 0.875rem;
-  color: #626262;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  display: none;
 }
 
 /* Center Section - Links */
@@ -66,7 +60,7 @@
 
 @media (max-width: 768px) {
   .footer-center {
-    display: none; /* Hide on mobile, similar to header desktop nav */
+    display: none;
   }
 }
 
@@ -129,6 +123,14 @@
 
 .footer-email:hover .email-arrow {
   transform: translate(2px, -2px);
+}
+
+/* New signature section below the line */
+.footer-signature {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: flex-start; /* Align to the left, matching navbar alignment */
 }
 
 /* Mobile Footer Menu - Clean version without background */

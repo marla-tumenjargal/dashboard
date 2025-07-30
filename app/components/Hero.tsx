@@ -18,7 +18,6 @@ export default function Hero() {
 
     return (
         <>
-            <Header />
             <div className="hero-container">
                 <div className="hero-header">
 

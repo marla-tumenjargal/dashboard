@@ -21,9 +21,6 @@ export default function ProjectsPage() {
 
   return (
     <div className="projects-page">
-      <button onClick={handleBackClick} className="projects-back-button">
-        ← back
-      </button>
 
       <div className="projects-main-container">
         <div className="projects-item">

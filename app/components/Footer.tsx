@@ -1,4 +1,5 @@
 import { ArrowUpRight, Linkedin, FileText, Github } from "lucide-react"
+import Image from "next/image"
 import "./footer.css"
 
 export default function Footer() {
@@ -7,11 +8,6 @@ export default function Footer() {
             <div className="footer-container">
                 <div className="footer-content">
                     <div className="footer-inner">
-                        {/* Left Section - Copyright */}
-                        <div className="footer-left">
-                            <span className="copyright">© 2025 - Marla Tumenjargal </span>
-                        </div>
-
                         {/* Right Section - Email */}
                         <div className="footer-right">
                             <a 
@@ -22,6 +18,17 @@ export default function Footer() {
                                 <ArrowUpRight className="email-arrow" />
                             </a>
                         </div>
+                    </div>
+                    
+                    {/* Signature below the line */}
+                    <div className="footer-signature">
+                        <Image
+                            src="/signature3.png"
+                            alt="Marla Tumenjargal signature - 2025 (C)"
+                            width={200}
+                            height={50}
+                            className="object-contain"
+                        />
                     </div>
                 </div>
 
