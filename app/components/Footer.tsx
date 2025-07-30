@@ -11,17 +11,17 @@ export default function Footer() {
                         {/* Right Section - Email */}
                         <div className="footer-right">
                             <a 
-                                href="mailto:tumearla@gmail.com" 
+                                href="mailto:marlatumenjargal@berkeley.edu" 
                                 className="footer-email"
                             >
-                                tumearla@gmail.com
+                                marlatumenjargal@berkeley.edu
                                 <ArrowUpRight className="email-arrow" />
                             </a>
                         </div>
                     </div>
                     
-                    {/* Signature below the line */}
-                    <div className="footer-signature">
+                    {/* Signature below the line - with tighter spacing */}
+                    <div className="footer-signature" style={{ paddingTop: '0.25rem' }}>
                         <Image
                             src="/signature3.png"
                             alt="Marla Tumenjargal signature - 2025 (C)"
@@ -32,7 +32,7 @@ export default function Footer() {
                     </div>
                 </div>
 
-                {/* Mobile Footer Menu - Similar to header mobile menu */}
+                {/* Mobile Footer Menu */}
                 <div className="mobile-footer-menu">
                     <div className="mobile-footer-content">
                         <a 

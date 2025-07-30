@@ -1,6 +1,7 @@
 .footer {
-  margin-top: 4rem;
+  margin-top: -6rem;
   padding: 0.75rem 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 @media (min-width: 640px) {
@@ -21,9 +22,7 @@
 }
 
 .footer-content {
-  /* Align with navigation bar's left position */
-  padding-left: 2.5rem; /* pl-10 equivalent to match navbar */
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-left: 2.5rem; 
 }
 
 @media (min-width: 640px) {
@@ -40,7 +39,7 @@
 
 .footer-inner {
   display: flex;
-  height: 4rem;
+  height: 2rem;
   align-items: center;
   justify-content: flex-end; /* Align email to the right */
   gap: 2rem;
@@ -127,7 +126,6 @@
 
 /* New signature section below the line */
 .footer-signature {
-  padding-top: 1rem;
   padding-bottom: 1rem;
   display: flex;
   justify-content: flex-start; /* Align to the left, matching navbar alignment */
