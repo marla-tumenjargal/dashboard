@@ -4,6 +4,7 @@ import './globals.css';
 import Header from './components/Navigation';
 import Footer from './components/Footer';
 import { useState, useEffect } from 'react';
+import Head from 'next/head';
 
 export default function RootLayout({
   children,
@@ -27,6 +28,11 @@ export default function RootLayout({
 
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/header.png" type="image/png" />
+        <link rel="shortcut icon" href="/header.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/header.png" />
+      </head>
       <body className="flex flex-col min-h-screen relative">
         {/* Conditional vertical line - only show after scrapbook */}
         {showNavigation && (

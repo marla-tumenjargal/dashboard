@@ -45,7 +45,7 @@ export default function Hero() {
                         </div>
 
                         <div className="section">
-                            <p className="section-title">previously, i was:</p>
+                            <p className="section-title"><strong>previously, i was: </strong></p>
                             <ul>
 
                             <li>scaling AI/CS education for 3k+ girls @ <a href="https://www.instagram.com/stembridge.inc/" target="_blank" rel="noopener noreferrer" className="underline">stembridgeinc</a></li>

@@ -72,7 +72,7 @@ body {
 /* Background video styles */
 .background-video-container {
   position: fixed;
-  top: 40%; /* POSITIONING: moved up from center (was 50%) */
+  top: 50%; /* POSITIONING: moved up from center (was 50%) */
   right: 2vw; /* POSITIONING: shifted more to the right (was 10vw) */
   transform: translateY(-50%); /* centers the video vertically */
   width: 95vw; /* SIZE: increased from 75vw to 85vw for a bigger video */
