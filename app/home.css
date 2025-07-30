@@ -1,8 +1,20 @@
-/* Global background color */
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap');
+
 body {
   background-color: #fafaf9;
   margin: 0;
   padding: 0;
+}
+
+.hero-name {
+  font-size: 1.5rem;
+  font-weight: 400; /* or 800 if you prefer extra bold */
+  font-family: 'Public Sans', sans-serif;
+  color: #111827;
+  letter-spacing: -0.03em;
+  padding-bottom: 0.2rem;
+  margin: 0;
 }
 
 .hover-underline-link {
@@ -63,7 +75,7 @@ body {
   top: 40%; /* POSITIONING: moved up from center (was 50%) */
   right: 2vw; /* POSITIONING: shifted more to the right (was 10vw) */
   transform: translateY(-50%); /* centers the video vertically */
-  width: 85vw; /* SIZE: increased from 75vw to 85vw for a bigger video */
+  width: 95vw; /* SIZE: increased from 75vw to 85vw for a bigger video */
   height: 110vh; /* SIZE: increased from 100vh to 110vh for a bigger video */
   z-index: -1; /* behind all content */
   overflow: hidden;
@@ -207,4 +219,24 @@ body {
   .hero-sample-image {
     width: 250px; /* smaller on mobile */
   }
+
+  .hero-name {
+    font-size: 1rem;
+    font-weight: 700 !important; /* Use 700 (bold) with !important to override */
+    font-family: 'DM Sans', sans-serif;
+    color: #111827;
+    letter-spacing: -0.03em;
+    margin: 0;
 }
+
+
+.section-title {
+    font-weight: 600 !important; /* Use 600 with !important */
+    color: #1f2937;
+    font-size: 1.05rem;
+    margin-bottom: 0.35rem;
+    text-transform: lowercase;
+}
+
+}
+

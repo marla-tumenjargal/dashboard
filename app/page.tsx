@@ -1,13 +1,18 @@
+'use client';
 
-"use client";
-
-import { useCallback, useEffect, useState } from "react";
+import React, { useState, useCallback, useEffect } from 'react';
 import { ArrowUpRight } from "lucide-react";
-import './page.css';
+import ScrapbookMoment from './ScrapbookMoment';
+import './home.css';
 
-export default function Page() {
+export default function HomePage() {
+  const [showScrapbook, setShowScrapbook] = useState<boolean>(true);
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const [isHovering, setIsHovering] = useState(false);
+
+  const handleScrapbookComplete = (): void => {
+    setShowScrapbook(false);
+  };
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
@@ -29,6 +34,11 @@ export default function Page() {
   const handleMouseEnter = () => setIsHovering(true);
   const handleMouseLeave = () => setIsHovering(false);
 
+  if (showScrapbook) {
+    return <ScrapbookMoment onComplete={handleScrapbookComplete} />;
+  }
+
+  // Main portfolio page after scrapbook
   return (
     <>
       {/* Custom cursor */}
@@ -59,11 +69,11 @@ export default function Page() {
 
       {/* Bio text container */}
       <div className="text-sm leading-relaxed space-y-4 pl-4 pt-10 font-footer max-w-[650px] mx-auto">
-        <p className="text-xs font-light tracking-wide text-gray-600">
+        <p className="text-xs font-light tracking-wide text-gray-500" style={{paddingLeft: 2, marginBottom: 5}}>
           salt lake city // san francisco
         </p>
 
-        <p className="text-xl">
+        <p className="hero-name">
           Marla Tumenjargal
         </p>
 
@@ -74,16 +84,14 @@ export default function Page() {
         </p>
 
         <div>
-          <p className="font-medium">currently, i'm:</p>
+          <p><strong>currently, i'm:</strong></p>
           <ul className="list-disc list-inside space-y-1 ml-0">
             <li>
               taking CS 61A (Structure & Interpretation of Computer Programs),
               Data 94 (Computational Thinking & Social Dynamics), Math 54, and
               Comparative Literature R1B
             </li>
-            <li>working on [some sort of data and machine learning related project]</li>
-            <li>penning my thoughts on tech, design, and society</li>
-            <li>looking for opportunities at cal</li>
+            <li>working on thoughtpieces (writing) on design, tech, and society</li>
           </ul>
         </div>
 
@@ -120,7 +128,7 @@ export default function Page() {
                 rel="noopener noreferrer"
                 className="hover-underline-link"
               >
-                marketing intern for 35k+ @ U.S. Embassy in Mongolia&apos;s EducationUSA&nbsp;
+                marketing intern for 35k+ @ U.S. Embassy in Mongolia's EducationUSA&nbsp;
                 <ArrowUpRight className="email-arrow" />
               </a>
             </li>

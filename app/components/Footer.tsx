@@ -8,6 +8,11 @@ export default function Footer() {
             <div className="footer-container">
                 <div className="footer-content">
                     <div className="footer-inner">
+                        {/* Left Section - Copyright */}
+                        <div className="footer-left">
+                            2025 - Marla Tumenjargal
+                        </div>
+                        
                         {/* Right Section - Email */}
                         <div className="footer-right">
                             <a 
@@ -18,17 +23,6 @@ export default function Footer() {
                                 <ArrowUpRight className="email-arrow" />
                             </a>
                         </div>
-                    </div>
-                    
-                    {/* Signature below the line - with tighter spacing */}
-                    <div className="footer-signature" style={{ paddingTop: '0.25rem' }}>
-                        <Image
-                            src="/signature3.png"
-                            alt="Marla Tumenjargal signature - 2025 (C)"
-                            width={200}
-                            height={50}
-                            className="object-contain"
-                        />
                     </div>
                 </div>
 

@@ -5,8 +5,6 @@ import Image from "next/image";
 
 const navItems = [
   { name: "bio", href: "/" },
-  { name: "projects", href: "/projects" },
-  { name: "writing", href: "/writing" },
 ];
 
 const externalLinks = [
