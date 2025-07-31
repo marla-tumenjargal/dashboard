@@ -25,7 +25,7 @@ const ScrapbookMoment: React.FC<ScrapbookMomentProps> = ({ onComplete }) => {
         // Complete after fade out finishes
         const completeTimer = setTimeout(() => {
           onComplete?.();
-        }, 200); // Wait for fade transition to complete
+        }, 100); // Wait for fade transition to complete
         return () => clearTimeout(completeTimer);
       }, 1100); // Signature display duration - 0.8 seconds
       return () => clearTimeout(fadeTimer);

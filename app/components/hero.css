@@ -294,6 +294,9 @@ body,
     .hero-image-wrapper {
         width: 18rem;
     }
+    .hero-container {
+        
+    }
 }
 
 .hero-top-row {
@@ -321,3 +324,4 @@ body,
     letter-spacing: -0.03em;
     margin: 0;
 }
+
