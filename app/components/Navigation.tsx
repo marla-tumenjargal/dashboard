@@ -5,11 +5,10 @@ import Image from "next/image";
 
 const navItems = [
   { name: "bio", href: "/" },
-  { name: "projects", href: "/projects"}
 ];
 
 const externalLinks = [
-  { name: "resume", href: "https://drive.google.com/file/d/1sc43YITFqWx4z5kR0m8RIA5K59otKl9h/view?usp=sharing" },
+  { name: "resume", href: "./MARLA_TUMENJARGAL_RESUME.pdf" },
   { name: "linkedin", href: "https://www.linkedin.com/in/marla-tumenjargal/" },
   { name: "github", href: "https://github.com/marla-tumenjargal" },
 ];
