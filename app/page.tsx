@@ -78,9 +78,9 @@ export default function HomePage() {
         </p>
 
         <p>
-          developer and undergraduate @ uc berkeley studying computer science and
-          (planned) minor in data science. interested in human-centered computing
-          & design, computer vision, and mitigating data bias with AI.
+          hello there! i'm a developer and undergraduate @ uc berkeley studying <strong>computer science</strong> and
+          (planned) minor in data science or business (we'll see!). interested in human-centered computing
+          & ux design, entrepreneurship, computer vision, and mitigating data bias with AI.
         </p>
 
         <div>
@@ -88,7 +88,7 @@ export default function HomePage() {
           <ul className="list-disc list-inside space-y-1 ml-0">
             <li>
               taking CS 61A (Structure & Interpretation of Computer Programs),
-              Data 94 (Computational Thinking & Social Dynamics), Math 54, and
+              Data 94 (Computational Thinking & Social Dynamics), Math 54 (Linear Algebra & Differential Equations), and
               Comparative Literature R1B
             </li>
             <li>working on thoughtpieces (writing) on design, tech, and society</li>
@@ -96,16 +96,16 @@ export default function HomePage() {
         </div>
 
         <div>
-          <p className="font-medium">previously, i was:</p>
+          <p className="font-medium"><strong>previously, i was:</strong></p>
           <ul className="list-disc list-inside space-y-1 ml-0">
-            <li>
+          <li>
               <a
-                href="https://www.instagram.com/stembridge.inc/"
+                href="https://educationusa.state.gov/centers/educationusa-mongolia"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover-underline-link"
               >
-                scaling AI/CS education for 3k+ girls @ stembridgeinc&nbsp;
+                marketing intern for 35k+ @ U.S. Embassy in Mongolia's EducationUSA&nbsp;
                 <ArrowUpRight className="email-arrow" />
               </a>
             </li>
@@ -123,23 +123,23 @@ export default function HomePage() {
             </li>
             <li>
               <a
-                href="https://educationusa.state.gov/centers/educationusa-mongolia"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover-underline-link"
-              >
-                marketing intern for 35k+ @ U.S. Embassy in Mongolia's EducationUSA&nbsp;
-                <ArrowUpRight className="email-arrow" />
-              </a>
-            </li>
-            <li>
-              <a
                 href="https://www.linkedin.com/company/mission-math-utah/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover-underline-link"
               >
                 raising $17k for competition math @ Mission Math Utah&nbsp;
+                <ArrowUpRight className="email-arrow" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/stembridge.inc/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover-underline-link"
+              >
+                scaling AI/CS education for 3k+ girls @ stembridgeinc&nbsp;
                 <ArrowUpRight className="email-arrow" />
               </a>
             </li>

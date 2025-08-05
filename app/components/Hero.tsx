@@ -27,7 +27,7 @@ export default function Hero() {
                     </div>
                     
                     <p className="hero-name">Marla Tumenjargal</p>
-                    <p className="hero-secondary">hi hi! i'm a developer and undergraduate @ uc berkeley studying <strong>computer science</strong> and (planned) minor in data science. interested in HCI, computer vision, and mitigating data bias with AI. </p>
+                    <p className="hero-secondary">hi hi! i'm a developer and undergraduate @ uc berkeley studying computer science and (planned) minor in data science. interested in HCI, computer vision, and mitigating data bias with AI. </p>
                     <p></p>
 
                 </div>
