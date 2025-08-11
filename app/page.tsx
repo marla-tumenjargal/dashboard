@@ -38,10 +38,8 @@ export default function HomePage() {
     return <ScrapbookMoment onComplete={handleScrapbookComplete} />;
   }
 
-  // Main portfolio page after scrapbook
   return (
     <>
-      {/* Custom cursor */}
       {isHovering && (
         <div 
           className="custom-cursor"
@@ -54,7 +52,6 @@ export default function HomePage() {
         </div>
       )}
 
-      {/* Background video container */}
       <div className="background-video-container">
         <video
           autoPlay
@@ -67,7 +64,6 @@ export default function HomePage() {
         </video>
       </div>
 
-      {/* Bio text container */}
       <div className="text-sm leading-relaxed space-y-4 pl-4 pt-10 font-footer max-w-[650px] mx-auto">
         <p className="text-xs font-light tracking-wide text-gray-500" style={{paddingLeft: 2, marginBottom: 5}}>
           salt lake city // san francisco
@@ -105,7 +101,7 @@ export default function HomePage() {
                 rel="noopener noreferrer"
                 className="hover-underline-link"
               >
-                marketing intern for 35k+ @ U.S. Embassy in Mongolia's EducationUSA&nbsp;
+                digital marketing analyst for 35k+ @ U.S. Embassy in Mongolia's EducationUSA&nbsp;
                 <ArrowUpRight className="email-arrow" />
               </a>
             </li>
@@ -147,7 +143,6 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* Separate hero section container */}
       <section className="hero-container mt-20 px-6">
         <div className="hero-row">
           <p>✿ </p>

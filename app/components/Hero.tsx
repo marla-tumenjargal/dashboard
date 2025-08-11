@@ -3,7 +3,6 @@
 import "./hero.css";
 import { ArrowUpRight } from "lucide-react";
 import { useRouter } from 'next/navigation';
-import Header from './Navigation';
 
 export default function Hero() {
     const router = useRouter();

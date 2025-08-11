@@ -44,29 +44,19 @@ most importantly, i value internal validation from goals and dreams over externa
 },
     {
       id: 2,
-      title: "tech/design tools waitlist",
-      author: "tech",
+      title: "on using code as a tool for creativity",
+      author: "marla",
       blocks: "7/1/2025",
       images: ['/rnb.jpg'],
-      content: `tech/design tools waitlist
-
-The ritual has become familiar: a sleek landing page, a minimal form, and the promise that something revolutionary is coming. "Join the waitlist," they say. "Be among the first to experience the future."
-
-I have a folder in my bookmarks called "Waitlists" with 47 entries. Tools for design, productivity, AI, collaboration—each one promising to solve problems I didn't know I had. The optimism is infectious. Maybe this will be the app that finally makes everything click.
-
-But here's what I've learned from years of early access: the tools that change everything rarely announce themselves with fanfare. They slip into your workflow quietly, solving real problems so elegantly that you can't imagine working without them.
-
-The best design tools I use daily—Figma, Linear, Notion—didn't need elaborate waitlist campaigns. They simply worked better than what came before. They earned their place through utility, not hype.
-
-There's something seductive about being "among the first." It feeds our desire to be ahead of the curve, to discover the next big thing before everyone else. But productivity isn't about having the newest tools—it's about mastering the ones that serve your actual needs.
-
-I've started asking different questions before joining waitlists. Does this solve a problem I actually have? Will it integrate with my existing workflow? Can I articulate what success would look like?
-
-The answer is usually no. Most waitlist tools are solutions searching for problems, built for the excitement of building rather than the discipline of solving.
-
-The future of productivity tools isn't about accumulating more apps. It's about finding the small set of tools that disappear into your process, that enhance your thinking rather than complicate it.
-
-Maybe the most radical thing you can do is stop joining waitlists and start mastering what you already have.`
+      content: `although i don't strongly consider myself a traditionally creative person (such as within the fine arts and music), i do believe that the ability to think 
+        critically and introspectively runs far beyond silicon valley's insistence on speed, efficiency, and optimization.  
+        one such thought involves integrating creativity into computer science. and no, not in a "how can i solve this 
+        algorithm to achieve the most efficiency" or "how can i maximize cpu usage here" ways but rather in a "how can i use computer science as a tool to express design creatively?"
+        nowaday, we are so focused on creating the most optimal algorithm to some problem or maxmizing storage, speed, and optimizing GPUs for computational power (as we've seen 
+        with DeepSeek's V0 model). while such academia is deeply necessary to advancing computation, so is creating ui/ux design that is uniquely ours. 
+        by creativity, i mean expression. by no means does this mean the code must be functional because the true creativty comes from experimentation and testing out different ways to 
+        position elements and animations and text throughout the screen. being able to test various fonts and shapes and screen sizes and animations all contribute to a website's/design's overall
+        message.`
     },
     {
       id: 3,
