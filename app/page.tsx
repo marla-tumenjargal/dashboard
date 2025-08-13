@@ -43,16 +43,14 @@ export default function HomePage() {
       </div>
 
       <div className="text-sm leading-relaxed space-y-4 pl-4 pt-10 font-footer max-w-[650px] mx-auto">
-        <p className="text-xs font-light tracking-wide text-gray-500 mb-2">
-          ⟢ salt lake city // san francisco
-        </p>
 
         <p className="hero-name">Marla Tumenjargal</p>
 
         <p>
           hello, i'm marla! i'm a first-year studying <strong>computer science</strong> @ UC Berkeley. 
-          i enjoy building playful software projects using machine learning & ux design. i love tinkering with NLP, software engineering, and entrepreneurship!
+          i enjoy product-based development and building playful software projects that can make life better. i especially love tinkering with ux design + NLP! 
         </p>
+
 
         <div>
           <p><strong>currently, i'm:</strong></p>
@@ -98,9 +96,12 @@ export default function HomePage() {
         </div>
 
         <p>in my free time, i enjoy solving nyt puzzles (especially sodukus), choreographing, and tuning into the NYT's Hard Fork podcast!</p>
+        <p className="text-xs font-light tracking-wide text-gray-500 mb-2">
+          ⟢ tech stack: react, node.js, swift, java, python
+        </p>
       </div>
 
-      <section className="hero-container mt-15 pl-6">
+      <section className="hero-container mt-10 pl-6">
         <div className="hero-row">
           <p>✿ </p>
           <p>&nbsp; view my work ↓</p>
