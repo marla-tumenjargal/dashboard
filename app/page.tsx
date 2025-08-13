@@ -66,7 +66,7 @@ export default function HomePage() {
 
       <div className="text-sm leading-relaxed space-y-4 pl-4 pt-10 font-footer max-w-[650px] mx-auto">
         <p className="text-xs font-light tracking-wide text-gray-500" style={{paddingLeft: 2, marginBottom: 5}}>
-          salt lake city // san francisco
+        ⟢ salt lake city // san francisco
         </p>
 
         <p className="hero-name">
@@ -74,8 +74,9 @@ export default function HomePage() {
         </p>
 
         <p>
-          hello there, i'm marla! i'm a first-year @ UC Berkeley studying Computer Science. interested in building for-fun software engineering projects, 
-          entrepreneurship, and all things ux-design related! 
+          hello, i'm marla! i'm a first-year studying <strong>computer science</strong> @ UC Berkeley. 
+
+          i enjoy building playful software projects using machine learning & ux design. i love tinkering with NLP, software engineering, and entrepreneurship! 
           
         </p>
 
@@ -93,17 +94,17 @@ export default function HomePage() {
         <div>
           <p className="font-medium"><strong>previously, i was:</strong></p>
           <ul className="list-disc list-inside space-y-1 ml-0">
-          <li>
+          <ul>
               <a
                 href="https://educationusa.state.gov/centers/educationusa-mongolia"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover-underline-link"
               >
-                digital marketing analyst for 35k+ @ U.S. Embassy in Mongolia's EducationUSA&nbsp;
+                digital marketing analyst @ U.S. Embassy in Mongolia's EducationUSA&nbsp;
                 <ArrowUpRight className="email-arrow" />
               </a>
-            </li>
+            </ul>
             <li>
               <a href="/research_publication.pdf" className="hover-underline-link">
                 researching bcrypt for secure password storage&nbsp;
