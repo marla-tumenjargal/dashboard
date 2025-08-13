@@ -143,6 +143,7 @@ export default function HomePage() {
         </div>
       </div>
 
+      {/* Separate hero section container */}
       <section className="hero-container mt-20 px-6">
         <div className="hero-row">
           <p>✿ </p>
