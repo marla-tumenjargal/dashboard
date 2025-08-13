@@ -48,7 +48,7 @@ export default function HomePage() {
 
         <p>
           hello, i'm marla! i'm a first-year studying <strong>computer science</strong> @ UC Berkeley. 
-          i enjoy product-based development and building playful software projects that can make life better. i especially love tinkering with ux design + NLP! 
+          i enjoy building playful software projects that can make life better and product-based development. i especially love tinkering with ux design + NLP! 
         </p>
 
 
