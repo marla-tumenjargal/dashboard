@@ -38,12 +38,6 @@ body {
   transition: color 0.2s ease;
 }
 
-.hero-container {
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 2rem;
-}
 
 .hover-underline-link:hover {
   color: #111827;
@@ -103,14 +97,14 @@ body {
 
 /* Hero section styles - NO horizontal scroll */
 .hero-section {
-  width: 100%;
-  max-width: 160%;
+  max-width: 100%;
   overflow-x: hidden;
-  padding: 20px 0;
+  padding: 15px 0;
 }
 
 .hero-row {
   padding-left: 1.5vw; 
+  max-width: 150%;
   display: inline-flex;
   align-items: center;    
   margin-left: 0;
@@ -136,7 +130,7 @@ body {
 .hero-image-wrapper {
   position: relative;
   display: inline-block;
-  max-width: 100%;
+  max-width: 150%;
   flex-shrink: 0;
   cursor: none;
 }
@@ -146,7 +140,7 @@ body {
 }
 
 .hero-sample-image {
-  width: 200px;
+  width: 900px;
   max-width: 100%;
   height: auto;
   object-fit: contain;

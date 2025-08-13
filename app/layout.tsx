@@ -12,17 +12,25 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   const [showNavigation, setShowNavigation] = useState(false);
+  const [isFullWindow, setIsFullWindow] = useState(true);
 
   useEffect(() => {
-    // Listen for a custom event when scrapbook completes
     const handleScrapbookComplete = () => {
       setShowNavigation(true);
     };
-
     window.addEventListener('scrapbook-complete', handleScrapbookComplete);
-    
+
+    const checkFullWindow = () => {
+      // Show line if width is large enough (Mac full-size ~1440px+)
+      setIsFullWindow(window.innerWidth >= 1440);
+    };
+
+    checkFullWindow();
+    window.addEventListener('resize', checkFullWindow);
+
     return () => {
       window.removeEventListener('scrapbook-complete', handleScrapbookComplete);
+      window.removeEventListener('resize', checkFullWindow);
     };
   }, []);
 
@@ -34,32 +42,24 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/header.png" />
       </head>
       <body className="flex flex-col min-h-screen relative">
-        {/* Conditional vertical line - only show after scrapbook */}
-        {showNavigation && (
-          <div className="fixed top-0 bottom-0 left-[calc(5vw+theme(spacing.1)+var(--nav-width,150px))] w-px bg-gray-300 z-10" />
+        {/* Show line if scrapbook done AND full window */}
+        {showNavigation && isFullWindow && (
+          <div className="fixed top-0 bottom-0 left-[calc(4vw+theme(spacing.1)+var(--nav-width,150px))] w-px bg-gray-300 z-10" />
         )}
-        
-        {/* Main area: nav + page content side by side */}
+
         <div className="flex flex-grow min-h-0">
-          {/* Left: Navigation container - only show after scrapbook */}
           {showNavigation && (
-            <div className="flex flex-col h-full pt-16 pl-[5vw] pr-10">
+            <div className="flex flex-col h-full pt-19 pl-[5vw] pr-10">
               <Header />
             </div>
           )}
 
-          {/* Right: Page content */}
           <main className={`flex-1 px-6 py-24 ${showNavigation ? 'max-w-3xl' : 'max-w-none'}`}>
             {children}
           </main>
         </div>
 
-        {/* Footer - only show after scrapbook */}
-        {showNavigation && (
-          <div className="pt-8">
-            <Footer />
-          </div>
-        )}
+        {showNavigation && <div className="pt-8"><Footer /></div>}
       </body>
     </html>
   );
