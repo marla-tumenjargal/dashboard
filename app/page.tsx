@@ -74,20 +74,19 @@ export default function HomePage() {
         </p>
 
         <p>
-          hello there! i'm a developer and undergraduate @ uc berkeley studying <strong>computer science</strong> and
-          (planned) minor in data science or business (we'll see!). interested in human-centered computing
-          & ux design, entrepreneurship, computer vision, and mitigating data bias with AI.
+          hello there, i'm marla! i'm a first-year @ UC Berkeley studying Computer Science. interested in building for-fun software engineering projects, 
+          entrepreneurship, and all things ux-design related! 
+          
         </p>
 
         <div>
           <p><strong>currently, i'm:</strong></p>
           <ul className="list-disc list-inside space-y-1 ml-0">
             <li>
-              taking CS 61A (Structure & Interpretation of Computer Programs),
-              Data 94 (Computational Thinking & Social Dynamics), Math 54 (Linear Algebra & Differential Equations), and
-              Comparative Literature R1B
+              building eikon (a UI component + pinterest moodboard AI generator)
             </li>
-            <li>working on thoughtpieces (writing) on design, tech, and society</li>
+            <li>learning about machine learning, nlp, and cybersecurity</li>
+            <li>penning my thoughts on design, tech, and society</li>
           </ul>
         </div>
 
@@ -141,9 +140,13 @@ export default function HomePage() {
             </li>
           </ul>
         </div>
+
+
+        <p> 
+        in my free time, i enjoy solving nyt puzzles (especially sodukud + wordles 😌), choreographing, and tuning into the NYT's Hard Fork podcast! </p>
       </div>
 
-      {/* Separate hero section container */}
+
       <section className="hero-container mt-20 px-6">
         <div className="hero-row">
           <p>✿ </p>
