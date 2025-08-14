@@ -47,7 +47,7 @@ export default function HomePage() {
         <p className="hero-name">Marla Tumenjargal</p>
 
         <p>
-          hello! i'm marla, a first-year studying <strong>computer science</strong> @ UC Berkeley. 
+          hello! i'm marla, a first-year studying <strong>computer science</strong> @ UC Berkeley. 🐻
           i enjoy building playful software projects that can make life better. i especially love product-based development and tinkering with ux design, web dev, + ML! 
         </p>
 
