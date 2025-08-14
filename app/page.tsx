@@ -58,7 +58,7 @@ export default function HomePage() {
             <li>
               building <a href="https://github.com/marla-tumenjargal/eikon" target="_blank" rel="noopener noreferrer" className="underline hover:no-underline">
                 eikon
-              </a> (a UI component + pinterest moodboard AI generator)
+              </a> (a UI component + pinterest moodboard AI agent)
             </li>
             <li>learning about machine learning, nlp, and cybersecurity</li>
           </ul>
