@@ -95,7 +95,7 @@ export default function HomePage() {
           </ul>
         </div>
 
-        <p>in my free time, i enjoy solving nyt puzzles (especially sodukus), choreographing, and tuning into the NYT's Hard Fork podcast!</p>
+        <p>in my free time, i enjoy solving nyt puzzles (especially sodukus) & choreographing!</p>
         <p className="text-xs font-light tracking-wide text-gray-500 mb-2">
           ⟢ tech stack: react, node.js, swift, java, python
         </p>
@@ -112,10 +112,6 @@ export default function HomePage() {
             <div className="hero-image-wrapper" onClick={handleProjectsClick} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
               <img src="/projectsfolder.png" alt="projects folder" className="hero-sample-image original-image" />
               <img src="/activeprojectsfolder.png" alt="active projects folder" className="hero-sample-image active-image" />
-            </div>
-            <div className="hero-image-wrapper" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-              <img src="/uifolder.png" alt="UI folder" className="hero-sample-image original-image" />
-              <img src="/activeuifolder.png" alt="active UI folder" className="hero-sample-image active-image" />
             </div>
             <div className="hero-image-wrapper" onClick={handleWritingClick} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
               <img src="/writingfolder.png" alt="writing folder" className="hero-sample-image original-image" />
