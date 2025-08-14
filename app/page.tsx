@@ -61,6 +61,7 @@ export default function HomePage() {
               </a> (a UI component + pinterest moodboard AI agent)
             </li>
             <li>learning about machine learning, nlp, and cybersecurity</li>
+            <li>penning my thoughts on tech</li>
           </ul>
         </div>
 
