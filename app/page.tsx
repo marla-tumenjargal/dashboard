@@ -95,9 +95,9 @@ export default function HomePage() {
           </ul>
         </div>
 
-        <p>in my free time, i enjoy solving nyt puzzles (especially sodukus) & choreographing!</p>
+        <p>in my free time, i enjoy solving nyt puzzles (especially sodukus) + choreographing!</p>
         <p className="text-xs font-light tracking-wide text-gray-500 mb-2">
-          ⟢ my tech stack includes react, node.js, swift, java, python
+          ⟢ my tech stack includes React, Node.js, Swift, Java, MongoDB, Python
         </p>
       </div>
 
