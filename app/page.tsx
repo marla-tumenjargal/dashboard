@@ -69,7 +69,7 @@ export default function HomePage() {
           <ul className="list-disc list-inside space-y-1 ml-0">
             <li>
               <a href="https://educationusa.state.gov/centers/educationusa-mongolia" target="_blank" rel="noopener noreferrer" className="hover-underline-link">
-                digital marketing analyst @ U.S. Embassy in Mongolia's EducationUSA&nbsp;<ArrowUpRight className="email-arrow" />
+                a digital marketing analyst @ U.S. Embassy in Mongolia's EducationUSA&nbsp;<ArrowUpRight className="email-arrow" />
               </a>
             </li>
             <li>
@@ -97,7 +97,7 @@ export default function HomePage() {
 
         <p>in my free time, i enjoy solving nyt puzzles (especially sodukus) & choreographing!</p>
         <p className="text-xs font-light tracking-wide text-gray-500 mb-2">
-          ⟢ tech stack: react, node.js, swift, java, python
+          ⟢ my tech stack includes react, node.js, swift, java, python
         </p>
       </div>
 
