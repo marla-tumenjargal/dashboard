@@ -40,15 +40,7 @@ i value internal validation from goals and dreams over external applause.  <span
   author: "marla",
   blocks: "7/1/2025",
   images: ['/rnb.jpg'],
-  content: `the other day, i asked claude to generate a few website templates. i've noticed there is a sterile "sameness" to ai-generated websites and startups focused on website-cloning/scraping (such as base44, loveable, orchids, etc). one of the core characteristics is how a button is animated (it's always a hover with a shadow, always..) 
-  
-while ai is certainly a useful tool in brainstorming new ideas for ux design, it shouldn't be our main source of inspiration. since chatbots are essentially pattern recognition regurgitation machines, it makes sense why they would excel in iterative and repetitive tasks (such as organizing a list or automating some monotonous task). 
-they optimize for famil
-
-although i don't strongly consider 
-myself a traditionally creative person (such as within the fine arts and music), <span class="highlight">i do believe that 
-the ability to think critically and introspectively runs far beyond silicon valley's insistence on 
-speed, efficiency, and optimization.</span class="highlight">
+  content: `although i don't strongly consider myself a traditionally creative person (such as within the fine arts and music), <span class="highlight">i do believe that the ability to think critically and introspectively runs far beyond silicon valley's insistence on speed, efficiency, and optimization.</span class="highlight">
 
 one such thought involves integrating creativity into computer science. and no, not in a "how can i solve this algorithm to achieve the most efficiency" or "how can i maximize cpu usage here" ways, but rather in a "how can i use computer science as a tool to express design creatively?"
 
