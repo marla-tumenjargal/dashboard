@@ -37,6 +37,16 @@ the more i continue to create and learn from others, the more i realize how much
 “human” is an odd way to describe a website’s frontend design, i know i know. but with the rise of ai-assisted coders (you may know them as vibe coderz), most (if not all) chatbots such as claude and chatgpt spit out generic designs that regurgitate all of the patterns it has recognized in its training data. in no way am i an expert on the llm process, <span class="highlight">but there is one thing i know for sure: the ability to think critically and introspectively about new problems is our most important tool to create better more readable code. </span class="highlight">`
 },
 {
+  id: 1,
+  title: "on luck",
+  author: "marla",
+  blocks: "7/11/2025",
+  images: ['/rnb.jpg'],
+  content: `preparation + opportunity = luck. 
+  
+  thats the post. `
+},
+{
   id: 2,
   title: "thoughts, in no particular order",
   author: "society",
