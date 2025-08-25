@@ -42,9 +42,7 @@ the more i continue to create and learn from others, the more i realize how much
   author: "marla",
   blocks: "7/11/2025",
   images: ['/rnb.jpg'],
-  content: `preparation + opportunity = luck. 
-  
-  thats the post.`
+  content: `<span class="highlight">preparation + opportunity = luck.</span class="highlight">`
 },
 {
   id: 3,
