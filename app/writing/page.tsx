@@ -21,7 +21,7 @@ export default function WritingPage() {
 {
   id: 1,
   title: "on using code as a tool for creativity",
-  author: "marla",
+  author: "opinion",
   blocks: "7/13/2025",
   images: ['/rnb.jpg'],
   content: `my goal as a programmer is to write elegant code. 
@@ -39,7 +39,7 @@ the more i continue to create and learn from others, the more i realize how much
 {
   id: 2,
   title: "on luck",
-  author: "marla",
+  author: "opinion",
   blocks: "7/11/2025",
   images: ['/rnb.jpg'],
   content: `<span class="highlight">preparation + opportunity = luck.</span class="highlight">`
