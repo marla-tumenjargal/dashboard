@@ -8,7 +8,7 @@ const navItems = [
 ];
 
 const externalLinks = [
-  { name: "resume", href: "https://drive.google.com/file/d/1v482f4wz601Ozl_7To21phPzfwHg6342/view?usp=sharing" },
+  { name: "resume", href: "https://drive.google.com/file/d/19O75d9YxXDIqCBSt4WZI0psZS-XVwsU6/view?usp=sharing" },
   { name: "linkedin", href: "https://www.linkedin.com/in/marla-tumenjargal/" },
   { name: "github", href: "https://github.com/marla-tumenjargal" },
 ];
