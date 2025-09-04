@@ -21,7 +21,7 @@ export default function WritingPage() {
       id: 1,
       title: "does innovation only happen when they exceed their context? (let's talk about leibniz!)",
       author: "technology",
-      blocks: "7/13/2025",
+      blocks: "9/1/2025",
       images: ['/rnb.jpg'],
       content: `
       
@@ -40,7 +40,7 @@ export default function WritingPage() {
     compute to ourselves without language (in this case, language is math + logic). binary is only concerned with 0 and 1s, on or off. 
     
     one fundamental logic behind this idea are the three laws of thought. these three laws are the law of identity, law of contradiction, and 
-    the law of excluded middle. leibniz believed all      knowledge is self evident, meaning that the mind itself already knows. for example, 
+    the law of excluded middle. leibniz believed all knowledge is self evident, meaning that the mind itself already knows. for example, 
     a triangle is self evidence because you can not comprehend of a triangle without three sides. another example is a bachelor. a bachelor 
     is always unmarried. other knowledge (he calls it empirical knowledge) is found "through" other knowledge. for example, if i say "kidney" 
     you would not intuitively correlate that with "pumping blood." most empirical knowledge drives scientific knowledge since we always
