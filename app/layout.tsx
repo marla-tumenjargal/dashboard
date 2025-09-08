@@ -21,7 +21,6 @@ export default function RootLayout({
     window.addEventListener('scrapbook-complete', handleScrapbookComplete);
 
     const checkFullWindow = () => {
-      // Show line if width is large enough (Mac full-size ~1440px+)
       setIsFullWindow(window.innerWidth >= 1440);
     };
 
@@ -41,8 +40,8 @@ export default function RootLayout({
         <link rel="shortcut icon" href="/header.png" type="image/png" />
         <link rel="apple-touch-icon" href="/header.png" />
       </head>
-      <body className="flex flex-col min-h-screen relative">
-        {/* Show line if scrapbook done AND full window */}
+      <body className="flex flex-col min-h-screen relative bg-white text-black">
+        {/* Vertical line for navigation */}
         {showNavigation && isFullWindow && (
           <div className="fixed top-0 bottom-0 left-[calc(4vw+theme(spacing.1)+var(--nav-width,150px))] w-px bg-gray-300 z-10" />
         )}
@@ -54,7 +53,9 @@ export default function RootLayout({
             </div>
           )}
 
-          <main className={`flex-1 px-6 py-24 ${showNavigation ? 'max-w-3xl' : 'max-w-none'}`}>
+          <main
+            className={`flex-1 px-6 py-24 bg-white ${showNavigation ? 'max-w-3xl' : 'max-w-none'}`}
+          >
             {children}
           </main>
         </div>
