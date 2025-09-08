@@ -22,7 +22,7 @@ export default function WritingPage() {
       title: "does innovation only happen when they exceed their context? (let's talk about leibniz!)",
       author: "technology",
       blocks: "9/1/2025",
-      images: ['/rnb.jpg'],
+      images: ['/blueruf.jpg'],
       content: `
       
     when Darwin created his Theory of Evolution, some may say that the "time was ripe." if Darwin never lived, some other scientist would have 
@@ -56,7 +56,7 @@ export default function WritingPage() {
       title: "on using code as a tool for creativity",
       author: "opinion",
       blocks: "7/13/2025",
-      images: ['/rnb.jpg'],
+      images: ['/greenblue.jpg'],
       content: `my goal as a programmer is to write elegant code. 
 
 but elegant code isn’t easy to write because it needs to be simple, readable, and efficient. in today's age, that often means maximizing storage, speed, and/or computational power (as we’ve seen with DeepSeek’s V0 model!). 
