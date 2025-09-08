@@ -1,5 +1,6 @@
 'use client';
 
+import { Analytics } from "@vercel/analytics/next"
 import './globals.css';
 import Header from './components/Navigation';
 import Footer from './components/Footer';
