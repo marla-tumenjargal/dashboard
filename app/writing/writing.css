@@ -199,14 +199,16 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 1.7;
-  color: #1f2937;
-  white-space: pre-wrap;
-  word-wrap: break-word;
+  color: #1f2937;           /* force dark text */
+  white-space: pre-wrap;     /* preserves line breaks & wraps automatically */
+  word-wrap: break-word;     /* breaks long words if needed */
+  overflow-wrap: break-word; /* additional safety for long words */
   margin: 0;
   padding: 2rem;
-  background: #fefefe;
+  background: #fefefe;       /* ensure white background */
   letter-spacing: -0.025em;
 }
+
 
 /* Highlighting Styles */
 .highlight {
