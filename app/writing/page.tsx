@@ -19,7 +19,7 @@ export default function WritingPage() {
   const articles: Article[] = [
     {
       id: 1,
-      title: "does innovation only happen when they exceed their context? (let's talk about leibniz!)",
+      title: "does innovation only happen within its context? ",
       author: "technology",
       blocks: "9/1/2025",
       images: ['/blueruf.jpg'],
