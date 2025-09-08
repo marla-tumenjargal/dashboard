@@ -5,6 +5,7 @@ import Header from './components/Navigation';
 import Footer from './components/Footer';
 import { useState, useEffect } from 'react';
 import Head from 'next/head';
+import { usePathname } from 'next/navigation';
 
 export default function RootLayout({
   children,
@@ -13,6 +14,7 @@ export default function RootLayout({
 }) {
   const [showNavigation, setShowNavigation] = useState(false);
   const [isFullWindow, setIsFullWindow] = useState(true);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScrapbookComplete = () => {
@@ -33,6 +35,9 @@ export default function RootLayout({
     };
   }, []);
 
+  const isWhiteBackgroundPage =
+    pathname?.startsWith('/projects') || pathname?.startsWith('/writing');
+
   return (
     <html lang="en">
       <head>
@@ -40,8 +45,11 @@ export default function RootLayout({
         <link rel="shortcut icon" href="/header.png" type="image/png" />
         <link rel="apple-touch-icon" href="/header.png" />
       </head>
-      <body className="flex flex-col min-h-screen relative bg-white text-black">
-        {/* Vertical line for navigation */}
+      <body
+        className={`flex flex-col min-h-screen relative ${
+          isWhiteBackgroundPage ? '!bg-white !text-black' : ''
+        }`}
+      >
         {showNavigation && isFullWindow && (
           <div className="fixed top-0 bottom-0 left-[calc(4vw+theme(spacing.1)+var(--nav-width,150px))] w-px bg-gray-300 z-10" />
         )}
@@ -53,9 +61,7 @@ export default function RootLayout({
             </div>
           )}
 
-          <main
-            className={`flex-1 px-6 py-24 bg-white ${showNavigation ? 'max-w-3xl' : 'max-w-none'}`}
-          >
+          <main className={`flex-1 px-6 py-24 ${showNavigation ? 'max-w-3xl' : 'max-w-none'}`}>
             {children}
           </main>
         </div>
