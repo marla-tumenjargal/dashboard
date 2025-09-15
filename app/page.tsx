@@ -48,20 +48,21 @@ export default function HomePage() {
 
         <p>
           hello! i'm marla, a first-year studying <strong>computer science</strong> @ UC Berkeley. 🐻
-          i enjoy building playful software projects that can make life better. i especially love product-based development and tinkering with ux design, web dev, + ML! 
+          i enjoy building playful software projects that can make life better. i especially love product-based development and tinkering with ux design, writing, and ml!
         </p>
 
 
         <div>
           <p><strong>currently, i'm:</strong></p>
           <ul className="list-disc list-inside space-y-1 ml-0">
+          
             <li>
-              building <a href="https://github.com/marla-tumenjargal/eikon" target="_blank" rel="noopener noreferrer" className="underline hover:no-underline">
-                eikon
-              </a> (a UI component + pinterest moodboard AI agent)
+            applying creative ml & ai @ <a href="https://www.callaunchpad.org/" target="_blank" rel="noopener noreferrer" className="underline hover:no-underline">
+                launchpad
+              </a> 
             </li>
             <li>learning about machine learning, nlp, and cybersecurity</li>
-            <li>penning my thoughts on tech</li>
+            <li>taking cs61a, math 54, and data 94 </li>
           </ul>
         </div>
 
