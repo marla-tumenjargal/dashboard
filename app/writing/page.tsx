@@ -33,7 +33,7 @@ export default function WritingPage() {
   3) it's important to be vulnerable with yourself and others. i’ve become more of an open book recently, and its been v fulfilling :D
 
   4) it’s not entirely useless to have conversations with people you know you’ll never see again. if anything, small talk has helped me 
-     express myself better. i’ve done so coffee chats and tech/behavorial interviews + social mixers and through it all, i have a 
+     express myself better. i’ve done so many coffee chats and tech/behavorial interviews + social mixers. through it all, i have a 
      different perspective on small talk. i like to think of it as practice and getting comfortable with my own voice and the types of 
      jokes that i make. i used to talk in a way that was fearful of perception. let me explainn. especially in hs, i spoke by keeping 
      the thoughts of what others may think at the forefront of my mind. nowadays, i speak whats on my mind and if someone doesn’t like 
@@ -43,12 +43,12 @@ export default function WritingPage() {
   5) <span class="highlight">hypocrisy erodes trust.</span class="highlight"> given the recent and unfortunate news in orem, utah @ Utah Valley University, i've become saddened 
     by how polarized US politics has become. 
     
-    why are we defining the value of someone's life on their beliefs? <
+    our opinions do not define our value as humans. 
     why do we uphold an idea only when it relates to those with the same beliefs as us? 
 
     <span class="highlight">the first amendment allows all of us to speak freely, to debate freely, and to express ourselves in a safe environment. college</span class="highlight">
-    <span class="highlight">campuses must encourage critical thinking and debate, especially with topics we disagree with, because that is how we determine </span class="highlight">
-    <span class="highlight">the concepts we each individually believe are "correct." our opinions do not define our value as humans. we must work towards creating </span class="highlight">
+    <span class="highlight">campuses must encourage critical thinking and debate, especially in regards with topics we disagree with, bc that is how we determine </span class="highlight">
+    <span class="highlight">the concepts we each individually believe are "correct." we must work towards creating </span class="highlight">
     <span class="highlight">spaces where everyone, not just students, are encouraged to respectfully debate one another. </span class="highlight">`
     },
     {
