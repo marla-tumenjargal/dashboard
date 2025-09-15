@@ -57,7 +57,7 @@ export default function HomePage() {
           <ul className="list-disc list-inside space-y-1 ml-0">
           
             <li>
-            applying creative ml & ai @ <a href="https://www.callaunchpad.org/" target="_blank" rel="noopener noreferrer" className="underline hover:no-underline">
+            building with creative ml & ai @ <a href="https://www.callaunchpad.org/" target="_blank" rel="noopener noreferrer" className="underline hover:no-underline">
                 launchpad
               </a> 
             </li>
