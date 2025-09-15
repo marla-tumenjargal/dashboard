@@ -17,8 +17,42 @@ export default function WritingPage() {
   const [expandedArticle, setExpandedArticle] = useState<Article | null>(null);
 
   const articles: Article[] = [
+
     {
       id: 1,
+      title: "quick lessons i've learned in uni!",
+      author: "opinion",
+      blocks: "9/15/2025",
+      images: ['/greenblue.jpg'],
+      content: `🌸 small lessons i’ve learned in one of month university: 
+
+  time management is super important!
+  1) <span class="highlight">balance is everything.</span class="highlight"> make time to eat well, exercise well, study well, to be goofy with your friends, to be bored, 
+     to be stressed, to be unproductive. 
+
+  2) it's important to be vulnerable with yourself and others. i’ve become more of an open book recently, and its been v fulfilling :D
+
+  3) it’s not entirely useless to have conversations with people you know you’ll never see again. if anything, small talk has helped me 
+     express myself better. i’ve done so coffee chats and tech/behavorial interviews + social mixers and through it all, i have a 
+     different perspective on small talk. i like to think of it as practice and getting comfortable with my own voice and the types of 
+     jokes that i make. i used to talk in a way that was fearful of perception. let me explainn. especially in hs, i spoke by keeping 
+     the thoughts of what others may think at the forefront of my mind. nowadays, i speak whats on my mind and if someone doesn’t like 
+     that particular joke or such i leave it there. <span class="highlight">i find that being comfortable in my own thoughts and emotions has helped me connect </span class="highlight">
+     with people better and has become an important stepping stone of sorts to become a bit more fearless and courageous in my everyday life. 
+
+  4) <span class="highlight">hypocrisy erodes trust.</span class="highlight"> given the recent and unfortunate news in orem, utah @ Utah Valley University, i've become saddened 
+    by how polarized US politics has become. 
+    
+    why are we defining the value of someone's life on their beliefs? <
+    why do we uphold an idea only when it relates to those with the same beliefs as us? 
+
+    <span class="highlight">the first amendment allows all of us to speak freely, to debate freely, and to express ourselves in a safe environment. college</span class="highlight">
+    <span class="highlight">campuses must encourage critical thinking and debate, especially with topics we disagree with, because that is how we determine </span class="highlight">
+    <span class="highlight">the concepts we each individually believe are "correct." our opinions do not define our value as humans. we must work towards creating </span class="highlight">
+    <span class="highlight">spaces where everyone, not just students, are encouraged to respectfully debate one another. </span class="highlight">`
+    },
+    {
+      id: 3,
       title: "does innovation only happen within its context? ",
       author: "technology",
       blocks: "9/1/2025",
@@ -58,7 +92,7 @@ do understand good" as the opposite of evil. <span class="highlight">these are q
 interesting.</span class="highlight">`
     },
     {
-      id: 2,
+      id: 4,
       title: "on using code as a tool for creativity",
       author: "opinion",
       blocks: "7/13/2025",
@@ -76,7 +110,7 @@ the more i continue to create and learn from others, the more i realize how much
 “human” is an odd way to describe a website’s frontend design, i know i know. but with the rise of ai-assisted coders (you may know them as vibe coderz), most (if not all) chatbots such as claude and chatgpt spit out generic designs that regurgitate all of the patterns it has recognized in its training data. in no way am i an expert on the llm process, <span class="highlight">but there is one thing i know for sure: the ability to think critically and introspectively about new problems is our most important tool to create better more readable code.</span>`
     },
     {
-      id: 3,
+      id: 5,
       title: "on luck",
       author: "opinion",
       blocks: "7/11/2025",
@@ -84,7 +118,7 @@ the more i continue to create and learn from others, the more i realize how much
       content: `<span class="highlight">preparation + opportunity = luck.</span>`
     },
     {
-      id: 4,
+      id: 6,
       title: "thoughts, in no particular order",
       author: "society",
       blocks: "7/15/2025",
