@@ -23,7 +23,7 @@ export default function WritingPage() {
       title: "quick lessons i've learned in uni!",
       author: "opinion",
       blocks: "9/15/2025",
-      images: ['/greenblue.jpg'],
+      images: ['/green.jpg'],
       content: `🌸 small lessons i’ve learned in one of month university: 
 
   1) time management is super important!
