@@ -26,13 +26,13 @@ export default function WritingPage() {
       images: ['/greenblue.jpg'],
       content: `🌸 small lessons i’ve learned in one of month university: 
 
-  time management is super important!
-  1) <span class="highlight">balance is everything.</span class="highlight"> make time to eat well, exercise well, study well, to be goofy with your friends, to be bored, 
+  1) time management is super important!
+  2) <span class="highlight">balance is everything.</span class="highlight"> make time to eat well, exercise well, study well, to be goofy with your friends, to be bored, 
      to be stressed, to be unproductive. 
 
-  2) it's important to be vulnerable with yourself and others. i’ve become more of an open book recently, and its been v fulfilling :D
+  3) it's important to be vulnerable with yourself and others. i’ve become more of an open book recently, and its been v fulfilling :D
 
-  3) it’s not entirely useless to have conversations with people you know you’ll never see again. if anything, small talk has helped me 
+  4) it’s not entirely useless to have conversations with people you know you’ll never see again. if anything, small talk has helped me 
      express myself better. i’ve done so coffee chats and tech/behavorial interviews + social mixers and through it all, i have a 
      different perspective on small talk. i like to think of it as practice and getting comfortable with my own voice and the types of 
      jokes that i make. i used to talk in a way that was fearful of perception. let me explainn. especially in hs, i spoke by keeping 
@@ -40,7 +40,7 @@ export default function WritingPage() {
      that particular joke or such i leave it there. <span class="highlight">i find that being comfortable in my own thoughts and emotions has helped me connect </span class="highlight">
      with people better and has become an important stepping stone of sorts to become a bit more fearless and courageous in my everyday life. 
 
-  4) <span class="highlight">hypocrisy erodes trust.</span class="highlight"> given the recent and unfortunate news in orem, utah @ Utah Valley University, i've become saddened 
+  5) <span class="highlight">hypocrisy erodes trust.</span class="highlight"> given the recent and unfortunate news in orem, utah @ Utah Valley University, i've become saddened 
     by how polarized US politics has become. 
     
     why are we defining the value of someone's life on their beliefs? <
