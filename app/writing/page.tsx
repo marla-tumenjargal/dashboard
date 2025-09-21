@@ -32,12 +32,7 @@ export default function WritingPage() {
 
   3) it's important to be vulnerable with yourself and others. i’ve become more of an open book recently, and its been v fulfilling :D
 
-  4) it’s not entirely useless to have conversations with people you know you’ll never see again. if anything, small talk has helped me 
-     express myself better. i’ve done so many coffee chats and tech/behavorial interviews + social mixers. through it all, i have a 
-     different perspective on small talk. i like to think of it as practice and getting comfortable with my own voice and the types of 
-     jokes that i make. i used to talk in a way that was fearful of perception. let me explainn. especially in hs, i spoke by keeping 
-     the thoughts of what others may think at the forefront of my mind. nowadays, i speak whats on my mind and if someone doesn’t like 
-     that particular joke or such i leave it there. <span class="highlight">i find that being comfortable in my own thoughts and emotions has helped me connect </span class="highlight">
+  4) small talk has helped me express myself better. i find that being comfortable in my own thoughts and emotions has helped me connect </span class="highlight">
      with people better and has become an important stepping stone of sorts to become a bit more fearless and courageous in my everyday life. 
 
   5) <span class="highlight">hypocrisy erodes trust.</span class="highlight"> given the recent and unfortunate news in orem, utah @ Utah Valley University, i've become saddened 
