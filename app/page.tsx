@@ -115,10 +115,6 @@ export default function HomePage() {
               <img src="/projectsfolder.png" alt="projects folder" className="hero-sample-image original-image" />
               <img src="/activeprojectsfolder.png" alt="active projects folder" className="hero-sample-image active-image" />
             </div>
-            <div className="hero-image-wrapper" onClick={handleWritingClick} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-              <img src="/writingfolder.png" alt="writing folder" className="hero-sample-image original-image" />
-              <img src="/activewritingfolder.png" alt="active writing folder" className="hero-sample-image active-image" />
-            </div>
           </div>
         </div>
       </section>
