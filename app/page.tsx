@@ -47,13 +47,23 @@ export default function HomePage() {
         <p className="hero-name">Marla Tumenjargal</p>
 
         <p>
-          hello! i'm marla, a first-year studying <strong>computer science</strong> @ UC Berkeley. 🐻
-          i enjoy building playful software projects that can make life better. i especially love product-based development and tinkering with ux design, writing, and ml!
+          helloo! i'm marla, a computer science student @ UC Berkeley. 
         </p>
-
+        
+        <div>
+          <p><strong>a bit about me:</strong></p>
+          <ul className="list-disc list-inside space-y-1 ml-0">
+          
+            <li>
+            og from slc, utah but am in the bay area rn 
+            </li>
+            <li>i enjoy building playful software, creative writing, & all-things ux design </li>
+            <li>i hope to eventually apply CS to interdiscplinary fields (computer vision + social biases?)</li>
+          </ul>
+        </div>
 
         <div>
-          <p><strong>currently, i'm:</strong></p>
+          <p><strong>what i've been + am up to:</strong></p>
           <ul className="list-disc list-inside space-y-1 ml-0">
           
             <li>
@@ -61,14 +71,6 @@ export default function HomePage() {
                 launchpad
               </a> 
             </li>
-            <li>learning about machine learning, nlp, and cybersecurity</li>
-            <li>taking cs61a, math 54, and data 94 </li>
-          </ul>
-        </div>
-
-        <div>
-          <p className="font-medium"><strong>previously, i was:</strong></p>
-          <ul className="list-disc list-inside space-y-1 ml-0">
             <li>
               <a href="https://educationusa.state.gov/centers/educationusa-mongolia" target="_blank" rel="noopener noreferrer" className="hover-underline-link">
                 a digital marketing analyst @ U.S. Embassy in Mongolia's EducationUSA&nbsp;<ArrowUpRight className="email-arrow" />
@@ -94,10 +96,10 @@ export default function HomePage() {
                 scaling AI/CS education for 3k+ girls @ stembridgeinc&nbsp;<ArrowUpRight className="email-arrow" />
               </a>
             </li>
+            
           </ul>
         </div>
 
-        <p>in my free time, i enjoy solving nyt puzzles (especially sodukus) + choreographing!</p>
         <p className="text-xs font-light tracking-wide text-gray-500 mb-2">
           ⟢ my tech stack includes React, Node.js, Swift, Java, MongoDB, Python
         </p>
