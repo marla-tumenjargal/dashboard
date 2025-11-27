@@ -55,7 +55,7 @@ export default function HomePage() {
           <ul className="list-disc list-inside space-y-1 ml-0">
           
             <li>
-            og from salt lake city, utah but am in the bay area rn 
+            og from salt lake city, utah, but currently in the bay area!
             </li>
             <li>i hope to eventually apply CS to interdiscplinary fields (computer vision + social biases?)</li>
           </ul>
