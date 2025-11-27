@@ -47,7 +47,7 @@ export default function HomePage() {
         <p className="hero-name">Marla Tumenjargal</p>
 
         <p>
-          helloo! i'm marla, a computer science student @ UC Berkeley. 
+          helloo i'm marla, a first-year studying computer science @ UC Berkeley 🧸. i enjoy building playful software, creative writing, & all-things ux design. feel free to explore my lil corner of the internet! <a href=""></a>
         </p>
         
         <div>
@@ -55,9 +55,8 @@ export default function HomePage() {
           <ul className="list-disc list-inside space-y-1 ml-0">
           
             <li>
-            og from slc, utah but am in the bay area rn 
+            og from salt lake city, utah but am in the bay area rn 
             </li>
-            <li>i enjoy building playful software, creative writing, & all-things ux design </li>
             <li>i hope to eventually apply CS to interdiscplinary fields (computer vision + social biases?)</li>
           </ul>
         </div>
@@ -73,7 +72,7 @@ export default function HomePage() {
             </li>
             <li>
               <a href="https://educationusa.state.gov/centers/educationusa-mongolia" target="_blank" rel="noopener noreferrer" className="hover-underline-link">
-                a digital marketing analyst @ U.S. Embassy in Mongolia's EducationUSA&nbsp;<ArrowUpRight className="email-arrow" />
+                prev @ U.S. Embassy in Mongolia &nbsp;<ArrowUpRight className="email-arrow" />
               </a>
             </li>
             <li>
@@ -83,7 +82,7 @@ export default function HomePage() {
             </li>
             <li>
               <a href="/projects" className="hover-underline-link">
-                building iOS tools for nomadic learners @ IntellectX&nbsp;<ArrowUpRight className="email-arrow" />
+                building full-stack iOS for nomadic learners @ IntellectX&nbsp;<ArrowUpRight className="email-arrow" />
               </a>
             </li>
             <li>
