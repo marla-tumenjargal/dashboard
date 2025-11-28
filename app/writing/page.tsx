@@ -20,32 +20,26 @@ export default function WritingPage() {
 
     {
       id: 1,
-      title: "quick lessons i've learned in uni!",
-      author: "opinion",
-      blocks: "9/15/2025",
+      title: "is the turing test an appropriate measure of machine intelligence?",
+      author: "society and technology",
+      blocks: "11/26/2025",
       images: ['/green.jpg'],
-      content: `🌸 small lessons i’ve learned in one of month university: 
+      content: `
+! read background information for more context to turing test, strong ai, and weak ai 
 
-  1) time management is super important!
-  2) <span class="highlight">balance is everything.</span class="highlight"> make time to eat well, exercise well, study well, to be goofy with your friends, to be bored, 
-     to be stressed, to be unproductive. 
+although machines can simulate intelligence convincingly enough to pass the Turing test, the Chinese Room experiment proves that syntactic manipulation (syntax) alone is insufficient for genuine understanding. in other words, the turing test can not measure internal cognition because it only measures the syntax of the output and not its semantics. the experiment also argues against strong AI because machines can not replicate qualitative human qualities such as semantics and therefore do have the capacity to have consciousness/understand. 
 
-  3) it's important to be vulnerable with yourself and others. i’ve become more of an open book recently, and its been v fulfilling :D
+in the chinese room thought experiment, searle imagines himself locked in a room. he receives chinese symbols (a “story” and “questions”) through a slot, which function as inputs, and follows an english rulebook that describes how to manipulate these symbols, representing the program. the rulebook lets him correlate one set of chinese symbols with another purely based on their shapes (syntax). by following these rules, he can assemble strings of chinese symbols that form correct answers to the questions. to an outside observer, his responses appear identical to those of a fluent chinese speaker. however, even though he can manipulate the symbols correctly and produce the correct outputs, he does not truly understand the language because his actions are based on syntax (manipulating symbols) without any care for semantics (meaning).  
 
-  4) small talk has helped me express myself better. i find that being comfortable in my own thoughts and emotions has helped me connect </span class="highlight">
-     with people better and has become an important stepping stone of sorts to become a bit more fearless and courageous in my everyday life. 
+the chinese room experiment proves that simulation does not equal duplication. an analogy i like to use is that a computer simulation of a storm is not an actual storm in real life. the turing test doesn’t care about the internal mechanisms (behavior or intentionality), only about the quality of the output. therefore, understanding is not a part of the program but a causal property of the biological system (aka our brains). 
 
-  5) <span class="highlight">hypocrisy erodes trust.</span class="highlight"> given the recent and unfortunate news in orem, utah @ Utah Valley University, i've become saddened 
-    by how polarized US politics has become. 
-    
-    our opinions do not define our value as humans. 
-    why do we uphold an idea only when it relates to those with the same beliefs as us? 
+background info!
 
-    <span class="highlight">the first amendment allows all of us to speak freely, to debate freely, and to express ourselves in a safe environment. college</span class="highlight">
-    <span class="highlight">campuses must encourage critical thinking and debate, especially in regards with topics we disagree with, bc that is how we determine </span class="highlight">
-    <span class="highlight">the concepts we each individually believe are "correct." we must work towards creating </span class="highlight">
-    <span class="highlight">spaces where everyone, not just students, are encouraged to respectfully debate one another. </span class="highlight">`
-    },
+turing test - a "test" basically saying that if a human can not tell the output of a machine and a human, then machines have reached "human-like intelligence"
+strong ai - ai can generalize beyond specific tasks, so it has a consciousness in theory
+weak ai -  computers can simluate intelligence but it can only do so in specific contexts such as alexa, chat, or recommendation algorithms
+
+`},
     {
       id: 3,
       title: "does innovation only happen within its context? ",
@@ -118,13 +112,8 @@ the more i continue to create and learn from others, the more i realize how much
       author: "society",
       blocks: "7/15/2025",
       images: ['/rnb2.jpg'],
-      content: `01. fulfillment isn't something we discover so much as something we create through attention and choice. i like to see it as <span class="highlight">all the people who inspire us, all the ideas that challenge us, the work that engages us, and through the quality of our actions</span>. perhaps this is why there is no universal formula to anything. what draws one person forward might leave another. 
-
-02. with uni coming up in the fall, i'd like to iterate over what i value. 
-
-i'm someone who enjoys music as equally as she approaches others with genuine curiosity, always wondering about the stories they carry and the worlds they've built inside their minds. i'm endlessly fascinated by how new technology works and am driven to complete whatever opportunity sits in front of me with the utmost intention (except household chores :<).
-
-i value internal validation from goals and dreams over external applause. <span class="highlight">but most of all, i'm someone who knows that if i am the smartest person in a room, i'm not in the right room. i know its cheugy, but labels are ok because they're never the full story. i believe it is up to people to learn more about the story that's inside them.</span> if we knew everyone's story. we wouldn't be curious or willing to make mistakes and learn from them.`
+      content: `fulfillment isn't something we discover so much as something we create through attention and choice. i like to see it as <span class="highlight">all the people who inspire us, all the ideas that challenge us, the work that engages us, and through the quality of our actions</span>. perhaps this is why there is no universal formula to anything. what draws one person forward might leave another. 
+`
     }
   ];
 
