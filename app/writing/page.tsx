@@ -18,43 +18,52 @@ export default function WritingPage() {
 
   const articles: Article[] = [
 
-    {
-      id: 1,
-      title: "is the turing test an appropriate measure of machine intelligence?",
-      author: "society and technology",
-      blocks: "11/26/2025",
-      images: ['/green.jpg'],
-      content: `
-! read background information for more context to turing test, strong ai, and weak ai 
+    { 
+      id: 1, 
+      title: "is the turing test an appropriate measure of machine intelligence?", 
+      author: "technology", 
+      blocks: "11/28/2025", 
+      images: ['/green.jpg'], 
+      content: `<span style="color: #999;">background info! 
+• turing test - proposed by Alan Turing in 1950; basically says that if a human can't tell the difference between the output of a machine and a human, then that machine has reached "human-level intelligence."
+• strong ai - the idea that ai can generalize beyond specific tasks, so it has a consciousness in theory 
+• weak ai - opposite of ^. idea that computers can simluate intelligence but it can only do so in specific contexts such as your tiktok recommendation algorithm, alexa, chatgpt, etc 
+• syntax vs semantics - syntax is structure of symbols and semantics is its meaning. for example, think of the difference between spelling "joy" and actually feeling it</span>
+    
+okie, now i ask : is the turing test an appropriate measure of machine intelligence? 
 
-although machines can simulate intelligence convincingly enough to pass the Turing test, the Chinese Room experiment proves that syntactic manipulation (syntax) alone is insufficient for genuine understanding. in other words, the turing test can not measure internal cognition because it only measures the syntax of the output and not its semantics. the experiment also argues against strong AI because machines can not replicate qualitative human qualities such as semantics and therefore do have the capacity to have consciousness/understand. 
+as llms get better at mimicking human conversation, writing code, and passing bar exams, i've been wrestling with the question of "what defines a mind?" i naturally thought to the turing test and whether we'll ever reach a point where machines have the same capacity as human consciousness. <span class="highlight">my main thesis, perhaps, is that intelligence can not be duplicated through syntactic manipulation alone. this is because intelligence is a byproduct of the biological/chemical processes of our mind (our consciousness) and that can not be duplicated through computation alone.</span class="highlight"> in other words, the turing test can not measure internal cognition because it only measures the syntax of the output and not its semantics. 
 
-in the chinese room thought experiment, searle imagines himself locked in a room. he receives chinese symbols (a “story” and “questions”) through a slot, which function as inputs, and follows an english rulebook that describes how to manipulate these symbols, representing the program. the rulebook lets him correlate one set of chinese symbols with another purely based on their shapes (syntax). by following these rules, he can assemble strings of chinese symbols that form correct answers to the questions. to an outside observer, his responses appear identical to those of a fluent chinese speaker. however, even though he can manipulate the symbols correctly and produce the correct outputs, he does not truly understand the language because his actions are based on syntax (manipulating symbols) without any care for semantics (meaning).  
+the chinese room thought experiment backs this claim up pretty well, so let's take a look at it! 
+    
+in the chinese room thought experiment, John Searle (he made this thought experiment) imagines himself locked in a room. he receives mandarin chinese symbols (a "story" and "questions") through a slot, which function as inputs, and follows an english rulebook that describes how to manipulate these symbols, representing the program. the rulebook lets him correlate one set of chinese symbols with another purely based on their shapes (syntax). by following these rules, he can assemble strings of chinese symbols that form correct answers to the questions. to an outside observer, his responses appear identical to those of a fluent speaker. however, even though he can manipulate the symbols correctly and produce the correct outputs, he does not truly understand the language because his actions are based on syntax (manipulating symbols) without any care for semantics (meaning). 
+    
+the chinese room experiment proves that simulation does not equal duplication. an analogy i like to use is that a computer simulation of a storm is not an actual storm in real life. the turing test doesn't care about the internal mechanisms (behavior or intentionality), only about the quality of the output. therefore, understanding is not a part of the program but a causal property of the biological system (aka our brains). 
 
-the chinese room experiment proves that simulation does not equal duplication. an analogy i like to use is that a computer simulation of a storm is not an actual storm in real life. the turing test doesn’t care about the internal mechanisms (behavior or intentionality), only about the quality of the output. therefore, understanding is not a part of the program but a causal property of the biological system (aka our brains). 
-
-background info!
-
-turing test - a "test" basically saying that if a human can not tell the output of a machine and a human, then machines have reached "human-like intelligence"
-strong ai - ai can generalize beyond specific tasks, so it has a consciousness in theory
-weak ai -  computers can simluate intelligence but it can only do so in specific contexts such as alexa, chat, or recommendation algorithms
-
-`},
+<span class="highlight">i believe this thought experiment matters a lot more than we realize when it comes to ai alignment and shaping the moral compasses of new systems as well.</span class="highlight"> `
+    },
 {
   id: 3,
   title: "does innovation only happen within its context? ",
-  author: "technology",
+  author: "philosophy",
   blocks: "9/1/2025",
   images: ['/blueruf.jpg'],
-  content: `recently, i've been interested in a lot of the social dynamics behind computational thinking, such as AGI, recommendation systems, the Turing test, and how recommendation algorithms are evolving with time. but to understand how we've been able to develop such mind-boggling technologies, we also need to understand binary (aka the computer's language of 0s and 1s). 
-  
+  content: `recently, i've been interested in a lot of the social dynamics behind computational thinking, such as AGI, internet systems, the turing test, and how recommendation algorithms (especially facebook and their metaverse) are evolving with time. but to understand how we've been able to develop such mind-boggling technologies, we also need to understand binary (aka the computer's language of 0s and 1s). 
+
+so, i ask : does innovation only happen within its context? 
+
+well, when Darwin created his Theory of Evolution, some may say that the "time was ripe." if Darwin never coined it in his place. but let's look at another example: Gregor Mendel! when he discovered the punnett square, his work was barely acknowledged. this, in part, is because he was quite ahead of his time. he combined two completely disparaging fields (math and biology) together to radically innovate (we call this radical innovation).
+
 like Mendel, Leibniz combined two different fields (logic and algebra) to create a "language" of sorts that later became the precursor to probabilistic inference. <span class="highlight">he proved that everything done by our mind is possible with computation.</span> he believed math was a language, and that private language can not exist because you can not express a concept if it does not have a name. this is why we don't have memories as babies because we can not conceptualize what we do not yet know. since math is simply a language made of symbols and signs, we can not think, reason, or compute to ourselves without language (in this case, combining math and logic to make sense of things like equations, theorems, etc). binary is only concerned with 0 and 1s, on or off.
   
 one fundamental logic behind this idea are the three laws of thought. these three laws are the law of identity, law of contradiction, and the law of excluded middle. leibniz believed all knowledge is self evident, meaning that the mind itself already knows. for example, a triangle is self evident because you can't comprehend of a triangle without three sides in the same way a bachelor is by definition unmarried. empirical knowledge, however, is discovered "through" other knowledge. for example, if i say "kidney" you wouldn't intuitively associate that with "pumping blood." most empirical knowledge drives scientific knowledge since we always discovering new facts that continue creating new knowledge. now, the third law ties everything together quite beautifully because binary mirrors human thinking. in binary, it is always a 0 or a 1, on or off. <span class="highlight">just like how we can not define what "happy" or "good" is without "sadness" or "evil," we understand binary through its opposite.</span> 
   
 well, if we do not think through these three laws of thought why do they matter? just as we experience and behave through them, binary operates through them! we can understand that 1) in binary, each state (0 or a 1) has a clear, unchanging state (this is the law of identity), and 2) each state can not be on and off at the same time in classical computing.
   
-<span class="highlight">when we reason, we're make a bunch of distinctions: something either is or isn't, exists or doesn't exist, is true or false. binary mirrors how we think but simply through a different lens of logic and computation.</span>`
+<span class="highlight">when we reason, we simply make a bunch of distinctions: something either is or isn't, exists or doesn't exist, is true or false. binary mirrors how we think but simply through a different lens of logic and computation.</span>
+
+circling back, innovation isn't bound to any singular context but how well it is received does.
+`
 },
     {
       id: 4,
