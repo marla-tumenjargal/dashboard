@@ -5,6 +5,7 @@ import { useState } from "react";
 
 const navItems = [
   { name: "bio", href: "/" },
+  { name: "courses", href: "/courses" },  // Added this line
   { name: "for fun", href: "/playground" },
 ];
 

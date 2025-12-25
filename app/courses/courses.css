@@ -1,20 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap');
 
-.courses-container {
+.courses-page {
     font-family: 'Public Sans', sans-serif;
+    margin: 0 auto;
+    padding: 0 1rem;
+    max-width: 1200px;
+    min-height: 100vh;
+    box-sizing: border-box;
+    background-color: #ffffff !important;
+}
+
+/* Back Button */
+.courses-back-button {
+    background: none;
+    border: none;
+    color: #111827;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0.5rem;
+    margin: 0 0 1rem 0;
+    border-radius: 6px;
+    transition: color 0.2s ease;
+}
+
+.courses-back-button:hover {
+    color: #4f46e5;
+}
+
+.courses-container {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     letter-spacing: -0.01em;
-    padding-top: 2rem;
-    padding-left: 7.3rem;
-    padding-right: 1rem;
-    max-width: 120rem;
+    padding: 0 2rem 2rem;
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
     position: relative;
-    padding-bottom: 2rem;
 }
 
 .courses-container::after {
@@ -28,7 +53,7 @@
 }
 
 .courses-header {
-    margin-top: 4rem;
+    margin-top: 0;
     margin-bottom: 1.25rem;
 }
 
@@ -39,23 +64,23 @@
 }
 
 .courses-name {
-    font-size: 2.2rem;
-    font-weight: 500;
-    font-family: 'DM Sans', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-family: 'Public Sans', sans-serif;
     color: #111827;
     letter-spacing: -0.03em;
+    padding-bottom: 0.2rem;
     margin: 0;
-    margin-bottom: 0.6rem;
 }
 
 .courses-secondary {
-    font-size: 1rem;
-    font-weight: 300;
+    font-size: 0.875rem;
+    font-weight: 400;
     padding-top: 0.3rem;
     max-width: 750px;
-    font-family: 'Public Sans', sans-serif;
-    color: #222222;
-    letter-spacing: -0.03em;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #000000;
+    line-height: 1.6;
     margin: 0;
 }
 
@@ -80,8 +105,9 @@
     flex: 1;
     min-width: 260px;
     max-width: 40rem;
-    font-size: 1rem;
-    line-height: 1.45;
+    font-size: 0.875rem;
+    line-height: 1.6;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 .section {
@@ -91,7 +117,7 @@
 .section-title {
     font-weight: 600;
     color: #1f2937;
-    font-size: 1.05rem;
+    font-size: 0.875rem;
     margin-bottom: 0.35rem;
     text-transform: lowercase;
 }
@@ -103,13 +129,14 @@
 
 .courses-column li {
     margin-bottom: 0.6rem;
+    color: #000000;
 }
 
 .course-description {
-    color: #666666;
-    font-size: 0.95rem;
-    font-weight: 300;
-    line-height: 1.4;
+    color: #000000;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.6;
 }
 
 .courses-header-2 {
@@ -160,7 +187,7 @@
 
 .semester-note {
     font-size: 0.875rem;
-    color: #666666;
+    color: #000000;
     font-weight: 400;
     margin: 0;
 }
@@ -171,8 +198,8 @@
         gap: 2rem;
     }
     
-    .courses-container {
-        padding-left: 4rem;
+    .courses-page {
+        margin: 0 1rem;
     }
 }
 
@@ -182,7 +209,9 @@
     }
 
     .courses-name {
-        font-size: 1.7rem;
+        font-size: 0.9rem;
+        font-weight: 700;
+        font-family: 'DM Sans', sans-serif;
     }
 
     .courses-location {
@@ -190,25 +219,44 @@
     }
 
     .courses-secondary {
-        font-size: 1rem;
+        font-size: 0.85rem;
         max-width: 378px;
-        font-weight: 10px;
+    }
+    
+    .courses-page {
+        margin: 0 0.75rem;
     }
     
     .courses-container {
-        padding-left: 2rem;
-        padding-top: 6rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
     
     .summary-stats {
         gap: 1.5rem;
     }
+    
+    .courses-column {
+        font-size: 0.8rem;
+    }
+    
+    .section-title {
+        font-size: 0.95rem;
+    }
 }
 
 @media (max-width: 480px) {
+    .courses-page {
+        margin: 0 0.25rem;
+    }
+    
     .courses-container {
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    
+    .courses-back-button {
+        padding: 0.25rem;
     }
     
     .summary-stats {
@@ -217,6 +265,18 @@
     }
     
     .courses-header {
-        margin-top: 2rem;
+        margin-top: 0;
+    }
+    
+    .courses-name {
+        font-size: 0.9rem;
+    }
+    
+    .courses-secondary {
+        font-size: 0.85rem;
+    }
+    
+    .courses-column li {
+        font-size: 0.85rem;
     }
 }

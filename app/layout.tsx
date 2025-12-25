@@ -37,7 +37,8 @@ export default function RootLayout({
   }, []);
 
   const isWhiteBackgroundPage =
-    pathname?.startsWith('/projects') || pathname?.startsWith('/writing');
+    pathname?.startsWith('/projects') || pathname?.startsWith('/writing') || pathname?.startsWith('/courses');
+
 
   return (
     <html lang="en">
